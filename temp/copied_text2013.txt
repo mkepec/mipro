@@ -1,0 +1,758 @@
+MICROELECTRONICS, ELECTRONICS AND
+ELECTRONIC TECHNOLOGY
+INVITED PAPER .................................................................................................................... 3
+Min-Max Circuits as a Problem Solving Tool(s) .................................................................................5
+D. Kovačević
+PAPERS .................................................................................................................................. 15
+Tuning Electronic Properties of Molybdenum Disulfide by a Substitution in Metal Sublattice...17
+V. Fedorov, N. Naumov, A. Lavrov, M. Tarasenko, S. Artemkina, A. Romanenko, M. Medvedev
+Alternating Current Electrochemical Anodisation of Silicon on Insulator Layers........................19
+M. Ivanda, V. Đerek, M. Balarin, O. Gamulin, M. Kosović, S. Musić, M. Ristić, Z. Crnjak Orel
+Porous Silicon Prepared from p- and p++ Bulk Silicon......................................................................24
+V. Đerek, R. Baltić, M. Marcijuš, M. Ristić, Z. Crnjak Orel, M. Ivanda
+Some Physical Problems in the Preparation and Analysis of the Heavily Boron and Phosphorous
+Doped Polysilicon Thin Films..............................................................................................................28
+M. Očko, S. Žonja, M. Ivanda
+Luminescence, Raman and Synchrotron XPS Study of Amorphous Ge2S3 Based Films...............34
+V. Mitsa, M. Ivanda, O. Gamulin, R. Holomb, O. Kondrat, N. Popovych, G. Lovas, S. Petreckiy, N.
+Tsud, V. Matolín, K. Prince
+Light Coupling Between the Whispering Gallery Modes of a Coated Microsphere
+and a Tapered Fiber.............................................................................................................................40
+D. Ristić, M. Mazzola, A. Chiappini, P. Féron, A. Rasoloniaina, G. Cibiel, M. Ivanda, G. Righini, M.
+Ferrari
+Eu3+/ Yb3+ - Activated Nanocrystals of Lanthanide Phosphates ......................................................44
+A. Lukowiak, A. Bednarkiewicz, R. Wiglusz, W. Strek, L. Kepinski, L. Krajczyk, D. Ristić, A.
+Chiasera, M. Ferrari
+Numerical Study and Performance Analysis of Carbone Nanotube Field Effect Transistors ......49
+R. Djamil, B. Salima, L. Kheireddine
+VI
+New Silicon Reach-Through Avalanche Photodiodes with Enhanced Sensitivity in the DUV/UV
+Wavelength Range................................................................................................................................54
+D. Grubišić, A. Shah
+175,000 Device-Hours Operation of AlGaN/GaN HEMTs on Diamond at 200oC Channel
+Temperature .........................................................................................................................................61
+D. Babić, Q. Diduck, C. Khandavalli, D. Francis, F. Faili, F. Ejeckam
+Low Power CMOS Sub-threshold Circuits........................................................................................66
+B. Dokić, A. Pajkanović
+Low-Power and High-Speed 4-2 Compressor....................................................................................72
+A. Najafi, B. Mazloom-Nezhad, A. Najafi
+High-Order Inductorless Elliptic Filter with Reduced Number of Capacitors
+Using Signal-Flow Graphs...................................................................................................................76
+Đ. Glavinić, D. Jurišić
+Engineering Education: Where We Are and Where We Go from Here .........................................82
+B. Pejčinović
+Concept for a SIL3 Middleware Encapsulating Safety-related Aspects of Applications for an
+8051-based SIL3 Multi-Core System-on-Chip...................................................................................88
+M. Schreiber, E. Delic, A. Hayek, J. Börcsök
+Validation of a SIL3 Middleware for Safety-related System-on-Chips...........................................92
+E. Delic, M. Schreiber, A. Hayek, J. Börcsök
+Weighted Least-Squares Design of Sharpened CIC Filters..............................................................98
+G. Molnar, M. Glavinić Pecotić, M. Vučić
+Some Improvements of the Gaussian Elimination Method for Solving Simultaneous Linear
+Equations.............................................................................................................................................103
+S. Delić, Ž. Jurić
+LED Powered Identification Tag - Energy Harvesting and Power Consumption Optimization109
+G. Horvat, D. Vinko, T. Švedek
+Self Powered Current Acquisition System with Wireless Data Transfer......................................115
+V. Valchev, A. Marinov, E. Dimitrova
+Investigation of an Intelligent Power Supply System for an Electric Heater Furnace with Silicon
+Carbide Heaters..................................................................................................................................120
+G. Nikolov, B. Dimitrov, V. Valchev
+Končar Smart Metering - Innovative Solutions for Well Known Problems.................................126
+D. Cmuk, D. Cihlar, M. Šimunović
+Micropositioning Mechatronics System Based on FPGA Architecture ........................................132
+E. Kamenar, S. Zelenika
+On-water Measurement and Analysis System for Estimating Kayak Paddlers' Performance...138
+G. Vadai, G. Makan, Z. Gingl, R. Mingesz, J. Mellár, T. Szépe, A. Csamangó
+Random Interleaver Design in Turbo Coding for Digital Magnetic Recording Channel ...........144
+S. Stancescu, C. Sandu
+Interpretation of Pulmonary Function Test Results in Relation to Asthma Classification Using
+Integrated Software Suite ..................................................................................................................147
+A. Badnjević, D. Koruga, M. Cifrek, H. Smith, T. Bego
+DISTRIBUTED COMPUTING AND VISUALIZATION
+PAPERS ................................................................................................................................ 155
+DISTRIBUTED COMPUTING
+High Productivity Processing - Engaging in Big Data around Distributed Computing 159
+M. Riedel, M. Memon, A. Memon, G. Fiameni, C. Cacciari, T. Lippert
+Scaling the Performance and Cost While Scaling the Load and Resources in the Cloud ...........165
+M. Simjanoska, S. Ristov, G. Velkoski, M. Gusev
+Semidefinite optimization of High Performance Linpack on Heterogeneous Cluster .................171
+D. Tomić, L. Gjenero, E. Imamagić
+Distributed Virtual Test Bed: an Approach to Intergation of CAE Systems in UNICORE Grid
+Environment .......................................................................................................................................177
+G. Radchenko, E. Hudyakova
+Message Oriented Framework with Low Overhead for Efficient High-Performance Monte Carlo
+Simulations..........................................................................................................................................183
+E. Atanassov, T. Gurov, A. Karaivanova
+WRF4SG: A Scientific Gateway for the Weather Research and Forecasting Model ..................186
+C. Blanco, A. Cofiño, V. Fernández-Quiruelas
+Generation of the Scrambled Halton Sequence Using Accelerators..............................................191
+E. Atanassov, M. Durchova
+Intel vs AMD: Matrix Multiplication Performance ........................................................................196
+N. Anchev, M. Gusev, S. Ristov, B. Atanasovski
+Web Service for Separating Components in the Exponential Decay Process...............................202
+A. Martinović, D. Arbula, Ž. Jeričević
+Performance Drawbacks for Matrix Multiplication Using Set Associative Cache in
+GPU Devices........................................................................................................................................207
+L. Djinevski, S. Arsenovski, S. Ristov, M. Gusev
+Defending the Need for a New Global Software Approach: a Literature Review........................213
+M. Trkman, S. Vrhovec, D. Vavpotič, M. Krisper
+Parallelization of NAPOM Implementation ....................................................................................217
+M. Depolli, G. Kosec, J. Ugovšek, V. Malačič
+Faster Solution of Large, Over-Determined, Dense Linear Systems.............................................222
+Ž. Jeričević, I. Kožar
+Virtual Computers and Virtual Data Storage ................................................................................226
+A. Šimec, O. Staničić
+VIII
+AdriaScience Gateway: Application Specific Gateway for Advanced Meteorological Predictions
+on Croatian Distributed Computing Infrastructures......................................................................231
+D. Davidović, T. Lipić, K. Skala
+Handling Web Service Interfaces......................................................................................................236
+J. Matković, K. Fertalj
+Loosely or Tightly Coupled Affinity for Matrix - Vector Multiplication......................................242
+G. Velkoski, S. Ristov, M. Gusev
+Computation and Analysis of Sobol Coefficients for Air Pollution Concentrations over the
+Territory of Bulgaria..........................................................................................................................248
+E. Atanassov, S. Ivanovska
+Algorithms for Computational Procedure Acceleration for Systems Differential Equations in
+Matlab .................................................................................................................................................252
+H. Nenov, B. Dimitrov, A. Marinov
+Support for Data-intensive Computing with CloudMan ................................................................257
+Y. Kowsar, E. Afgan
+IaaS Type Cloud Infrastructure Assessment and Monitoring .......................................................263
+M. Kozlovszky, M. Törőcsik, T. Schubert, V. Póserné
+Energy Efficiency in Large-Scale Distributed Computing Systems ..............................................267
+R. Trobec, M. Depolli, K. Skala, T. Lipić
+3D Visual Analytics for Quality Control in Engineering................................................................272
+M. Klemenčić, K. Skala
+VISUALIZATION SYSTEMS
+Remote Visualization of 3D Graphical Models................................................................................279
+D. Gorgan, O. Capatana
+Fast Network Communities Visualization on Massively Parallel GPU Architecture ..................285
+M. Mržek, J. Blažič
+Realization of Natural Interaction over the Micro Soot Device Model .........................................291
+P. Mrazović, M. Pilipović, M. Volarević, Ž. Mihajlović
+Accelerating Mean Shift Image Segmentation with IFGT on Massively Parallel GPU...............295
+J. Sirotković, H. Dujmić, V. Papić
+ARIS MashZone KPI Visualisation of Simulated Routing Protocol Operations for Smart Dust
+Environments......................................................................................................................................302
+K. Hajdarević, A. Civa
+Physical Simulation of 3D Dynamical Surfaces on Graphic Clusters ...........................................308
+A. Sabou, D. Gorgan
+Road Line Detection based on Optical Correlator..........................................................................314
+T. Harasthy, J. Turán, Ľ. Ovseník
+BIOMEDICAL ENGINEERING
+The Specific Approach for Establishment of Innovation Hospitals in Gorenjska Region 319
+U. Stanič, S. Dolinšek, A. Cerkvenik Škafar, I. Grmek-Košnik, J. Stanič, G. Cerinšek
+Multifunctional Protective Clothing System: Development vs. Functionality..............................325
+D. Zavec Pavlinić, A. Oder, V. Grm, U. Stanič
+Functional Textiles Have Important Role on the Field of Human Life.........................................330
+D. Zavec Pavlinić
+I-TEHMED Biomedical Technology Platform - Structure and Results........................................335
+J. Stanič, J. Jelenc, U. Stanič
+Multi-Functional Wireless Body Sensor - Analysis of Autonomy..................................................340
+K. Bregar, V. Avbelj
+Personal Health Monitoring with Android Based Mobile Devices ................................................344
+M. Kozlovszky, L. Bartalis, B. Jókai, J. Ferenczi, P. Bogdanov, Z. Meixner, L. Németh, K. Karóczkai
+Signal Processing Methods for ST Variability Assessment in ECG ..............................................349
+A. Rashkovska, V.Avbelj
+Coarse Grain Molecular Dynamics Study of Voids Present in the Membrane of a Lipid
+Vesicle..................................................................................................................................................353
+J. Pavlič
+Low-Frequency Ultrasound in vitro: Experimental System and Ultrasound-Induced Changes of
+Cell Morphology.................................................................................................................................358
+J. Jelenc, J. Jelenc, D. Miklavčič, A. Maček Lebar
+Using Hadoop MapReduce in a Multicluster Environment ...........................................................363
+I. Tomašić, A. Rashkovska, M. Depolli
+Approaches to DNA de novo Assembly ............................................................................................369
+I. Sović, K.Skala, M.Šikić
+Ski Injury Triggers of Tibial Plateau Compression Fracture........................................................378
+R. Trobec, I. Belehar, J. Polajnar, M. Veselko
+A Model of Selective Stimulation and ENG Recording in the Human Left Vagus Nerve ...........383
+P. Pečlin, J. Rozman
+TELECOMMUNICATIONS AND INFORMATION
+INVITED PAPERS .............................................................................................................. 389
+New Challenges and Perspectives on Understanding and Managing the End User Experience:
+Presenting European Research Efforts on the Quality of Experience of Multimedia Systems...391
+L. Skorin-Kapov
+ICT i povećanje socijalne uključenosti osoba sa složenim komunikacijskim potrebama............393
+Ž. Car
+X
+PAPERS ................................................................................................................................ 395
+SERVICE QUALITY
+PSQM - Platform for Service Quality Management .......................................................................399
+O. Jukić, I. Heđi
+A Possibility of Estimation of IPTV QoS Parameters by Using DSL Transceivers Physical Layer
+Parameters ..........................................................................................................................................404
+N. Škaljo, A. Begović, N. Behlilović
+An Impact of Access Network Physical Impairments on IPTV QoE in DSL Enviroment ..........408
+N. Goran, M. Hadžialić, A. Begović
+Metodologija vrednovanja kvalitete usluge e-Poziva u sklopu pilot projekta HeERO................412
+P. Britvić, M. Rimac, K. Vidović
+Utjecaj kvalitete usluga i zadovoljstva korisnika na lojalnost korisnika usluga ..........................416
+H. Kuč, A. Kuč
+Istraživanje zadovoljstva korisnika multidimenzionalnih usluga na tržištu telekomunikacija
+Bosne i Hercegovine ...........................................................................................................................422
+N. Karahmetović
+INNOVATIONS AND BUSINESS IMPROVEMENTS
+A Blend of Semi-Open Innovation & Open Sourceness: Accelerating Innovation within a Large
+Telecommunications Company.........................................................................................................431
+M. Bervanakis, S. Dešić
+SEO in e-Commerce: Balancing between White and Black Hat Methods....................................437
+S. Duk, D. Bjelobrk, M. Čarapina
+Izazovi razvoja odgovarajućih poslovnih procesa neophodnih za migraciju telekomunikacijskih
+usluga...................................................................................................................................................443
+K. Musa, D. Markulin
+Povezanost društveno odgovornog poslovanja i poslovnih performansi.......................................448
+N. Pivačić, N. Kusić
+WEB APPLICATIONS & M2M COMMUNICATIONS
+Web Application Functional Size Estimation Based on COSMIC Method and UWE
+Approach.............................................................................................................................................457
+D. Čeke, M. Đurek, S. Kasapović
+Značajke i mogućnosti web orijentiranih radnih sučelja ...............................................................465
+Ž. Širanović, N. Majstorović, T. Tolić
+Abstraction and Semantics Support in M2M Communications ....................................................472
+V. Čačković, Ž. Popović
+Machine-to-Machine Communication as Key Enabler in Smart Metering Systems ...................477
+M. Dujak, V. Parać, M. Đurasević, A. Herić
+DEVELOPMENT METHODS
+Improved Distributed Band-Preference Dynamic Spectrum Management for Upstream
+VDSL2 .................................................................................................................................................485
+Y. Gao, Y. Li, G. Wang, M. Jin
+Dictionary Based Optimization for Adaptive Compression Techniques.......................................491
+A. Mokhtar Mansour, M. Fouad
+Adoption of Agile Methodology in Software Development ............................................................496
+D. Duka
+Developments and Current Trends in Ethernet Technology .........................................................501
+D. Valenčić, V. Lebinac, A. Skendžić
+Pregled metoda ublažavanja utjecaja endogenih faktora na neuspješnost IT projekata............507
+N. Marušić
+INFRASTRUCTURE DEVELOPMENT
+Terastream Implementation of All IP New Architecture ...............................................................515
+B. Zaluški, B. Rajtar, H. Habjanić, M. Baranek, N. Šlibar, R. Petračić, T. Sukser
+Merging Dynamic Address Autoconfiguration and Security Key Protocols in Mobile Ad Hoc
+Networks .............................................................................................................................................519
+M. Shurman, M. Al-Mistarihi, K. Darabkh
+MAC Layer Back-off Algorithm for Ad hoc Networks ..................................................................524
+M. Shurman, M. Al-Mistarihi, Z. Alomari
+Heterogeneous Networks in Theory and Practice ...........................................................................530
+T. Ivanković
+Information Systems Infrastructure Planning Based on Collected Data from Monitoring
+Tools.....................................................................................................................................................534
+I. Golub, B. Radojević
+REGULATORY ASPECTS
+Regulatory Aspects of Mobile Broadband Technologies ................................................................541
+A. Džebo, H. Mutapčić
+Role of Infrastructure Atlas in NGA Deployment...........................................................................546
+S. Hadžović, S. Kovačević
+Trendovi i mogućnosti primjene mobilnog širokopojasnog pristupa............................................549
+A. Krivošić, A. Džebo
+Prenosivost telefonskih brojeva ........................................................................................................555
+A. Gabela, F. Gabela, J. Gabela
+XII
+WIRELESS SENSOR NETWORKS
+Effective Energy Consumption on Wireless Sensor Networks: Survey and Challenges .............561
+A. Boonsongsrikul, S. Kocijančič, S. Suppharangsan
+An Optimal Algorithm Based on Gridding and Clustering for Decrease Energy Consumption in
+WSN.....................................................................................................................................................566
+A. Firuzbakht, A. Bouyer
+Hierarchical Clustering Using Genetic Algorithm in Wireless Sensor Networks ........................571
+M. Shurman, M. Al-Mistarihi, A. Mohammad, K. Darabkh, A. Ababnah
+Efficient Wireless Signal Emitting Sensor Distribution within an Environment Modified for the
+Needs of the Aging Population ..........................................................................................................576
+V. Prčić, M. Đurek, D. Šimunić
+TeleAssistant - Assisted Living Platform Applied to Fall Detection..............................................582
+M. Čavka, R. Krpetić, D. Vasić, V. Bilas
+RADIO COMMUNICATIONS SYSTEMS
+Properties of Hybrid FSO/RF Link with 60 GHz RF Backup Link ..............................................589
+M. Tatarko, Ľ. Ovsénik, J. Turán
+Comparison of New Technologies for Data Exchange in the Maritime HF Frequency Band ....592
+S. Valčić, Z. Mrak, D. Kezić
+A Modular Simulation Framework for Analyzing Coexistence Issues in Wireless Radio
+Networks in Close Spatial Proximity................................................................................................597
+R. Neumeier, G. Ostermayer
+On the Performance of DoA Estimation Algorithms in Cognitive Radio Networks:- A New
+Approach in Spectrum Sensing.........................................................................................................601
+T. Dhope, D. Šimunić
+Design and Implementation of SDR Based QPSK Modulator on FPGA......................................607
+T. Kazaz, M. Kulin, M. Hadžialić
+Mogućnost korištenja bežičnih komunikacija za uspostavu "mesh" podatkovne mreže sa svim
+objektima pomorske signalizacije na Jadranu ................................................................................613
+I. Karin, J. Vrlić, Z. Belak, I. Ružić
+ENVIRONMENTAL PROTECTION
+Analiza rezultata mjerenja elektromagnetskih polja u mobilnim mrežama
+Hrvatskog Telekoma ..........................................................................................................................621
+S. Gros, R. Gajić
+Kolocirani izvori visokofrekvencijskih elektromagnetskih zračenja.............................................627
+B. Tanatarec
+Analysis Methodologies of Assessment of Impact Teleworking on the Decrease Carbon
+Emissions of Physical Mobility..........................................................................................................631
+M. Berković, A. Kosovac, A. Džebo
+COMPUTERS IN EDUCATION
+INVITED PAPER ................................................................................................................ 641
+Tablet Learning Environment in iSchool Vežica ...........................................................................643
+V. Nikolić, L. Zima Krnelić, D. Kolarić, M. Nikolić
+PAPERS ................................................................................................................................ 647
+Are We Trendy? .................................................................................................................................649
+H. Jaakkola, B. Brumen, J. Henno, J. Mäkelä
+Concept Maps in Computer-Assisted Knowledge Assessment.......................................................658
+J. Petrović, B. Jeren, P. Pale
+Tracking the Roots of Plagiarism - Results of the Initial International Survey ...........................663
+D. Lukač, M. Čičin-Šain
+Considerations on the Evolution of Attention Paid to Education in Romania Compared to EU, in
+the 1998-2010 Period..........................................................................................................................667
+M. Zaharia, D. Enachescu
+Synergy of e-Science and Libraries as a Support to Higher Education Institutions
+in Croatia ............................................................................................................................................673
+R. Vrana
+Modes of Use and Preservation of Digital Information Resources as a Support to the Learning
+Process at the Faculty of Humanities and Social Sciences in Zagreb ............................................679
+R. Vrana
+Towards a Framework for Usability Evaluation of Educational Artifacts Created with Web 2.0
+Applications: A Pilot Study ...............................................................................................................685
+T. Orehovački, N. Žajdela Hrustek
+Parameter Identification of Transfer Functions Using MATLAB ................................................691
+M. Fruk, G. Vujisić, T. Špoljarić
+Web Interactive Learning - Case Study: Faculty of Economics of Josip Juraj Strossmayer
+University in Osijek............................................................................................................................697
+M. Lamza-Maronić, J. Glavaš
+The Role of Computerisation and Automation of School Libraries Management in Teaching
+Information Literacy on the Example of Curriculum Unit Online Library Catalogues .............701
+D. Vincek
+Design and Development of School Assets Management System...................................................707
+A. Vladimirou, A. Kokkinaki
+Data Mining in Hybrid Learning: Possibility to Predict the Final Exam Result .........................711
+J. Gamulin, O. Gamulin, D.Kermek
+Students' Attitudes to the Use of Open Source Technology in Education.....................................717
+K. Pavlina, B. Petrović
+XIV
+More Efficient Training of Teachers of Informatics Using Modern Information-Communication
+Technology in Croatian Education and Teacher Training Agency...............................................720
+E. Ban, T. Bronzin
+Student's Level of ICT Literacy by Study Groups on Faculty of Philosophy, University of
+Mostar .................................................................................................................................................725
+A. Ivanković, S. Špiranec, D. Miljko
+E_Learning vs. Multimedia (Ivica & Marica - Hansel & Gretel) ..................................................730
+K. Bedi, N. Žajdela Hrustek, T. Vrbanec
+ICT Learning Experience in the Multilingual and Multicultural Environment of ERASMUS IP
+TAARLoG Project .............................................................................................................................736
+J. Žufić, H. Cvilinder
+Incorporating Social Network Workshops in Elementary School Curriculum............................742
+M. Draženović
+Mathematical Modelling, Computers and GeoGebra in University and College Mathematics
+Education ............................................................................................................................................745
+T. Sekulić, Đ. Takači
+Application of Gantt Charts in the Educational Process................................................................751
+A. Bednjanec, M. Filipović Tretinjak
+Interaktivnost u učionicama u kontekstu novih obrazovnih tehnologija i alata ..........................756
+K. Blažeka
+PC and Microcontrollers Applications in the Laboratory Exercises of the Electrical
+Engineering .........................................................................................................................................760
+O. Tasić, V. Tasić, D. Brodić, V. Despotović, M. Pavlov, D. Milivojević
+On-line e-Learning Platform Supporting Education and Practice of Accountants in EU
+Space....................................................................................................................................................765
+D. Paľová, M. Vejačka
+Choosing Free Library Software: Experiences of the Faculty of Humanities and Social Studies in
+Zagreb .................................................................................................................................................771
+T. Čonč
+Development of Information Competencies via Process Modelling and ICT Integration...........778
+L. Révészová
+Research Assistance Library Service - In between Formal and Informal Learning....................784
+B. Marijanović, S. Šimara, J. Lisek
+Gaming in the Adolescent's Population - Pilot Research................................................................789
+J. Žufić, D. Kiralj
+Compact Flexible Router Based Remote Experimenting System ..................................................795
+T. Szepe, S. Toth, Z. Gingl
+Web 2.0 Tools in Croatian Higher Education: an Overview..........................................................800
+M. Čarapina, D. Bjelobrk, S. Duk
+Using Microsoft Project for Project Management in Non-Governmental Organisations ...........805
+D. Kažović, D. Valenčić
+Heuristic Evaluation in the Human Computer Interaction Course ..............................................809
+D. Bošković, N. Borovina
+Motherboard and User Experience ..................................................................................................813
+J. Tomljanović, T. Turina, E. Krelja-Kurelović
+QR Codes in Library - Does Anyone Use Them?............................................................................819
+I. Jelić, D. Vrkić
+Systems of Suport for Persons with Complex Communication Needs ..........................................824
+Z. Stančić, J. Škrinjar, Ž. Car, I. Lovrek, V. Vlahović Štetić, J. Pibernik
+Framework for Web Application Domain Knowledge Extraction ................................................829
+I. Rožanc
+The Influence of Social Networks on Student's Evaluation and Results.......................................835
+A. Skendžić, B. Kovačić, D. Valenčić
+Will Universities and University Teachers Become Extinct in Our Bright Online Future?........840
+J. Henno, H. Jaakkola, J. Mäkelä, B. Brumen
+Cloud Computing in Education and Student's Needs.....................................................................850
+E. Krelja Kurelović, S. Rako, J. Tomljanović
+Mobile Phone in the Classroom ........................................................................................................856
+Ž. Požgaj, V. Bosilj Vukšić
+Future-Oriented Education with a Modern Flexible Production Unit..........................................861
+C. Ungermanns, W. Werth
+An Approach to the Evaluation of Embedded Engineering Study Programs ..............................866
+I. Kaštelan, M. Barak, V. Sruk, M. Anastassova, M. Temerinac
+BYOD: a Challenge for the Future Digital Generation ..................................................................872
+I. Pogarčić, M. Gligora Marković, V. Davidović
+ICT Didactics: The New Study Discipline is Needed.......................................................................877
+M. Krašna, B. Bedrač
+Computer Science Curriculum 2013 - An Example........................................................................883
+V. Jovanović
+Determination of the Torque-Speed Characteristic of Induction Motor in Electric Machinery
+Education ............................................................................................................................................889
+R. Buinac, V. Tomljenović
+Relevance and Realization of Communication between Information and Communication
+Technology Employers and Educational Sector..............................................................................894
+M. Rotim
+The Influence of Situational Factors on Accepting e-Learning Technology by University
+Teachers ..............................................................................................................................................900
+S. Babić
+XVI
+The Next Generation of University Information Systems - TTI Version for XXI Century ........906
+B. Misnevs, N. Fila
+Preparedness of Teachers and Learning Materials for e-Learning...............................................911
+N. Lazić, J. Klindžić, M. Odak
+The Strategic Oriented Information Science Education in the Function of Gaining Strategic
+Knowledge...........................................................................................................................................916
+M. Čičin-Šain, S. Vukmirović, M. Čičin-Šain
+E-learning Controversy in Practical Application............................................................................922
+T. Bratina, M. Duh, M. Krašna
+COB: Online Educational Tool for Collaborative Ontology Building ..........................................928
+M. Jovanov, M. Gusev, D. Martinovikj
+Object-oriented Programming for Graphical Modeling on the Example of Logistics Network
+Design ..................................................................................................................................................934
+S. Vukmirović, D. Kovač, I. Mežnarić
+Calculating Duration and Convexity of Bonds Using Excel...........................................................940
+Z. Prohaska, B. Olgić Draženović, V. Šarić
+PaintArt - An Interactive Computer Software for Education of Visual Arts...............................944
+Z. Prohaska, I. Uroda
+Laboratorij za emulaciju računalnih mreža i primjena u praktičnoj nastavi..............................948
+A. Jakupović, E. Pirić
+Otvoreni edukacijski online program u funkciji kvalitetnije dostupnosti službenih
+informacija..........................................................................................................................................954
+R. Pekorari, T. Horvat
+Primjena računalnih igara u obrazovanju.......................................................................................958
+M. Mirković
+Istraživanje o učestalosti korištenja računala i Interneta kod učenika Osnovne škole Centar u
+Puli.......................................................................................................................................................964
+B. Kontošić, A. Kontošić
+Elektronski udžbenik u osnovnim i srednjim školama ...................................................................970
+J. Đurić, V. Jelkić, A. Nikitović
+Istraživanje utjecaja rada za računalom na zdravlje učenika Osnovne škole Centar u Puli......976
+B. Kontošić, A. Kontošić
+OpenProj - Open Source softverski alat za upravljanje IT projektima........................................981
+D. Valenčić, D. Kažović, A. Radovan
+Zaštita i sigurnost djece na internetu ...............................................................................................986
+M. Kosovec, M. Dumančić
+Mogućnosti primjene informacijsko-komunikacijske tehnologije u primarnom obrazovanju ..991
+M. Lukić, M. Dumančić
+Facebook u obrazovanju....................................................................................................................995
+D. Drenjanac, M. Dumančić
+Usporedba stavova dvije generacije budućih učitelja prema odgoju i obrazovanju u
+budućnosti ...........................................................................................................................................999
+V. Galešev
+Primjena web sadržaja i web alata na području filozofije znanosti ............................................1003
+M. Sertić
+Information Literacy Instruction: Self-Education through e-Tutorials......................................1009
+A. Papić
+Zaštita podataka od plagiranja .......................................................................................................1013
+S. Šimundić, D. Barbarić
+Primjer uporabe dinamičkih struktura podataka u programskom jeziku Python....................1017
+P. Brođanac, L. Budin, Z. Markučič, S. Perić
+Programiranje u općoj, jezičnoj i klasičnog gimnaziji..................................................................1021
+M. Menciger
+Poboljšanja u primjeni računalom vođenog demonstracijskog stola u nastavi..........................1025
+T. Horvat, Lj. Cvitaš
+Metodologija izrade E - learning sadržaja u svrhu osposobljavanja za polaganje ECDL
+certifikata ..........................................................................................................................................1031
+S. Grgić, A. Lacković
+Primjena testova s bodovanjem zasnovanim na sigurnosti ispitanika u ispravnost odgovora .1035
+B. Nožica, Ž. Širanović, M. Čarapina
+Informacijske tehnologije u funkciji ekološkog obrazovanja učenika strukovnih škola...........1040
+V. Matić
+Primjena e-učenja u NATO okružju (e-NATO) ............................................................................1046
+D. Možnik
+Sigurnost i mobilnost za sve ............................................................................................................1052
+I. Ružić
+Motivacija učenika za e-učenje .......................................................................................................1055
+A. Czwyk Marić
+Obrazovanje za poduzetništvo pomoću računalne tehnologije u nastavi vježbeničke tvrtke ...1060
+I. Ivančić
+COMPUTERS IN TECHNICAL SYSTEMS
+INVITED PAPER ............................................................................................................. 1067
+New Wave of FPGA Prototyping for System-on-Chip Designs ..................................................1069
+H. Mlinarić
+XVII I
+PAPERS ............................................................................................................................. 1071
+Model-based Verification of the SIP Invite Scenario ....................................................................1073
+S. Matetić, M. Bagić Babac
+Improved Automatic DTV/STB Menu Navigation for Functional Verification.........................1079
+V. Marinković, B. Kordić, M. Popović, V. Peković
+Reliability Sensitivity Analysis for Yahoo! Pipes Mashups..........................................................1083
+G. Delač, M. Šilić, K. Vladimir
+Requirement Bottlenecks in a Cloud Based SCADA System .......................................................1089
+D. Sutić, B. Atlagić
+Impact of Control Flow Blocks Granularity on Custom Processor Design Time ......................1095
+D. Ivošević, V.Sruk
+Numerical Relay Protection Coordination Using Simulation Software ......................................1101
+S. Nikolovski, M. Havranek, P. Marić
+Engine Fault Detection for Piston Engine Aircraft .......................................................................1106
+D. Miljković
+Active Noise Reduction for General Aviation Aircraft Using Conventional Headsets ..............1112
+D. Miljković
+Reducing Off-road Vehicle Seat Vibrations Using Pneumatic Active Suspension and Fuzzy Logic
+Based Controller...............................................................................................................................1118
+A. Salihbegović, A. Salihbegović, M. Hadžiselimović, Z. Avdagić
+Comparative Analysis Between Methodologies and Their Software Realizations Applied to
+Modeling and Simulation of Industrial Thermal Processes .........................................................1123
+B. Dimitrov, H. Nenov, A. Marinov
+Twenty Years of Monitoring and Control of Electricity Consumption in RTB Bor, Serbia.....1128
+V. Tasić, V. Despotović, D. Brodić, M. Pavlov, D. Milivojević
+Remote Control of Model Vehicles Using Android Mobile Devices ............................................1133
+B. Vunderl, M. Žagar, D. Basch
+Optimal Control of a Family House Heating System....................................................................1139
+M. Vašak, A. Martinčević
+Model Predictive Control of a Heating, Ventilation and Air Conditioning System...................1145
+M. Vašak, A. Starčić
+Tuning of Model Predictive Controller for Wind Turbine Load Reduction ..............................1151
+G. Banjac, V. Spudić, M. Baotić
+Control of the Grid Side Converter in a Wind Turbine ...............................................................1157
+T. Hadjina, M. Baotić, N. Perić
+A Leader-Follower Approach to Formation Control of Multiple Non-Holonomic Mobile
+Robots................................................................................................................................................1163
+T. Petrinić, I. Petrović
+One Variant of Self-tuning DC Motor Adaptive Controller ........................................................1168
+Ž. Jurić, H. Šiljak
+An Experience on Manufacturing Execution System in the Field of Metals Industry ..............1174
+J. Novak
+Primjena zelenog računalstva u podatkovnom centru Rafinerije nafte Rijeka .........................1179
+S. Horvat, B. Žeželj, Z. Grgić
+Nadziranje i dijagnostika rada rafinerijskih postrojenja.............................................................1185
+I. Mohler, N. Bolf, R. Karlović, I. Šarlija
+Korištenje zalihosne opreme poslužitelja u VHF DSC sustavu Plovputa ...................................1190
+J. Vrlić, N. Grgić, I. Ružić
+Primjena Microsoft Windows Embedded operativnog sustava na ugrađenim računalnim
+platformama .....................................................................................................................................1196
+S. Braica, N. Grgić
+Upotreba mini računala s Linux operativnim sustavom na lokacijama sa zahtjevnim uvjetima
+okoline ...............................................................................................................................................1201
+N. Grgić, J. Vrlić, I. Ružić
+INTELLIGENT SYSTEMS
+INVITED PAPER ............................................................................................................. 1209
+Let the Machines Do. How Intelligent is Artificial Intelligence? .................................................1211
+H.-D. Burkhard
+PAPERS ............................................................................................................................. 1217
+Some Security Considerations on Crowd-Sourcing an Ontology ................................................1219
+M. Migliardi, E. Riccomagno
+Bayesian Posterior Probability Classification of Colorectal Cancer Probed with Affymetrix
+Microarray Technology ...................................................................................................................1225
+M. Simjanoska, A. Madevska Bogdanova, Z. Popeska
+Feature Extraction From Electroencephalographic Records Using EEGFrame Framework..1231
+A. Jović, L. Suć, N. Bogunović
+Technique for Indirect Analysis of Domestic Power Consumers Based on Power Pattern
+Recognition for Smart Energy Metering........................................................................................1237
+N. Nikolaev, Y. Rangelov, V. Valchev, A. Marinov
+Testing of Several Overlapping Optimization Methods for Bin-Packing Problem....................1241
+T. Rolich, D. Domović, D. Grundler
+Investigation of Coevolutionary Approach in Gene Regulatory Network Inference.................1247
+D. Komlen, D. Jakobović
+XX
+Evolution of Vehicle Routing Problem Heuristics with Genetic Programming .........................1254
+M. Gulić, D. Jakobović
+Multimedia Stimuli Databases Usage Patterns: A Survey Report...............................................1259
+M. Horvat, S. Popović, K. Ćosić
+Navigational Evaluation of Breadth First Search Spanning Trees..............................................1264
+D. Helić, M. Strohmaier, W. Wójcik
+Comparison of the Nodes of Knowledge Method with Other Graphical Methods for Knowledge
+Representation..................................................................................................................................1270
+A. Jakupović, M. Pavlić, A. Meštrović, V. Jovanović
+Identification of the Global Text Skew Based on the Convex Hulls ............................................1275
+D. Brodić, D. Milivojević, V. Tasić, Z. Milivojević
+Indexing Positively Constructed Formulas ....................................................................................1281
+A. Larionov, I. Terekhin
+On a Method of Solution the Equality Problem for Positively Constructed Formulas .............1285
+I. Terekhin, A. Larionov
+The Calculus of Positively Constructed Formulas, its Features, Strategies and
+Implementation.................................................................................................................................1289
+A. Larionov, A. Davydov, E. Cherkashin
+Logical Programming and Data Mining as Engine for MDA Model Transformation
+Implementation.................................................................................................................................1295
+A. Sokolov, I. Terekhin, E. Cherkashin, S. Butakov, A. Larionov
+Building Process of SCT Generators ..............................................................................................1303
+D. Radošević, I. Magdalenić, T. Orehovački
+A Proportional Distribution of AUVs under Decentralized Control...........................................1309
+N. Nagul
+A P300-Based Brain-Computer Interface: Towards a Simpler Approach .................................1315
+F. Melinščak, A.B. Jerbić, M. Cifrek
+Utjecaj nedostajućih vrijednosti na rezultate dubinske analize podataka..................................1319
+M. Somek
+From Digitisation Process to Terminological Digital Resources..................................................1323
+S. Seljan, I. Dunđer, A. Gašpar
+Comparative Study of Color Histograms as Global Feature for Image Retrieval .....................1329
+V. Ljubović, H. Šupić
+Intelligent Traffic Recommender System.......................................................................................1334
+Lj. Šerić, M. Jukić, M. Braović
+Cloning Fuzzy Inference System Component Behavior with an Artificial Neural Network
+Component........................................................................................................................................1339
+D. Bošković, Z. Avdagić
+Principal Component Analysis of Fatigue Strength......................................................................1343
+Lj. Šerić, K. Korun Curić, M. Šušnjar
+Agile Methods for Cloud Computing .............................................................................................1349
+S. Kalem, D. Đonko, D. Bošković
+Generation Technique for Django MVC Web Framework Using the Stratego Transformation
+Language...........................................................................................................................................1354
+D. Annenkov, E. Cherkashin
+INFORMATION SYSTEMS SECURITY
+PAPERS .............................................................................................................................. 1361
+Security Evaluation in Cloud ..........................................................................................................1363
+O. Mirković
+Security Assessment of Virtual Machines in Open Source Clouds..............................................1369
+A. Donevski, S. Ristov, M. Gusev
+Security Analysis of Croatia's Receipt Registration and Verification System ...........................1375
+S. Groš
+Conceptual Information Modelling within the Contemporary Information Security Policies .1380
+A. Klaić, M. Golub
+Influence of Established Information Security Governance and Infrastructure on Future
+Security Certifications .....................................................................................................................1386
+I. Sedinić, Z. Lovrić
+Knowledge Based Authentication Requirements ..........................................................................1391
+K. Skračić, P. Pale, B. Jeren
+A New Method for the Identification of Proactive Information Security Management System
+Metrics...............................................................................................................................................1396
+K. Hajdarević, P. Allen
+Cyber Crime and Violation of Copyright ......................................................................................1402
+B. Vukelić, K. Škaron
+Pravna regulativa kompjuterskog kriminala s osvrtom na Bosnu i Hercegovinu .....................1406
+F. Gabela
+BUSINESS INTELLIGENCE SYSTEMS
+INVITED PAPER .............................................................................................................. 1415
+The Generalized Physical Design Problem in Data Warehousing Environment: Towards a
+Generic Cost Model..........................................................................................................................1417
+L. Bellatreche, S. Breß, A. Kerkad, A. Boukorca, C. Salmi
+XXII
+PAPERS .............................................................................................................................. 1425
+Analysis of World Bank Indicators for Countries with Banking Crises by Subgroup Discovery
+Induction ...........................................................................................................................................1427
+D. Gamberger, D. Lučanin, T. Šmuc
+Transformation of OWL Ontology Sources into Data Warehouse .............................................1432
+M. Gulić
+Using Big Data and Sentiment Analysis in Product Evaluation ..................................................1438
+L. Banić, A. Mihanović, M. Brakus
+Model of the Business Intelligence System for Credit Risk Analysis...........................................1444
+T. Gazdić, Lj. Kašćelan
+The Integral OLAP-Model of the Emergency Risk Estimation in the Case of Krasnoyarsk
+Region................................................................................................................................................1450
+A. Korobko, T. Penkova, V. Nicheporchuk, A. Mihalev
+Automatizacija generiranja prezentacijskog sloja skladišta ........................................................1456
+S. Pavlek, M. Sorić
+Upravljanje matičnim podacima u suradnji sa skladištem podataka .........................................1462
+A. Matić, M. Sekula, D. Udier
+Suvremena rješenja poslovne inteligencije zasnovana na konceptu računarstva u oblaku ......1468
+I. Sekula, M. Franić
+Končar MIS - snažan alat za mudra poduzeća..............................................................................1474
+A. Frančić, D. Ferenčak, D. Cmuk
+DIGITAL ECONOMY – 10th Alpe Adria Danube Universities
+Initiative (ALADIN)
+PAPERS ...............................................................................................................................1481
+Business Valuation in Oil & Gas Industry: New Challenges........................................................1483
+S. Brlečić Valčić, B. Crnković-Stumpf, J. Katunar
+Komparativna analiza hrvatskih online novina koje se plaćaju ..................................................1489
+O. Prlić, A. Lacković, F. Lončar
+ePrivacy Rules and Data Processing in Users' Terminal Equipment: a Croatian Experience .1495
+N. Gumzej, S. Grgić
+The Cost of Information Security Management in Offshore SMB ICT Companies..................1502
+S. Aksentijević, E. Tijan, D. Čišić
+ICT Contribution to the Economic Development of Some SEE Countries in Transition .........1507
+M. Vidas-Bubanja
+Optimizacija ICT kapaciteta po filozofiji modela JIT(UNV).......................................................1513
+Z. Buljubašić, I. Kapetanović Serdarević, N. Buljubašić
+Analiza problema repova kod telekomunikacijskih operatera ....................................................1518
+Z. Buljubašić, N. Salkić, N. Buljubašić
+Od sustava e-poslovanja klastera do e-klastera.............................................................................1523
+M. Davidović
+Electronic Commerce in Romania Features and Dynamics.........................................................1529
+D. Enachescu, M. Zaharia
+Web 2.0 Tools Support for SME Start-up Projects.......................................................................1534
+I. Ogrizek Biškupić, I. Vrečko, K. Jurina
+e-Maintenance for Ship Electrical Propulsion Plants ...................................................................1540
+J. Ćelić, A. Cuculić
+Implementing Responsive Web Design for Enhanced Web Presence .........................................1544
+S. Mohorovičić
+GOVERNMENT, LOCAL GOVERNMENT, PUBLIC
+SERVICES
+PAPERS ...............................................................................................................................1551
+Problemi prijenosa podataka iz prostornih planova u geoinformacijski sustav prostornog
+uređenja u županiji ..........................................................................................................................1553
+A. Butigan, M. Pavlić
+Measuring Success of Implementation County Development Strategy by Using Balanced
+Scorecard Method ............................................................................................................................1559
+R. Zdjelar
+Effects of e-Government in Croatia................................................................................................1565
+J. Klasinc
+E-Hrvatska, jedinstven informacijski sustav .................................................................................1568
+S. Šimundić, J. Šimić
+Mogućnosti primjene računalstva u oblaku u tijelima lokalne uprave i samouprave ...............1574
+Ž. Širanović, B. Nožica, D. Bjelobrk
+Regulating IT Projects and Information Systems Audit in Public and State Administration of
+the Republic of Croatia....................................................................................................................1580
+B. Cerin, G. Vojković
+MIPRO Junior - STUDENT PAPERS
+PAPERS ...............................................................................................................................1589
+Upravljanje vozilom na električni pogon .......................................................................................1591
+D. Damjanović, V. Kirinčić, S. Skok
+XXIV
+The Development of Charging Stations for Electric Vehicles: A Solution or a Problem? ........1599
+I. Grdić, V. Kirinčić, S. Skok
+Monitoring of Low Voltage Facilities Using Synchronized Phasor Measurements ...................1604
+D. Bulić, R. Jančić, V. Kirinčić, S. Skok
+Studentski projekt razvoja vozila na električni pogon kao dijela elektroenergetskog sustava
+budućnosti .........................................................................................................................................1608
+P. Šaša, V. Kirinčić, S. Skok
+The Educational Model of the System Integrity Protection Scheme ...........................................1614
+I. Sterpin, V. Kirinčić, S. Skok
+Stochastic Simulation of the Smart Grid and Demand Response Implementations on a City-wide
+Scale ...................................................................................................................................................1620
+B. Morvaj, B. Jurišić, N. Holjevac
+Framework for Designing a Smart Grid Testbed..........................................................................1626
+B. Jurišić, N. Holjevac, B. Morvaj
+Optimal Scheduling of a CHP System with Energy Storage ........................................................1632
+L. Majić, I. Krželj, M. Delimar
+Poboljšanje performansi bežičnih mreža korištenjem relejnih postaja ......................................1637
+A. Caplić, Ž. Ilić
+Integration of Advanced Additional Capabilites to a Modern IPTV Platform: a Technical
+Study..................................................................................................................................................1643
+G. Macut, N. Drljević
+Upravljanje rehabilitacijskim okruženjem koristeći M2M tehnologiju......................................1649
+M. Gabrić, J. Novak
+Sustav za podršku razvoju edukacijskih aplikacija zasnovanih na potpomognutoj
+komunikaciji .....................................................................................................................................1653
+Š. Brtan, D. Perić, B. Hemar, D. Tomić, H. Novak, Ž. Kompes, T. Vodopijak, M. Vuković, B.
+Zagajšek, Ž. Car
+Benchmarking of Parallel Ray Tracing Using Different Load Granularity ...............................1659
+E. Mujagić, A. Demir, N. Omerbegović, E. Mujalo, M. Kozar, N.Nosović
+A HTTP-Enabled Cryptographically Secure Hardware Random Number Generator.............1663
+M. Božićević, A. Radovan
+Parallelization of the Ant Colony Optimization for the Shortest Path Problem using OpenMP
+and CUDA.........................................................................................................................................1668
+M. Arnautović, M. Curić, E. Dolamić, N. Nosović
+Protein Database Search Optimization Based on CUDA and MPI .............................................1673
+D. Pavlović, R. Vaser, M. Korpar, M. Šikić
+Parallel Implementation of the Ant Colony System Algorithm for Automated Combinational
+Logic Circuits Design Using CUDA Architecture .........................................................................1676
+Dž. Bajgorić, A. Porović, T. Handanović, N. Nosović
+Performance Analysis of the Parallelized Matrix Multiplication Using C# Threading.............1680
+M. Delić, E. Omerović, A. Sokolović, N. Nosović
+Comparison of a Sequential and a MapReduce Approach to Joining Large Datasets ..............1684
+M. Lalić, E. Memić, F. Kešan, E. Gondžić, N. Smajić, N. Nosović
+Acceleration of DCT Transformation in JPEG Image Conversion.............................................1687
+N. Frid, H. Mlinarić, J. Knezović
+A Preliminary Study of Croatian Language Syllable Networks ..................................................1691
+K. Ban, I. Ivakić, A. Meštrović
+Performance Comparison of Sequential and Parallel Execution of the Ant Colony Optimization
+Algorithm for Solving the Traveling Salesman Problem..............................................................1696
+E. Fejzagić, A. Oputić
+Parallelization and Performance Analysis of the Simulated Annealing Algorithm for Graph
+Coloring Problem .............................................................................................................................1701
+L. Bećirspahić, A. Đulović, N. Nosović
+Performance Analysis of the Traveling Salesman Problem Optimization Using Ant Colony
+Algorithm and OpenMP ..................................................................................................................1705
+A. Milanović, M. Duranović, N. Nosović
+Closed-Loop System for Assisted Strength Exercising .................................................................1709
+T. Pozaić, M. Varga, D. Džaja, S. Žulj

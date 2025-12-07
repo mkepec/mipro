@@ -1,0 +1,998 @@
+MICROELECTRONICS, ELECTRONICS AND ELECTRONIC
+TECHNOLOGY
+PAPERS
+MICROVAWE
+Interdigital Capacitor Based Microwave Heater for Continuous Microfluidics 7
+T. Marković, J. Bao, B. Nauwelaers
+Extraction of π-Capacitor Equivalent Circuit Elements for Field-Effect 11
+Transistors in Deep Pinch-off
+F. Kostelac, D. Babić
+Impact and Detection of Foreign Metal Objects in Multi-User Wireless Power 18
+Transfer System
+D. Vinko, D. Bilandžija, K. Grgić, V. Mandrić-Radivojević
+Design of Short-Range S-Band Radar Sensing System for Autonomous Object 23
+Classification
+F. Turčinović, M. Erny, V. Zoričić, N. Poletan, M. Bosiljevac
+Comparison of Discrete Bipolar Transistors and MOSFETs for High-Speed 28
+Switching Application
+F. Bogdanović, Ž. Osrečki, J. Žilak, M. Koričić, T. Suligoj
+Comparative Study of Electromagnetic Field Solvers for the Modeling of 34
+Nanoscale Plasmonic Scatterers
+M. Kuprešak, T. Marinović, X. Zheng, G.A.E. Vandenbosch
+DEVICE PHYSICS
+Characterization of Fe Micromagnets for Semiconductor Spintronics by 39
+In-Field Magnetic Force Microscopy
+H.S. Funk, D. Weißhaupt, D. Schwarz, D. Bloos, J. van Slageren, J. Schulze
+Titanium and Nickel as Alternative Materials for Mid Infrared Plasmonic 44
+F. Berkmann, M. Ayasse, F. Mörz, I.A. Fischer, J. Schulze
+VI
+Strained Ge Channels with High Hole Mobility Grown on Si Substrates by 48
+Molecular Beam Epitaxy
+E. Sigle, D. Weißhaupt, M. Oehme, H.S. Funk, D. Schwarz, F. Berkmann,
+J. Schulze
+Formation of Mn5Ge3 on a Recess-Etched Ge (111) Quantum-Well Structure 53
+for Semiconductor Spintronics
+D. Weißhaupt, H.S. Funk, C. Sürgers, G. Fischer, M. Oehme, D. Schwarz,
+I.A. Fischer, J. van Slageren, J. Schulze
+MBE-grown Ge0.92Sn0.08 Diode on RPCVD-grown Partially Relaxed 58
+Virtual Ge0.92Sn0.08 Substrate
+D. Schwarz, S.C. Schäfer, L. Seidel, H.S. Funk, D. Weißhaupt, M. Oehme,
+V. Schlykow, V. Kiyek, D. Buca, J. Schulze
+Electrical Characterization of SiGeSn/Ge/GeSn-pin-Heterodiodes at 63
+Low Temperatures
+L. Seidel, D. Schwarz, M. Oehme, A. Čaušević, H.S. Funk, D. Weißhaupt,
+F. Berkmann, J. Schulze
+On-Glass Thin Film Transistor Based on p-i-n Amorphous Silicon Junction 68
+N. Lovecchio, V. Ferrara, D. Caputo, G. de Cesare
+Modeling and Simulation Study of Electrical Properties of Ge-on-Si Diodes 72
+with Nanometerthin PureGaB Layer
+L. Marković, T. Knežević, L.K. Nanver, T. Suligoj
+Finite Element Method Approach to MRAM Modeling 78
+M. Bendra, J. Ender, S. Fiorentini, T. Hadamek, R.L. de Orio, W. Goes,
+S. Selberherr, V. Sverdlov
+Modelling of Electrostatics and Transport in GaNBased HEMTs under 82
+Non-Equilibrium Conditions
+I. Berdalović, M. Poljak, T. Suligoj
+DFT-Based Tight-Binding Model for Atomistic Simulations of Phosphorene 88
+Nanoribbons
+M. Poljak, M. Matić
+Estimating OFF-State Leakage in Silicene Nanoribbon MOSFETs from 93
+Complex Bandstructure
+M. Matić, M. Leljak, M. Poljak
+CIRCUITS
+Characterization of GaN-Based Synchronous Buck Converter Operating in 101
+MHz-Range
+T. Fogec, J. Bačmaga, I. Krois, A. Barić
+VII
+Self-Referenced 32-kHz Rotating Capacitor Relaxation Oscillator with 107
+Chopped Comparator Offset-Voltage Cancellation
+J. Mikulić, G. Schatzberger, A. Barić
+Fully On-Chip Low-Drop Regulator for Low-Power Applications 112
+D. Arbet, M. Potočný, M. Kováč, L. Nagy, V. Stopjaková
+Design and Testing of an 8-Bit Current DAC in 180-nm CMOS Technology 118
+K. Špoljarić, J. Mikulić, A. Barić
+200-MHz and 400-MHz Self-Biased Temperature-Compensated Ring 124
+Oscillators in 180-nm CMOS Technology
+I. Skeledžija, J. Mikulić, A. Barić
+Fractional-Order Elements Using Tunable OTA-C Structures 130
+F. Kostelac, A. Ćoza, D. Jurišić
+Simulation Analysis of XOR Gates Implemented with a Memristor-Based 136
+Neural Network
+A. Zeljko, I. Prevarić, M. Poljak
+Decoupling Analog Conservative Connections Using Waveform Relaxation 142
+Method
+A. Traživuk, A. Alberts, A. Barić, V. Čeperić
+SYSTEMS AND SIGNAL PROCESSING
+Eddy Current Inversion of Lift-off, Conductivity and Permeability Relaxation 149
+I. Rep, D. Špikić, D. Vasić
+Generation of Oscillatory Synthetic Signal Simulating Brain Network 154
+Dynamics
+Z. Šverko, J. Sajovic, G. Drevenšek, S. Vlahinić, P. Rogelj
+Application of the Signal Samples Approximation for Accurate RMS 160
+Measurement
+A.N. Serov, A.A. Shatokhin, N.A. Serov
+Particle Filter Implemented as a Hardware Accelerator in Cortex-M Core 167
+Periphery
+J. Kundrata, D. Tomić, I. Maretić, A. Barić
+Verification of the Legacy Compatibility of the MIPI I3C Master 173
+M. Golubić, J. Kundrata, A. Barić
+Robust Set-Based Predictive Control for Grid-Tied Inverter with LCL Filter 179
+R. Babojelić, Š. Ileš, J. Matuško
+VIII
+Comparison of Different Methods for Efficiency Determination acc.to IEC 185
+for Specific Induction Motor
+T. Đuran, V. Šimović, B. Vuletić Komljen
+DATA SCIENCE AND BIOMEDICAL ENGINEERING
+PAPERS
+DATA SCIENCE
+Automatic Web Page Robustness Grading 197
+E. Građanin, I. Prazina, V. Okanović
+Choosing the Framework for Managing Data Quality in the Organization for 201
+the Defined Data Quality Dimensions
+G. Hamzaj, Z. Dika
+A Survey of Word Embedding Algorithms for Textual Data Information 207
+Extraction
+E. Vušak, V. Kužina, A. Jović
+Methods for Automatic Sensitive Data Detection in Large Datasets: A Review 213
+V. Kužina, E. Vušak, A. Jović
+The Influence of Window Size on the Prediction Power in the Case of 219
+Absenteeism Prediction from Timesheet Data
+P. Zupančić, P. Panov
+Propaganda Detection Using Sentiment Aware Ensemble Deep Learning 225
+B. Polonijo, S. Šuman, I. Šimac
+Semantic Representation of Machine Learning and Data Mining Algorithms 231
+L. Jovanovska, P. Panov
+Comparison of Neural Network with Gradient Boosted Trees, Random 237
+Forest, Logistic Regression and SVM in Predicting Student Achievement
+M. Domladovac
+Using Machine Learning to Identify Factors Contributing to Mould in the 243
+Celje Ceiling Painting
+S. Popov, K. Kavkler, S. Džeroski
+Fake News Detection by Using Doc2Vec Representation Model and Various 249
+Classification Algorithms
+D. Janakieva, G. Mirceva, S. Gievska
+IX
+Building Spell-Check Dictionary for Low-Resource Language by Comparing 255
+Word Usage
+D. Nagavci Mati, M. Hamiti, B. Selimi, J. Ajdari
+Negation Detection Using NooJ 263
+G. Thakkar, N. Mikelić Preradović, M. Tadić
+Service-Oriented Application for Solving Parametric Synthesis Problem of a 268
+Boolean Network with Given Dynamic Properties
+G.A. Oparin, V.G. Bogdanova, A.A. Pashinin
+Design and Evaluation of an HPC-Based Expert System to Speed-up Retail 274
+Data Analysis Using Residual Networks Combined with Parallel Association
+Rule Mining and Scalable Recommenders
+C. Barakat, M. Riedel, S. Brynjólfsson, G. Cavallaro, J. Busch, R. Sedona
+Partition-of-Unity Based Error Indicator for Local Collocation Meshless 280
+Methods
+J. Slak
+Natural Convection of Non-Newtonian Fluids in a Differentially Heated 285
+Closed Cavity
+M. Rot, G. Kosec
+An Overview of Dense Eigenvalue Solvers for Distributed Memory Systems 291
+D. Davidović
+Benchmarking Apache Beam for IoT Applications 298
+M. Žaja, I. Čavrak, T. Lipić
+Discretized Boundary Surface Reconstruction 304
+M. Jančič, V. Cvrtila, G. Kosec
+A k-d Tree Based Partitioning of Computational Domains for Efficient 310
+Parallel Computing
+R. Trobec, M. Depolli
+Particle-in-Cell Code for GPU Systems 317
+I. Vasileska, L. Bogdanović, L. Kos
+Fitting Sum of Exponentials to Experimental Data II: Global Approach Using 321
+Linearization by Numerical Integration
+Ž. Jeričević
+Developer-Centric Design of Branch and Bound Algorithm 324
+J. Radešček, M. Depolli
+X
+BIOMEDICAL ENGINEERING
+A Model for Jellyfish Detritus Decay through Microbial Processing 335
+F. Strniša, G. Kosec
+A HPC-Driven Data Science Platform to Speed-up Time Series Data Analysis 340
+of Patients with the Acute Respiratory Distress Syndrome
+C. Barakat, S. Fritsch, M. Riedel, S. Brynjólfsson
+Enhanced Reconstruction for PET Scanner with a Narrow Field of View by 346
+Using Backprojection Method
+T. Matulić, R. Bagarić, D. Seršić
+Spectral Features for the Classification of Familiarity from EEG Recordings 352
+F. Feradov
+Distribution Analysis of Long-Term Heart Rate Variability versus Blood 357
+Glucose
+I. Vishinov, M. Gusev, L. Poposka, M. Vavlukis, I. Ahmeti
+A Method to Detect Ventricular Fibrillation in Electrocardiograms 363
+G. Temelkov, M. Gusev
+Developing a Deep Learning Solution to Estimate Instantaneous Glucose Level 369
+from Heart Rate Variability
+E. Shaqiri, M. Gusev, L. Poposka, M. Vavlukis, I. Ahmeti
+Cross-Database Generalization of Deep Learning Models for Arrhythmia 375
+Classification
+E. Merdjanovska, A. Rashkovska
+Electromechanical Events in Exercise-Induced Remodeling of the Equine 381
+Heart
+M. Brložnik, V. Kadunc Kos, P. Kramarič, A. Domanjko Petrič, V. Avbelj
+State-Space versus Linear Regression Models between ECG Leads 386
+I. Tomašić, R. Trobec, M. Lindén
+Analog Frontend for ECG/EMG Capacitive Electrodes 392
+D. Cindrić, A. Stanešić, M. Cifrek
+Numerical Modelling of Capacitive Electrodes for Biomedical Signals 396
+Measurement
+L. Klaić, A. Stanešić, M. Cifrek
+AROI: Annotated Retinal OCT Images Database 400
+M. Melinščak, M. Radmilović, Z. Vatavuk, S. Lončarić
+Classification of Cognitive Load Based on Oculometric Features 406
+M. Gambiraža, I. Kesedžić, M. Šarlija, S. Popović, K. Ćosić
+XI
+Classification of Emotions Based on Text and Qualitative Variables 412
+J. Dobša, D. Šebalj, D. Bužić
+Relating Prenatal Hg Exposure and Neurological Development in Children 418
+with Machine Learning
+S. Popov, J. Snoj Tratnik, M. Breskvar, D. Mazej, M. Horvat, S. Džeroski
+Prediction of COVID-19 Related Information Spreading on Twitter 424
+K. Babić, M. Petrović, S. Beliga, S. Martinčić-Ipšić, M. Pranjić, A. Meštrović
+An Infrastructure for Integrated Temperature Monitoring and Contact 429
+Tracing
+J. Niehaus, N. Caporusso
+Structure-Based Molecular Docking in the Identification of Novel Inhibitors 435
+Targeting SARS-CoV-2 Main Protease
+V. Miletić, P. Nikolić, D. Kinkela
+TELECOMMUNICATIONS & INFORMATION
+PAPERS
+IMPLEMENTATION OF 5G TECHNOLOGY
+An Impact of Implementation of 5G Technology on Information Security 447
+D. Lučić, P. Mišević
+5G-Connected Drone for Public Road Safety - Research Challenges and 452
+Future Research Roadmap
+M. Jurčević, I. Vitas
+Data Traffic Models for Broadband Backbone in 5G Networks 458
+E.P.Ivanova, I. Penkov, T.B. Iliev, I.S. Stoyanov
+Modification of a Commercial Fixed-Wing-Unmanned Aerial Vehicle with 462
+Mobile Radio for beyond Visual Line of Sight Operability
+K. Kainrath, M. Gruber, A. Hinze, H. Flühr, E. Leitgeb
+ARTIFICIAL INTELLIGENCE
+Artificial Intelligence in Wireless Communications – Evolution towards 6G 469
+Mobile Networks
+T.B. Iliev, E.P. Ivanova, I.S. Stoyanov, G.Y. Mihaylov, I.H. Beloev
+CASR: A Corpus for Albanian Speech Recognition 475
+A. Rista, A. Kadriu
+XII
+End-to-End Speech Recognition Model Based on Deep Learning for Albanian 479
+A. Rista, A. Kadriu
+Machine Learning Model of Communication of Physical and Virtual Sensors 484
+in the Mobile Network on the Motorway Section
+M. Stojčić, M.K. Banjanin, Z. Ćurguz, A. Stjepanović
+NETWORK MANAGEMENT
+Interoperability Test of NETCONF Capabilities 493
+D. Valenčić, V. Pupovac
+MQTT-Like Network Management Architecture 499
+O. Jukić, R. Filjar, I. Heđi, E. Ciriković
+WEB APPLICATIONS
+Use of Image File Format WebP on Websites in Croatian Top Domains 507
+T. Jakopec, Ž. Hrkač
+Adapting Modularized Web Applications to Web Accessibility Standards 513
+L. Žuliček, S. Tomić, I. Bosnić
+An Improved PIN Input Method for the Visually Impaired 519
+N. Caporusso
+ascCAPTCHA: an Invisible Sensor CAPTCHA for PCs Based on Acoustic 525
+Side Channel
+R. Di Nardo Di Maio, M. Guerar, M. Migliardi
+The Impact of Legislation on Website Accessibility: Croatian Case-Study 531
+A. Kešelj, I. Topolovac, M. Žilak, I. Rašan
+PROCESS AND SOLUTION INNOVATIONS
+Creativity and Innovation Processes in Complex Sustainable City 539
+Environments: „Smart Creative City” Concept
+D. Šimunić, A. Višković, D. Žubrinić
+Value Co-Creation through a Digital Platform Business Model in the Power 544
+Sector
+A. Višković, V. Franki
+Integrated Strategic Action for Facilitating the Electrification Process 551
+A. Višković, V. Franki, A. Damiano
+Smart Door as a Solution for the Independent Life of People in Need 558
+N. Bjelčić, M. Blažeković, D. Švelec
+XIII
+ENVIRONMENTAL PROTECTION
+Analysis of the Impact of Electromagnetic Interference on the Performance 567
+of a Household Wireless Network
+J. Muratović, K. Josić, S. Papić
+Distribution of High-Frequency Electromagnetic Fields on the Basis of Total 571
+Exposure Quotients
+B. Tanatarec, D. Šimunić
+COMPUTERS IN EDUCATION
+PAPERS
+Climbing up the Leaderboard: An Empirical Study of Improving Student 579
+Outcome by Applying Gamification Principles to an Object-Oriented
+Programming Course on a University Level
+D. Kučak, D. Bele, Đ. Pašić
+Education for Entrepreneurship in Agriculture - Results of the AGRIENT 584
+Project Implementation
+F. Urem, I. Kardum Goleš, I. Beljo
+Young Adults' Privacy Concerns about Wearable Technology 589
+A. Papić, K. Đurđević
+Machine Learning vs Human Learning 594
+J. Henno, H. Jaakkola, J. Mäkelä
+Shifting Pre-Lab Activity Online for a More Efficient Instructional 601
+Engineering Laboratory Session
+M. Seničić, V. Šimović, L. Lažeta
+Learning Management System as a Tool for Online Knowledge Evaluation 605
+in an Engineering Course during the COVID-19 Pandemic
+V. Zuppa Bakša, V. Šimović, T. Đuran
+The Effectiveness of the Education in the University Course during and 610
+before the Covid- 19 Pandemic
+M. Vejačka, D. Paľová
+The Educational Needs of the Alpha Generation 616
+R. Jukić, T. Škojo
+Learning Analytics of YouTube Videos Linked to LMS Moodle 622
+N. Kadoić, D. Oreški
+XIV
+Open Educational Resources (OER) as Means of Promotion of Open 628
+Education
+R. Vrana
+The Distance Learning Implications on High School Students 634
+M. Lapi, M. Krašna
+Creating Multisensory Learning Experiences That Go beyond the Limitations 639
+of Traditional Media
+E. Rakovac Bekeš
+Using Text Mining to Extract Information from Students’ Lab Assignments 643
+J. Gusić, D. Šimić
+Mobile Virtual Reality in Secondary Education: An Exploratory Study in the 647
+Course of Biology
+N. Niittymäki, A. Christopoulos, M.-J. Laakso
+The Main Issues of the Education Process during the COVID-19 Pandemic at 653
+the University Education
+D. Paľová, M. Vejačka
+Cognitive Painting as a Broadly Applicable Method of Constructing a Positive 659
+Cognitive-Emotional Space for Young Children and Adolescents under
+Conditions of the Coronavirus Pandemic
+O.S. Fomichova, V.A. Fomichov
+Unity as a Physics Simulator: Calculating Mean Free Path for Hard Disk Gas 665
+V. Krstić, I. Mekterović
+Using ICT to Teach Effectively at COVID-19 669
+A. Špernjak
+Preparation of Future Specialists in Physical Culture and Sports for the Use 673
+of Digital Health Technologies in Professional Activity
+S. Lazorenko, T. Loza, I. Samokhvalova, E. Khomenko, N. Oliinyk
+Online Training during the COVID-19 Pandemic: Analysis of Opinions of 678
+Practicing Teachers in Ukraine
+Y. Rudenko, A. Rozumenko, T. Kryvosheya, O. Karpenko, O. Semenikhina
+Improvement of Teacher Qualification in the Field of Computer Animation: 683
+Training or Master Class?
+A. Yurchenko, V. Shamonia, O. Udovychenko, R. Momot, O. Semenikhina
+Attitudes of Students, Future Teachers, to the Importance of Using Media 688
+in Teaching
+P. Pejić Papak, J. Mezak
+XV
+Project “Algorithmic Thinking Skills through Play-Based Learning for 693
+Future's Code Literates”
+L. Jančec, L. Vujičić
+Students’ Transition from High School to University in COVID-19 697
+Constrained Education
+I. Pesek, M. Krašna, T. Bratina
+Open-Source Intelligence as the New Introduction in the Graduate 702
+Cybersecurity Curriculum
+V. Kolar, D. Delija, G. Sirovatka
+Software for Writing Online Exam with Video and Audio Surveillance – 706
+Cheatless
+J. Đurić, A. Mahmutović
+Computer Probabilistic Models Construction and Analysis of Professional 712
+Activity of Their Use by Ukrainian Mathematics Teachers
+M.G. Drushlyak, I.V. Shishenko, N. S. Borozenets, K.M. Nekyslykh,
+O. Semenikhina
+Using ICT in Generating Motivation for Foreign Language Learning: from 718
+Traditional to Virtual Classroom
+P. Cuculić
+Emotional Understanding Skills Training Using Educational Computer Game 724
+in Children with Autism Spectrum Disorder (ASD) – Case Study
+M. Stankova, P.Mihova, T. Kamenski, K. Mehandzhiyska
+Development of New Complementary Metrics for the Authenticity of Student 730
+Papers
+M. Sokele, S. Morić, V. Zuppa Bakša
+Design and Evaluation of a Deep Learning Powered Image Regression Sensor 735
+for Control Engineering Applications
+L. Hundgeburth, H. Liechtenecker, W. Werth
+Arduino Platform as Learning Tool in High School and College Education 740
+B. Balon, J. Đurić, M. Simić
+The Satisfaction of Primary School Teachers with the Introduction and Use of 746
+MS Teams in Distance Education
+B. Marčinković, B. Aberšek, I. Pesek
+Gender Differences in Ambition Level and Career Aspirations among Students 751
+G. Prpić, M. Vuković, T. Babić
+Comparison of Students’ Motivation for Programming Computer Game and 756
+Educational Robot Using the Game of Marbles
+I. Kunović, A. Sović Kržić
+XVI
+The Importance of Synchronous Online Learning for Student Success in 762
+Exams
+M. Sokele, S. Morić, T. Alajbeg, F. Brkić
+Learning Topic “Safe Internet” in Low Secondary School through Games 768
+D. Tuparova, G. Tuparov, K. Mehandzhiyska
+User Interfaces for Browsing the Online Catalogues of Museums and Cultural 776
+Heritage Institutions: Preliminary Research on Mapping of Subject Access
+Points
+G. Zlodi, I. Majer, L. Biličić
+Research on Gamer Motivation Factors Based on the Gamer Motivation Model 782
+Framework
+M. Vigato, T. Babić
+Discovering the Old Dubrovnik Cathedrals: Stone Fragments Analysis, 788
+Cataloguing and Structured Terminology Development in Digital
+Environment
+G. Zlodi, M. Zeman, A. Marinković, M.M. Marušić
+Lessons from Developing and Delivering an Artificial Intelligence Course 794
+during the Covid-19 Pandemic
+B. Debić, K. Aleksić-Maslać, P. Vranešić
+EduScrum Method for Teaching Programming Microcontroller Arduino 801
+P. Voštinár
+The Cost of Open-Access Publishing in an Engineering Academic Community: 806
+A Study of Zagreb Faculty of Electrical Engineering and Computing
+M. Tucaković, B. Marijanović, J. Petrak
+Instagram as Emotional and Intellectual Motivation for Understanding 811
+Sections of Printed and Digital Magazines
+D. Vincek
+The Impact of Internet Usage on Pupils Internet Safety in Primary and 817
+Secondary School
+M. Gaborov, M. Kavalić, D. Karuović, D. Glušac, M. Nikolić
+Knowledge Transfer through Recognition and Implementation of the 823
+Transformational Team Member Role
+T. Babić, Z. Musa
+The Relationship between Students' Evaluation of Teachers' Performance 829
+Quality and Students’ Satisfaction with Online Live Model of Teaching
+T. Babić, S. Grgić, Z. Kunić
+XVII
+The Quality Assurance System and Teacher Support for the Online Live 835
+Model of Teaching during the Covid-19 Pandemic
+T. Babić, S. Grgić
+Organizing Online Exams during the COVID-19 Pandemic 841
+F. Škopljanac-Mačina, I. Zakarija, B. Blašković
+‘CodeInnova’ Teaching Programming in Primary School 847
+B. Klimczuk, B. Denys, I. Ružić
+Use of Augmented Reality in Teaching Management of Anaphylactic Shock to 852
+Family Doctors
+Š. Tevžič, Z. Klemenc Ketiš, A. Poplas Susič, U. Zafošnik, P. Selič, Š. Mirošević,
+N. Ružić Gorenjec
+Perceived Quality of Software Used for Distance Learning during COVID-19 856
+Pandemic
+T. Orehovački, S. Babić, D. Etinger
+Use of Computer Vision Based Hand Tracking in Educational Environments 862
+V. Križnar, M. Leskovšek, B. Batagelj
+Research on Students’ Opinion on the Method of Presenting Teaching 868
+Materials
+T. Mladenova, Y. Kalmukov, I. Valova
+Digital Transformation in Covid-19 Pandemic – What We Learned and How 873
+to Utilize What Was Learned
+M. Odak, A. Miljko, T. Papac
+VARs/AVARs in Croatian Top Division (1. HNL) and Major League Soccer: 878
+Experiences with VAR System
+D. Vučkov, S. Babić
+Decision Making Styles in Higher Education Institutions: Systematic 884
+Literature Review
+L. Zlatić, B. Šlibar, N. Begičević Ređep
+Inclusive Higher Education during the Covid-19 Pandemic 891
+K. Zdravkova, V. Krasniqi
+Automatic, Configurable and Partial Assessment of Student SQL Queries 895
+with Joins and Groupings
+G. Đambić, M. Fabijanić, A. Lokas Ćošković
+A Blended Learning with Gamification Approach for Teaching Programming 901
+Courses in Higher Education
+G. Đambić, T. Keščec, D. Kučak
+XVIII
+Using Digital Tools for Gamification in Schools 906
+A. Vrcelj, N. Hoić-Božić, M. Holenko Dlab
+Development of Measurement Systems with the BBC Micro:bit 911
+P. Bernad, D. Šic, R. Repnik, D. Osrajnik
+From Mobile Learning to Mobile Research 917
+T.S. Georgiev
+Individual, Cooperative and Collaborative Learning and Students’ Perceptions 922
+of Their Impact on Their Own Study Performance
+T. Babić, L. Kolar, M. Miličević
+Programming and Mathematics through Game 928
+S. Babić, D. Bjelanović, M. Čičin-Šain
+Izazovi i poteškoće tijekom nastave na daljinu 933
+A. Vragović
+Uloga informacijsko-komunikacijskih tehnologija na ishode učenja u nastavi 937
+Tjelesne i zdravstvene kulture
+I. Dubovečak
+Dugoročnost primjene informacijsko komunikacijske tehnologije na uspjeh 940
+u nastavi matematike
+T. Pavičić Zajec, T. Ređep
+Planiranje, provedba i evaluacija velikih projekata na primjeru projekta 946
+Drvokod
+B. Raičković, B. Musović
+Promethee metoda i alati kognitivne kibernetike za inteligentne sustave 949
+Z. Balaž, A. Jelić
+Projektno učenje kao prediktor akademskog postignuća u nastavi matematike 955
+R. Soldo, N. Maras
+Multidisciplinarna implementacija umjetne inteligencije u sustav 959
+osnovnoškolskog obrazovanja
+D. Kager
+Od projektne nastave s Arduinom do modela pametne kuće 964
+E. Krelja Kurelović, M. Jerončić, J. Tomljanović
+Primjena Riskmanagenable softvera u nastavi kolegija Vođenje projekata i 968
+dokumentacija
+K. Šamec, M. Nikitović, A. Mahmutović
+XIX
+Objektno orijentiran koncept programiranja u interaktivnom grafičkom 973
+okruženju
+M. Božurić, R. Bogut, J. Lozar
+Korištenje informatičkih tehnologija u srednjoškolskoj nastavi fizike 979
+M. Novaković
+Riznica kreativne međunarodne suradnje u Erasmus projektima školskog 985
+partnerstva
+M. Mirković
+ARTIE: Umjetna inteligencija u osnovnoškolskom obrazovanju - izazovi i 991
+mogućnosti novog doba: razvoj kurikuluma, priručnika za učitelje i
+obrazovnih materijala za učenike u osnovnoškolskom obrazovanju
+I. Ružić, S. Stričak
+Primjena kviza u nastavi matematike 996
+M. Škarica, M. Ašenbrener Katić, V. Miletić
+Digitalne učeničke mape na from.hr domeni 1001
+K. Maček Blažeka
+Govor tijela prilikom razgovora za posao 1006
+M. Bilić, T. Babić
+Mogućnosti primjene računalnih oblaka u obrazovanju 1010
+M. Šitum
+Nastava na daljinu uporabom OneNotea i Teamsa 1015
+D. Vrbanc
+COMPUTERS IN TECHNICAL SYSTEMS
+PAPERS
+IIR Filters Designed for Comparison and Minimum-Order Design 1025
+Exploration sing Matlab
+L. Lažeta, I. Marković, V. Šimović
+Dynamic Priority Assignment in FreeRTOS Kernel for Improving 1030
+Performance Metrics
+K. Salamun, I. Pavić, H. Džapo
+Framework for Evaluation of Schedulability Tests for Mixed-Criticality 1036
+Systems
+I. Pavić, H. Džapo
+XX
+Ultra-Low Power Microcontroller Selection for Smart Sticker Design 1042
+J. Zidar, T. Matić, F. Sušac, I. Aleksi
+Infrared Sensor – Based Temperature Control for E.G.O. Induction 1046
+Cooktop
+A. Smrke, I. Smrke, T. Smrke
+Power Management System for Electric and Hybrid Marine Vessels 1052
+K. Blašković
+Fault Detection Using Limit Checking: A Brief Introductory Review 1058
+D. Miljković
+Cymatics for Visual Representation of Aircraft Engine Noise 1064
+D. Miljković
+Architecture of Connectivity-Aware Redundancy Control Module for 1070
+Distributed Resource Management in InfaaS-AP
+K. Taniguchi, Y. Watashiba, S. Date, S. Shimojo
+Framework for Real-Time Parallel and Distributed Natural Language 1076
+Processing
+D. Mileski, V. Zdraveski, M. Kostoska, M. Gusev
+Parallelization of a Neural Network Algorithm for Handwriting Recognition: 1082
+Can we Increase the Speed, Keeping the Same Accuracy
+D. Todorov, V. Zdraveski, M. Kostoska, M. Gusev
+TPC-H Benchmark Q3, Q6 and Q12 Sequential, OpenMP Parallel and 1088
+CUDA Parallel Implementation
+J. Mitrovski, L. Djinevski, M. Gusev, S. Arsenovski
+Airport Modeling Software as a Tool for Assessing Airport Complexity and 1094
+Decision Making
+M. Šabić, E. Šimić, M. Begović
+Unified Framework to Select an IoT Platform for Industrial Energy 1100
+Management Systems
+M. Ullah, A. Narayanan, A. Wolff, P.H.J. Nardelli
+Smart Grid Information Processes Using IoT and Big Data with Cloud and 1106
+Edge Computing
+M. Ullah, A. Narayanan, A. Wolff, P.H.J. Nardelli
+Three-Layer IoT Node Model for Simpler Custom IoT Deployments 1112
+L. Jelenković
+The Requirements and Challenges of Visualizing Building Data 1118
+M. Nurminen, A. Lindstedt, M. Saari, P. Rantanen
+XXI
+DataSites: a Simple Solution for Providing Building Data to Client 1123
+Applications
+M. Nurminen, M. Saari, P. Rantanen
+Leveraging Smartphones for Distributed Global Navigation Satellite System 1129
+Post-Processing
+A. Ivanovski, V. Zdraveski, M. Gusev, M. Kostoska
+Vehicle Mirror Replacement System 1135
+I. Zovak, R. Grbić, B. Jelić, D. Samardžija
+Container Manager for Multiple Container Runtimes 1141
+P. Stanojević, S. Usorac, N. Stanojev
+Android Runtime Service Optimization for Execution Inside LXC 1145
+A. Obradov, S. Usorac, M. Antić
+Pattern Search Algorithm in FPGA Implementation View 1148
+D. Ivošević
+FPGA Design and Implementation of Driving Lane Detection on Zynq-7000 1154
+SoC
+M. Martin, R. Grbić, M. Subotić, I. Kaštelan
+Podizanje razine sigurnosti plovidbe upotrebom sustava daljinskog nadzora 1160
+na objektima pomorske signalizacije
+I. Karin, N. Račić, I. Torlak, T. Peša
+INTELLIGENT SYSTEMS
+PAPERS
+Automatic Latent Fingerprint Segmentation Using Convolutional Neural 1171
+Networks
+L. Premk, Ž. Emeršič, T. Oblak
+Security Hardening of Facial Recognition Systems 1176
+D. Cindori, I. Tomičić, P. Grd
+Classification in Binary Feature Space Using Logical Dynamic Models 1181
+G.A. Oparin, V.G. Bogdanova, A.A. Pashinin
+Recognition of Symbols and Topology in the Image of a DC Circuit Diagram 1187
+Based on Contours and Skeletons
+M. Štorga, M. Randić
+XXII
+The Influence of Noise on 2D Gaussian Profile Parameters Estimation 1193
+A. Gribl, D. Petrinović
+ML-Based Approach for NFL Defensive Pass Interference Prediction Using 1199
+GPS Tracking Data
+A. Skoki, J. Lerga, I. Štajduhar
+Topic Modelling of Croatian News during COVID-19 Pandemic 1205
+P.K. Bogović, A. Meštrović, S. Beliga, S. Martinčić-Ipšić
+Regulatory Framework of Artificial Intelligence in Healthcare 1213
+P. Hernández García, D. Šimunić
+A Discrete Bat Algorithm for the Rich Vehicle Routing Problem 1219
+S. Delalić, E. Žunić, A. Alihodžić, E. Selmanović
+Positively Constructed Formulas-Based Approach to Mobile Robot Control 1225
+Using DES
+A. Davydov, A. Larionov, N. Nagul
+Artificial Intelligence (AI) Brings Enhanced Personalized User Experience 1231
+T. Bronzin, B. Prole, A. Stipić, K. Pap
+How to Facilitate Explainability of AI for Increased User Trust: Results of a 1237
+Study with a COVID-19 Risk Calculator
+B. Ewerz, M. Hoefler, C. Marx, P. Moertl
+Methodology for Assessment of Mobile Telecom Databased Origin- 1242
+Destination Matrices Accuracy
+M. Jakovljević, S. Vojvodić, P. Čolić, O. Lale, E. Jovandžikov
+Validation Points in Process of Urban Mobility Assessment Using Telecom 1247
+Big Data Analytics
+K. Vidović, M. Šoštarić, A. Blavicki, F. Sirovica
+Air Pollution Forecasting Using CNN-LSTM Deep Learning Model 1252
+L. Jovova, K. Trivodaliev
+Evaluation of Deep Approaches to Sclera Segmentation 1258
+M. Vitek, A. Hafner, P. Peer, A. Jaklič
+A GIS Based Approach for Finding Association between Air Pollution, 1264
+Factories and Population Density in North Macedonia
+E. Stefanovska, A. Kralevska, A. Abazi, A. Naumoski
+Hospitals and Pharmacy Relationship between Rating, Service Time and 1269
+Closeness in the City of Skopje
+F. Bozinovski, E. Simikj, A. Naumoski
+XXIII
+Automatska usporedba tetovaža 1274
+N. Kale, P. Grd, I. Tomičić
+ROBOTICS TECHNOLOGIES AND APPLICATIONS
+PAPERS
+A Comparison of Graph Optimization Approaches for Pose Estimation in 1283
+SLAM
+A. Jurić, F. Kendeš, I. Marković, I. Petrović
+Towards Autonomous Navigation of a Mobile Robot in a Steep Slope 1289
+Vineyard
+I. Hrabar, J. Goričanec, Z. Kovačić
+Collecting Information for Biomass Estimation in Mariculture with a 1295
+Heterogeneous Robotic System
+M. Rezo, K.-M. Čagalj, I. Ušljebrka, Z. Kovačić
+Ground Robotic Systems for the Inspection of Concrete Bridges 1301
+K. Tešić, A. Baričević, M. Serdar, I. Banjad Pečur
+Development of a Mobile Wall-Climbing Robot with a Hybrid Adhesion 1306
+System
+M. Božić, B. Jerbić, M. Švaco
+Mobile Robot Teleoperation via Android Mobile Device with UDP 1313
+Communication
+E. Szymańska, L. Petrović, I. Marković, I. Petrović
+Review of Artificial Intelligence Applications in the ROS Ecosystem 1319
+J. Grönman, M. Saarivirta, T. Aaltonen, T. Kerminen
+Characterization of Modeling Errors Affecting Performances of a Robotics 1324
+Deep Reinforcement Learning Controller in a Sim-to-Real Transfer
+E. Salvato, G. Fenu, E. Medvet, F.A. Pellegrino
+A Model-Based Adaptive Control of an Autonomous Driving Car for Lane 1330
+Change Maneuver
+I. Astrov, A. Udal, M. Jaanus
+Automated Robot Control for a Game of Chess in Unity Game Engine 1336
+through Artificial Intelligence
+D. Kudek, M. Sužnjević
+XXIV
+Depth from Mono Accuracy Analysis by Changing Camera Parameters in the 1342
+CARLA Simulator
+Z. Gršković, J. Peršić, I. Marković, I. Petrović
+Safety System for Industrial Robots Based on Human Detection Using an 1348
+RGB-D Camera
+V. Šimundić, D. Mihelčić, D. Svirac, P. Đurović, R. Cupec
+Robot-Assisted Stereotactic and Spinal Neurosurgery: A Review of Literature 1355
+D. Dlaka, D. Chudy, B. Jerbić, A. Kaštelančić, M. Raguž
+Workspace Analysis of Robotically Assisted Percutaneous Radiofrequency 1361
+Thermocoagulation for the Trigeminal Neuralgia
+M. Švaco, A. Kaštelančić, D. Dlaka, F. Šuligoj, M. Marijić, D. Chudy, B. Jerbić
+INFORMATION SYSTEMS SECURITY
+PAPERS
+A Taxonomy of Defenses against Memory Corruption Attacks 1371
+B. Novković
+Optimization of the Key Sharing Protocol for Noiseless Public Channels 1377
+without the Use of Cryptographic Assumptions
+V. Korzhik, V. Starostin, M. Kabardov, V. Yakovlev, A. Gerasimovich,
+A. Zhuvikin
+Preparation and Planning of the Development of a Proficiency Test in the 1383
+Field of igital Forensics
+D. Delija, G. Sirovatka, I. Špoljarić, S. Krajinović
+Confidential Computing as an Attempt to Secure Service Provider’s 1388
+Confidential Client Data in a Multi-Tenant Cloud Environment
+B. Novković, A. Božić, M. Golub, S. Groš
+An Analysis of Wireless Network Security Test Results Provided by 1394
+Raspberry Pi Devices on Kali Linux
+D. Delija, Ž. Petrović, G. Sirovatka, M. Žagar
+Generating Prime Numbers Using Genetic Algorithms 1399
+K. Knežević
+Comparative Analysis of Network Forensic Tools on Different Operating 1406
+Systems
+D. Delija, I. Mohenski, G. Sirovatka
+XXV
+Have You Been Framed and Can You Prove It? 1411
+D.O. Lawal, D.W. Gresty, D.E. Gan, L. Hewitt
+Kriptografija u nastavi matematike u osnovnoj školi 1417
+I. Nađ
+BUSINESS INTELLIGENCE SYSTEMS
+PAPERS
+Data Lakehouse - a Novel Step in Analytics Architecture 1427
+D. Oreščanin, T. Hlupić
+The Potential Role of Hydrometeorological Data in Agricultural Supply Chain 1432
+A. Čorňák, R. Delina
+Intelligent Monitoring of News on Economics and Finance Based on Formal 1438
+Semantics of the Movement Verbs
+V.A. Fomichov
+Machine Learning Approaches to Personality Classification on Imbalanced 1444
+MBTI Datasets
+N. Čerkez, V. Vareškić
+An Overview of Current Trends in Data Ingestion and Integration 1450
+T. Hlupić, J. Puniš
+Investor Classification Model Based on Behavioural Finance Studies 1456
+N. Vlahović, V. Brozović, F. Škavić
+Evaluation of BI Solutions for Business Needs 1462
+M. Pribisalić
+Upravljanje odnosima visokog učilišta s vanjskim dionicima 1467
+M. Davidović, I. Završki
+DIGITAL ECONOMY AND DIGITAL SOCIETY
+PAPERS
+Study on the Utilization of National and EU Funds in Financing Capital 1477
+Investments of ICT Companies
+I. Bestvina Bukvić, I. Đurđević Babić, D. Pekanov Starčević
+XXVI
+Use of Organizational Analysis Methods for Evaluating Business 1483
+Improvement Initiatives
+I. Gregurec, M. Đuras Sekovanić, M. Tomičić Furjan
+Digitalization of Port Access Control: Case Study Port of Šibenik 1489
+S. Aksentijević, E. Tijan, A. Panjako, G. Mrčela
+Economic Potential of Mobile Entertainment as an Advertisement Channel 1495
+I. Kelić
+Switching to Wi-Fi 6 Technology in a SOHO Environment 1501
+A. Skendžić, K. Mustač, B. Balon
+Impact of Covid 19 Pandemic on Digital Transformation of Public 1507
+Administration in European Union
+M. Boban, M. Klarić
+Prioritisation of Factors That Influence the Digital Platform Selection in 1513
+Agriculture
+N. Kadoić, K. Tomičić-Pupek, N. Vrček
+Digital Component of Innovation Landscapes: Context of Sustainable 1519
+Development at the Local Level
+V. Omelyanenko, O. Prokopenko, O. Kudrina, I. Petrova, N. Biloshkurska,
+M. Biloshkurskyi, O. Omelyanenko
+The Role of Business Processes in Digital Transformation of the Organization 1524
+Ž. Dobrović
+Usage of BI Tools in Analysis of the Tomas Croatia 2019 Survey 1530
+I. Beroš, N. Hlupić, F. Džapo
+Impact of COVID-19 on Agricultural Sector Transformation 1536
+I. Gregurec, K. Tomičić-Pupek, A. Horvat
+Circular Economy in Croatian Society 1542
+M. Barić, M. Alić
+Effect of 5G Network on Development of Digitally Dependent Industries 1548
+D. Turkalj
+IoT-Based Solutions in Aquaculture: A Systematic Literature Review 1553
+A. Petkovski, J. Ajdari, X. Zenuni
+The Cloud Computing Adoption Factors in Various Organizations: A 1559
+Systematic Literature Review
+A. Krasniqi, J. Ajdari, X. Zenuni
+XXVII
+Smart Agriculture and Digital Transformation on Case of Intelligent System 1565
+for Wine Quality Prediction
+D. Oreški, I. Pihir, K. Cajzek
+Taxation of Digital Services 1571
+Z. Šinković, L. Pribisalić
+Machine Learning Based Prediction of Croatian 2017 Local Elections 1577
+A. Kišić, B. Kliček
+Advanced Data Analytics in Logistics Demand Forecasting 1582
+A. Agatić, E. Tijan, S. Hess, T. Poletan Jugović
+Digital Transformation of Slovenian Enterprises 1588
+A. Pucihar, M. Marolt, D. Vidmar, G. Lenart
+Multi-Stakeholder Engagement in Agile Service Platform Co-Creation 1593
+T. Pohjola, J. Grönman, J. Viljanen
+Business Practices of Marketing Agencies in Croatia 1599
+M. Fraculj, V. Šebek, N. Drašković
+Employment in Knowledge-Intensive Activities in European Countries: 1604
+Gender Perspective
+M. Pejić Bach, J. Zoroja, I. Miloloža
+Blockchain Technology Perspectives in Maritime Industry 1609
+S. Marenković, E. Tijan, S. Aksentijević
+Analysis of the Financial Results of the Twitter Platform at the Beginning of 1615
+Covid 19
+J. Lozić, G. Vojković, I. Lozić
+Online Informing about Consumer Rights: Correspondence Analysis of Age, 1620
+Education and Occupation
+T. Ćurlin, H. Nikolić, I. Miloloža
+Digitalization of the University Technology Transfer Process 1626
+P. Karanikić, H. Bezić, S. Redžepagić
+Sustainable Business Model Development 1631
+G. Marković, M. Tomičić Furjan
+Unregistered Activity Inspection in the Customs Administration Business 1637
+Model in Croatia
+K. Maršić, Ž. Dobrović
+Establishing a National Maritime Single Window in Small Coastal Countries 1643
+N. Kapidani, S. Aksentijević, E. Tijan, E. Kočan
+XXVIII
+Implementation of RFID Technology in Perishable Goods Transport 1649
+V. Dose, A. Wallenhorst, E. Tijan, M. Jović
+Digitalization in the Role of Humanization or Dehumanization of Modern 1655
+Society
+I. Rašan
+Managing Digital Transformation in Public Administration 1661
+J. Glavaš, I. Uroda, B. Mandić
+Digitalni marketing na društvenim mrežama u vrijeme pandemije COVID-19 1665
+J. Tomljanović, G. Dubrović, E. Krelja Kurelović
+Uloga e-održavanja u poslovanju poduzeća 1670
+M. Davidović
+Uloga digitalizacije u procesu komercijalizacije rezultata procesa 1675
+istraživanja i razvoja
+P. Karanikić
+Korištenje društvenih mreža za komuniciranje s dionicima u socijalnim 1679
+samoposlugama
+B. Knežević, P. Škrobot, I. Sosa Meštrović
+INFORMATION AND COMMUNICATION TECHNOLOGY
+LAW
+PAPERS
+The Role of Key Words and the Use of the Multilingual Eurovoc Thesaurus 1689
+when Searching for Legal Regulations of the Republic of Croatia - Research
+Results
+T. Didak Prekpalaj
+Impact of COVID 19 on the Use of Social Networks Security Settings of 1695
+Elementary and High School Students in the Split-Dalmatia County
+R. Matković, L. Vejmelka, Ž. Ključević
+Is It Time for New Data Governance? 1702
+R. Matanovac Vučković, I. Kanceljak, M. Jurić
+Liability for Early Safety Obsolescence of IoT Devices due to Information 1709
+Security Reasons
+G. Vojković, M. Milenković
+XXIX
+Criminal Trend Analysis of Illegal Use of Personal Data for a Period of 1715
+2015-2019
+N. Protrka, M. Plećaš
+Sexual Exploitation or Child Pornography: Terminological Analysis in 1721
+Criminal Codes of Southeast European Countries
+J. Jurinić, T. Ramljak
+The Deep Blue Sea of Global Data Flows. Implications of the Convergence of 1730
+Privacy Regimes for Overseas Transfer of Personal Data
+F. Molinari, D. Čišić, B. Kovačić
+Evaluation of Digital Evidence in Criminal Proceedings in Croatia with a 1737
+Focus on Preservation Requirements and Role of Standard Operative
+Procedures
+N. Gumzej, N. Protrka
+Procjena potreba digitalnih kompetencija: rezultati istraživanja stručnjaka 1743
+koji rade s djecom u alternativnoj skrbi
+P. Hrvoj
+ENGINEERING EDUCATION
+PAPERS
+Redesigning a Postgraduate Software Engineering Module to Increase 1755
+Engagement
+G.J. Collins
+Introducing Open Data Concepts to STEM Students Using Real-World Open 1761
+Datasets
+I. Bosnić, I. Čavrak, A. Zuiderwijk
+How to Teach Databases in a Student-Centered Environment - Oracle 1767
+Academy Program Experiences
+F. Urem, D. Jureković, I. Livaja
+A Course Gamification Model for the Development of Higher Order 1772
+Thinking Skills
+D. Orozova, S. Hadzhikoleva, E. Hadzhikolev
+Adaptive Approach of System-Engineering Project Management Skills 1778
+Acquisition
+N. Venelinova, D. Antonova, I. Kostadinova
+A Review of Lecture Capture Technology and Its Usage in Higher Education 1784
+M.P. Bišćan, M. Milanović, J. Petrović, P. Pale
+XXX
+Teaching High-Frequency Circuit Design in Online Environment 1790
+B. Pejčinović
+Integrating GNU Radio into a Virtual Course about Communication 1796
+Systems
+T. Fuhrmann, M. Farmbauer, M. Niemetz
+Using EEG Device in the Pilot Development of Cyber-Physical Learning 1802
+Model
+M. Veber, I. Pesek, B. Aberšek
+Automation and Measurement Classes for Power Engineering Students in 1807
+the Online-Mode
+E.I. Merzlikina, N.S. Dolbikova, A.V. Kuznetsova, G.V. Farafonov
+Power Electronics and Drives Laboratory Learning Environment for Electric 1812
+Vehicles
+P.J. van Duijsen, D.C. Zuidervliet
+Laboratory Setup for Teaching DC Grid Droop Control and Protection 1818
+P.J. van Duijsen, D.C. Zuidervliet
+Technology-Enhanced Active Learning Used for Teaching “Multiplexers and 1824
+Demultiplexers”
+A.N. Borodzhieva, I.D. Tsvetkova, D.V. Dimitrov
+Remote Labs and Their Didactics in Engineering Education: A Case Study 1829
+E.W. de Vries, H.J. Wörtche
+SOFTWARE AND SYSTEMS ENGINEERING
+PAPERS
+ENGINEERING SOFTWARE TOOLS AND PROCESSES
+Clean Code and Design Educational Tool 1839
+S. Prokić, K.-G. Grujić, N. Luburić, J. Slivka, A. Kovačević, D. Vidaković,
+G. Sladić
+Measuring Developers' Expertise Based on Version Control Data 1845
+A. Fekete, M. Cserép, Z. Porkoláb
+Game Development for the Elderly: Experiences from Usability Tests in the 1851
+Wild
+J. Saari, T. Hynninen
+XXXI
+The Application of Continuous Practices in Higher Computer Science 1856
+Education - A Systematic Literature Review
+F. Huber, G. Hagel
+Accessibility Analysis of the Bosnia and Herzegovina Universities' Websites 1862
+in the Relation to Their Position on the Webometrics Ranking List
+D. Čeke, S. Kunosić
+ENGINEERING SYSTEM PROPERTIES AND DATA SYSTEMS
+Complex Systems - Network Component Security of SCADA Systems 1871
+M. Šverko, T. Galinac Grbac
+Review of Automation Problems in Air Traffic Control 1877
+T. Rogošić, B. Juričić, B. Antulov-Fantulin, T. Radišić
+In-Database Auditing Subsystem for Security Enhancement 1883
+B. Bašić, P. Udovičić, O. Orel
+Simplified Evaluation Framework for Query Extraction Techniques 1889
+I. Grgurina, D. Škvorc
+Realizacija sučelja u Oracle PL/SQL-u koristeći JSON format 1895
+T. Adamović, I. Sekovanić, I. Kranjec
+Programsko rješenje problema lijepljenja raspona podataka u filtrirani 1899
+raspon u MS Excelu
+D. Ružak, A. Lacković
+APPLICATIONS OF SOFTWARE SYSTEMS
+Low-Power Wireless IoT System for Indoor Environment Real-Time 1905
+Monitoring and Alerting
+D. Fonović, Z. Sirotić, N. Tanković, S. Sovilj
+Retention of Cultural Heritage with the Help of Innovative Technologies 1910
+M. Fandáková, P. Kudela, M. Palčák
+The Use of Intranet in Croatian National Parks 1915
+B. Brumen, M. Franjić
+HD Maps and Usage of Laser Scanned Data as a Potential Map Layer 1921
+B. Bučko, K. Zábovská, J. Ristvej, M. Jánošíková
+XXXII
+MIPRO JUNIOR - STUDENT PAPERS
+PAPERS
+Creating a Web Corpus Using GO 1931
+M. Kučić
+DESPRO: Decentralized Business Platform for Student Non-Profit 1934
+Organizations
+M. Vasilj, S. Skender, M. Jurdana, M. Horvat
+On Analyzing Virtual Threads – a Structured Concurrency Model for 1939
+Scalable Applications on the JVM
+D. Beronić, P. Pufek, B. Mihaljević, A. Radovan
+Adaptive Intelligent Agent for e-Learning: First Report on Enabling 1945
+Technology Solutions
+D. Doljanin, L. Pranjić, Lj. Jelečević, M. Horvat
+Next-Generation Web Applications with WebAssembly and TruffleWasm 1950
+M. Šipek, D. Muharemagić, B. Mihaljević, A. Radovan
+Prediction of Traffic Accidents Severity Based on Machine Learning and 1956
+Multiclass Classification Model
+M. Iveta, A. Radovan, B. Mihaljević
+Plagiarism on Controlled Documents: A Case Study from University 1961
+”Ukshin Hoti” Prizren
+L. Shkurti, H. Snopçe, L. Abazi-Bexheti, F. Kabashi
+Dew-Based Service Orchestration Model for Systems Spanning Multiple 1966
+Computing Layers
+L.T. Udovičić, N. Tanković
+Developing Game Engine in C# Programming Language 1972
+M. Sršen, T. Orehovački
+Clutch Compensation System for Motorcycles Using an Embedded System 1978
+I. Jurenić, J. Ćurković, V. Šimović
+Visual Object Detection – an Overview of Algorithms and Results 1982
+D. Gudelj, A. Stama, J. Petrović, P. Pale
+MOFit: A Framework to Reduce Obesity Using Machine Learning and IoT 1988
+S. Garg, P. Pundir
+A Machine Learning Approach to Flight Control of a VTOL Tailsitter UAV 1996
+S. Domitran, M. Bagić Babac
+XXXIII
+Underwater ROV Software for Fish Cage Inspection 2002
+G. Borković, M. Fabijanić, M. Magdalenić, A. Malobabić, J. Vuković, I. Zieliński
+Methods of Improving and Optimizing React Web-applications 2008
+F. Pavić, Lj. Brkić
+Primjena ključ-vrijednost baza podataka 2014
+M. Cerjan, K. Rabuzin, R. Kudelić
+OPTOELECTRONICS AND PHOTONICS
+PAPERS
+Spectral Unmixing of Light-Emitting Diode and High-Intensity Discharge 2023
+Illumination Sources
+J. Tutavac, D. Babić
+SPAD Based Digital Photon Counting Optical Distance Sensor in 150 nm 2029
+CMOS Using Indirect Multiphase Time-of-Flight
+A. Kuttner, M. Hauser, A. Dervic, H. Zimmermann, M. Hofbauer
+Time of Flight Analog Correlator for Distance Measurement with SPADs 2035
+M. Hauser, A. Dervic, A. Kuttner, H. Zimmermann, M. Hofbauer
+Advances in Optomechanical Force Sensors 2041
+M. Karuza, M. Čanađija, M. Markanović, I. Jelovica Badovinac, K. Veličan,
+D. Božičević, M. Vretenar, D. Čakara, G. Cantatore
+A Deep Prior Method for Fourier Ptychography Microscopy 2045
+F. Guzzi, G. Kourousias, F. Billè, R. Pugliese, A. Gianoncelli, S. Carrato
+A Fiber-optic Sensing Technique for Sub-Micrometer Distance Measurement 2051
+between the Surgical Tools and Retina
+Z. Djinovic, M. Tomić, N. Plank
+Optical Detection of Analytes through Evanescent Waves in Lab-on-Chip 2057
+Devices
+A. Buzzin, R. Asquini, D. Caputo, G. de Cesare
+Light Dependent Temperature Characteristics of a-Si:H p-i-n Photodiode 2063
+V. Gradišnik, K. Veličan, D. Gumbarević, M. Karuza
+XXXIV
