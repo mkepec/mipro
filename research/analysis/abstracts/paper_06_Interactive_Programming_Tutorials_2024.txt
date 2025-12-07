@@ -1,0 +1,18 @@
+Title: Interactive Programming Tutorials in Automated Programming Assessment System Edgar
+Authors: I. Mekterovic, L. Brkic, M. Fertalj, M. Fabijanic
+Year: 2024
+Conference: CE (Computers in Education)
+Priority: HIGH - Must examine
+
+Relevance: Recent paper on automated assessment system, relevant for MCP Assessment idea
+
+Abstract:
+Automated programming assessment tools are software systems widely used in education to assess programming code without manual intervention. Beyond exam scenarios, these tools are increasingly applied in e-learning contexts. In this realm, interactive programming tutorials have gained prominence for their effectiveness in teaching programming concepts. These tutorials blend theoretical knowledge with hands-on exercises, providing real-time feedback on code errors to facilitate prompt identification and correction by learners. The interactive nature engages learners actively, enhancing their understanding, and adaptability accommodates individualized progress. The accessibility and scalability of interactive programming tutorials suit learners of diverse skill levels. Integrated with automated assessment systems, interactive tutorials not only provide a dynamic and personalized learning experience but also alleviate the burden on instructors by enabling interactive content creation and offering valuable learning analytics. This paper introduces an evolution of the Edgar system, now equipped with an integrated interactive tutorial module. This module can evaluate embedded questions and code playgrounds in various programming languages, including SQL, Java, C, Python, etc., as well as multiple-choice questions. The integration represents a practical shift in programming education, offering learners a versatile and personalized approach to acquiring essential skills.
+
+
+---
+Notes after reading abstract:
+
+
+---
+Decision: [ ] Get full paper  [ ] Abstract sufficient  [ ] Not relevant

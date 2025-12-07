@@ -1,0 +1,679 @@
+Title: Assessing Contemporary Automated Memory Management in Java – Garbage First, Shenandoah, and Z Garbage Collectors Comparison
+Authors: D. Beronić, N. Novosel, B. Mihaljević, A. Radovan
+Year: 2022
+Conference: MIPRO Junior (Student Papers)
+Priority: LOW-MEDIUM - Abstract sufficient
+
+Relevance: Junior technical comparison - methodology example
+
+Abstract:
+Selecting the appropriate automated memory
+management approach directly impacts application
+performance and is considered one of the crucial factors in
+contemporary memory management. In Java, applications
+are commonly executed within the Java Virtual Machine
+(JVM), and, for years, it has offered several garbage
+collection techniques to choose from. The Garbage First (G1)
+garbage collector (GC) became the standard in 2017 and is
+currently a widely used garbage collection algorithm. Other
+GCs evolved in the meantime, such as Shenandoah GC and Z
+Garbage Collector (ZGC), and they were recently promoted
+from experimental features to production-ready. Since
+currently, there are several standard GCs to choose from, we
+believe that the performance distinctions they manifest
+should be more thoroughly examined with experimental
+benchmarks and real-life use cases. Given the importance of
+GC in automated memory management performance, it is
+worthwhile to investigate how those GC algorithms handle
+various memory issues and perform in regards to heap
+allocation, CPU usage, and time consumption. This paper
+focuses on the comparative analysis of the default G1 and the
+Shenandoah and Z GCs, and compares the number of
+measures in selected application tests from the popular
+benchmarking suites with all three standard GCs available.
+
+
+---
+Notes after reading abstract:
+
+
+---
+Decision: [ ] Get full paper  [ ] Abstract sufficient  [ ] Not relevant
+
+---
+Full Paper (if decided to get):
+
+Assessing Contemporary
+Automated Memory Management in Java –
+Garbage First, Shenandoah, and Z
+Garbage Collectors Comparison
+D. Beronić, N. Novosel, B. Mihaljević and A. Radovan
+Rochester Institute of Technology Croatia, Zagreb, Croatia
+dora.beronic@mail.rit.edu, nina.novosel@mail.rit.edu,
+branko.mihaljevic@croatia.rit.edu, aleksander.radovan@croatia.rit.edu
+Abstract - Selecting the appropriate automated memory
+management approach directly impacts application
+performance and is considered one of the crucial factors in
+contemporary memory management. In Java, applications
+are commonly executed within the Java Virtual Machine
+(JVM), and, for years, it has offered several garbage
+collection techniques to choose from. The Garbage First (G1)
+garbage collector (GC) became the standard in 2017 and is
+currently a widely used garbage collection algorithm. Other
+GCs evolved in the meantime, such as Shenandoah GC and Z
+Garbage Collector (ZGC), and they were recently promoted
+from experimental features to production-ready. Since
+currently, there are several standard GCs to choose from, we
+believe that the performance distinctions they manifest
+should be more thoroughly examined with experimental
+benchmarks and real-life use cases. Given the importance of
+GC in automated memory management performance, it is
+worthwhile to investigate how those GC algorithms handle
+various memory issues and perform in regards to heap
+allocation, CPU usage, and time consumption. This paper
+focuses on the comparative analysis of the default G1 and the
+Shenandoah and Z GCs, and compares the number of
+measures in selected application tests from the popular
+benchmarking suites with all three standard GCs available.
+Keywords – Garbage Collector, G1, ZGC, Shenandoah,
+Memory Management, DaCapo suite
+I. INTRODUCTION
+Memory management could be defined as a process of
+controlling and coordinating computer memory by
+allocating blocks of memory to multiple operating
+processes in order to govern memory in an efficient manner
+and improve overall system performance. It is well known
+that manual memory management, present in some lower-
+level programming languages, such as C or C++, can cause
+many problems in runtime later. For example, forgotten
+deallocations of objects that are no longer used in heap
+memory can be a cause of wasteful heap usage and
+potential out-of-memory issues. Moreover, accidental
+releasing memory of objects still in use could cause data
+corruption. Both cases could lead to significant problems
+related to inefficient memory management and,
+consequently, potential critical production problems [1].
+As opposed to that, in the high-level (modern) object-
+oriented programming (OOP) languages, such as Java, the
+capability of performing automatic memory management is
+one of its core values. In the case of the Java programming
+language, it is performed within the Java Runtime
+Environment (JRE) and the Java Virtual Machine (JVM).
+This capability of performing the automatic reclamation
+and management of memory is an essential and critical
+component of an abstract computing machine. An
+execution environment for applications, such as Process
+Virtual Machine, is achieved through efficient garbage
+collection algorithms. The primary goal of garbage
+collection algorithms is to free the memory from objects
+with no active references that would keep a pointer to them
+in some section of the application. In this case, garbage
+collection operations are performed automatically at
+regular intervals, last for a certain amount of time, and
+result in evident benefits of appropriately reclaimed
+memory. The main premise is that Java applications occupy
+only the necessary amount of space, and the released
+memory should be available for further usage as soon as
+possible.
+Many difficulties associated with manual memory
+management are eliminated through the usage of automatic
+garbage collectors (GC). The apparent benefits of GC's
+usage include preventing and removing simple memory
+leaks (forgetting to release unused objects) and dangling
+pointers (memory is cleaned, but the references remain).
+However, since this process attempts to reclaim memory,
+which was allocated by the program but is no longer
+referenced, it may take a significant proportion of total
+processing time and, as a result, can have a considerable
+influence on performance. Since GC algorithms, in some
+cases, can negatively influence the application's
+performance, it is crucial that software developers are
+familiar with the garbage collection's core processes. From
+the perspective of potential application performance tuning,
+there are three core components of the Java Virtual
+Machine (JVM) that developers must take into account
+when implementing an application with efficient memory
+management [2] – the heap, compiler, and garbage
+collector (Fig. 1).
+MIPRO 2022/SP 1713
+Figure 1. OpenJDK HotSpot JVM Architecture
+A. Heap Memory
+Java's heap is a particular area of memory that holds
+memory objects used by a program – all class instances
+(objects), as well as their corresponding instance variables
+and arrays, are allocated to the heap [3]. It is formed during
+JVM's start-up procedure, and all the instances of all the
+classes produced throughout the runtime of a program share
+the heap memory. Furthermore, all of the application's
+running threads have access to the heap's objects and can
+conduct allocations effectively for as long as there is
+enough space. Furthermore, the JVM is responsible for
+initiating automated memory management operations, such
+as garbage collection, for reclaiming heap memory space.
+Moreover, the configuration of JVM parameters related to
+memory management gives software developers the
+flexibility of adjusting heap memory size according to their
+demands.
+B. Just-In-Time (JIT) Compiler
+Just-In-Time (JIT) compilation is one of the key
+components of the JVM related to memory management. It
+controls the operating program by tracing data and making
+decisions based on it, with the goal of memory
+optimization. JIT compilation is a form of dynamic
+compilation that enables adaptive optimizations such as
+dynamic recompilation and microarchitecture-specific
+performance boosts. The JIT compiler system repeatedly
+analyses the code being executed and finds areas of the
+code where the performance may prosper from compilation
+or recompilation since the benefits from the optimization of
+the memory would outweigh the expense of compiling.
+JIT-based systems can manage late-bound data types while
+providing security requirements. The JIT rarely requires
+adjustments in recent versions of the JVM. Instead, the
+emphasis is put on the heap and garbage collector [2].
+C. Garbage Collectors
+Garbage collection improves Java memory efficiency
+by automatically removing unreferenced objects from the
+heap memory and enabling space for new objects to be
+created. A garbage collector (GC) in the JVM is a tool that
+manages the application memory allocation requests
+automatically while relieving the application developer of
+this complex task. In this way, some types of errors can be
+avoided by relieving the software developer of the
+responsibility of matching memory allocation with
+deallocation and keeping track of object lifetimes.
+However, it comes with a cost – in the form of runtime
+overhead [3].
+A garbage collector is in charge of the heap and
+manages dynamic memory allocation by performing
+several operations, including allocating and returning
+memory to the operating system, delivering memory to an
+application on demand, determining which memory is still
+in use by an application, and reclaiming unused memory.
+The GC roots are the points from which the application may
+access the rest of the heap contents. If an item cannot be
+reached by walking the object graph from the GC roots, it
+is deemed garbage. If an item is unreachable from the root,
+no application can access it; a living item is only the one
+that can be effectively accessed from the root.
+II. BACKGROUND
+A. Java GC Approaches
+The early GC algorithms commonly used the Mark and
+Sweep approach to recover and reuse heap memory that is
+no longer in use by the application. In its most basic form,
+this approach stops all running program threads with the so-
+called stop-the-world event and verifies all live objects that
+have a reference in any stack frame of any application
+thread. After that, it traverses through the reference tree of
+utilized objects and marks any object found as alive. Every
+remaining object is regarded as garbage and is then ready
+to be collected and swept [4].
+However, since Java's features and generic purpose
+have led it to be adopted as a programming language for
+various server applications, which tend to be highly
+multithreaded, running a stop-the-world-based GC could
+become inefficient and time-consuming since it is stopping
+all threads [5]. Additionally, as heap size and the number
+of living objects in it increases, the amount of time an
+application is interrupted for garbage collection grows, and
+response times become longer and more irregular. Due to
+those reasons, two other approaches pioneered with the task
+of keeping all the processes active as long as possible:
+ Concurrent collectors – collector thread runs on
+one process while the program threads keep
+running concurrently on the other processes
+ Parallel collectors – stopping all program threads
+completely and then running the collector in
+parallel in several collector threads
+Although GCs may employ different approaches to
+optimize their target performance metrics, in the general
+case, they tend to make a trade-off between throughput
+(number of operations done by an application), pause time
+(time that an application is forced to stop to let the GC
+execute), and memory usage (the amount of memory used
+in a process) [6].
+B. Garbage First (G1) Garbage Collector
+The Garbage First (G1) garbage collector was
+developed in 2004 and had subsequently become the
+default collector in 2017 with JDK 9. Today, G1 GC is
+considered to be one of the most widely used garbage
+collectors [7]. It is parallel and mostly concurrent, but it
+works quite differently in comparison to the older garbage
+collectors. It is considered to be generational since it
+1714 MIPRO 2022/SP
+consists of generations of objects of different ages within
+the lifecycle, but there are no separate regions for young
+and old generations of objects. Alternatively, each
+generation may be considered a collection of regions,
+allowing the young generation's scale to be adjusted. G1
+GC is commonly not considered as a real-time collector;
+therefore, its purpose in the default setup is to provide
+consistent, minimal pause durations rather than optimize
+throughput or have the lowest latency. G1 GC was created
+to achieve established pause time goals with a high
+probability over extended periods. It reduces pause times
+by tracking the targeted break times during each stop-the-
+world event and using them to predict future collection
+execution time and space.
+1) Heap Layout with G1 GC
+In the global labeling phase, G1 GC uses multiple
+threads to determine the importance of objects and divide
+them into a set of regions of approximately equal size. Each
+region is a continuous range of virtual memory, which is
+considered a unit for allocating and reclaiming memory.
+Units can be empty (free) or belong to one of the
+generations (Fig. 2). Free regions are organized into a
+linked list and constantly assigned to a generation [8]. The
+young generation is split into two regions which are usually
+organized in a non-continuous manner in the memory.
+Newly allocated objects are always allocated to the Eden
+region, and once an object survives its first garbage
+collection, it is moved to the survivor region. After
+surviving several garbage collection cycles, an object is
+eventually moved to the older generation. The old
+generation contains larger facilities (so-called huge objects)
+that can span several regions.
+Figure 2. Heap Regions in G1 GC - Eden Space (E), Survivor Space
+(S), Old Generation (O) and Huge Area (H), Empty (unmarked)
+2) Garbage Collection Cycle with G1 GC
+Upon completing the labeling phase, G1 GC knows
+which areas contain the most garbage objects that can be
+recovered from the facilities for maximal space liberation.
+Furthermore, G1 GC can also choose to evacuate only a few
+regions if the user is interested in the minimum break time.
+If the user is not worried about the break time or has defined
+a fairly large break goal, the G1 GC could include more
+regions.
+G1 GC identifies the area with the most garbage and
+collects the garbage in that region first, which is the reason
+why it was named "garbage first." Moreover, G1 GC gives
+preference to regions with low occupancy, and it also
+chooses garbage first. Finally, as G1 GC uses user-defined
+acceptable latency times, heap targeting is performed
+optimally and predictably.
+C. Shenandoah Garbage Collector
+The Shenandoah GC is a relatively new GC that was
+integrated into JDK 12 in 2019 and marked as experimental
+in order to match the status of other new GCs. In September
+2020, when JDK was updated to version 15, Shenandoah
+GC became a standard product feature as anticipated.
+It is considered to be an open-source region-based low-
+pause parallel and concurrent collector, similar to another
+GC named ZGC (explained in Sec 2D), which tempts to
+reduce pause times by evacuating objects (compacting)
+concurrently with running application threads [9]. The
+main idea behind the development of this new GC was to
+reduce the pause times by performing concurrent
+compaction. It may relocate items simultaneously because
+it conducts more of its garbage collection cycles
+simultaneously as it is using the application threads. For
+comparison, G1 GC can evacuate its heap regions only
+when the application is paused. Moreover, Shenandoah GC
+is able to compress living objects, clean up garbage, and
+reintroduce RAM into the OS practically instantly when
+free memory is identified. However, since all of this
+happens while the application is running, Shenandoah GC
+is considered to be more CPU intensive.
+1) Heap Layout with Shenandoah GC
+Although GC performance depends on the heap size,
+with the Shenandoah GC, the pause times are independent
+of the size of the heap. The Shenandoah GC is a
+regionalized collector, and its heap is constructed as a
+collection of equally sized regions (Fig. 3). Regions
+marking may be empty, may contain newly allocated and
+long-lived objects, or a mix of both. Any subset of those
+regions might be collected during a GC cycle.
+Unlike the G1 GC, the Shenandoah GC is not
+generational, and its heap objects are not separated into
+generations. Therefore, all regions must be marked for
+every garbage collection cycle. Upon allocation, involved
+free regions are marked as newly allocated. Concurrent
+marking marks live data. Regions selected for concurrent
+evacuation are marked live data in the collection set.
+2) Garbage Collection Cycle with Shenandoah GC
+The collection cycle of Shenandoah GC can be divided
+into three phases: mark, evacuate, and update references.
+Although the majority of the work in these stages takes
+place concurrently with the running application, there are
+still a few parts that must be completed in a stop-the-world
+mode. The procedure of marking identifies all items in a
+heap or sections of it that are inaccessible. This may be
+accomplished by beginning with the root object and
+traversing the object to identify accessible items. Marking
+is easier in stop-the-world mode, but it becomes more
+complex in concurrent mode since multiple concurrent
+threads are scanning the object as the same time. This is
+because the user software mutates the object graph
+simultaneously with the marking process.
+Shenandoah GC uses the Snapshot At The Beginning
+(SATB) approach to tackle this problem, which indicates
+that any object that was alive at the beginning of the
+marking or has been allocated since the beginning of the
+marking is considered to be alive.
+MIPRO 2022/SP 1715
+Figure 3. Shenandoah GC heap layout phases -
+Newly Allocated (NA), Live Data (LD), Live Data in Collection Set (CS), Live Data in Collection Set Updating References To (UR), Free (unmarked)
+D. Z Garbage Collector (ZGC)
+Another newly developed GC, named simply the Z
+garbage collector or ZGC or, was released as an
+experimental GC in JDK 11 in 2018, was improved later in
+JDK 12, and has become a non-experimental (production-
+ready) feature in JDK 15 in 2020, practically at the same
+time as Shenandoah GC. It is intended for applications that
+require low latency and use a multiple terabytes stack.
+The primary objectives of the ZGC are low latency,
+scalability, and ease of use, and it does this by allowing the
+Java program to continue running while garbage collection
+is performed. The ZGC restores unused memory to the
+operating system once it has been reclaimed. By giving an
+exceptionally short break time, ZGC provides a huge
+improvement over the traditional GCs.
+Moreover, the ZGC uses a technique known as pointer
+coloring to take advantage of 64-bit pointers. Color
+pointers are used to hold additional information about the
+objects on the stack. ZGC collectors' aims are comparable
+to those of Shenandoah GC collectors in that both aim for
+achieving short break time that is not proportional to the
+size of the heap, although Shenandoah GC has more tuning
+options than the ZGC.
+1) Heap Layout with ZGC
+As opposed to the G1 GC, the ZGC is a single-
+generation collector. The regions, also called ZPages, can
+be dynamically allocated and dynamically sized into one of
+three group sizes (Fig. 4). Objects below 2MB are assigned
+to Small Page, objects below 32MB are in Medium Page,
+and objects larger than 32MB are in Large Page.
+Figure 4. ZGC Heap Regions -
+Small (S), Medium (M), Large (L), Empty (unmarked)
+Unlike other GCs, physical heap regions of the ZGC
+can map into bigger heap address spaces which may include
+virtual memory. This resolves issues connected to
+allocating large objects and performing multiple garbage
+collections to free enough memory. ZGC is region-based,
+but it has a flexible sizing scheme and has a better way to
+deal with object allocations [10], as there is no generational
+separation of the heap like with G1 GC. Internally, the heap
+is divided into numerous smaller regions, and a subset of
+those may be compressed, usually the one with the most
+garbage.
+2) Garbage Collection Cycle with ZGC
+Colored pointers are considered a key concept in the
+ZGC implementation. In the 64-bit object pointers, ZGC
+stores metadata in unused bits (references). To decrease
+memory fragmentation, the Z collector maps objects using
+extra information stored on the cursor. The four bits used to
+indicate an object's status are: finalizable, remapped,
+marked 0, and marked 1.One issue with color pointers is
+that masking out the information bits requires more effort
+when dereferencing the pointer. However, multi-mapping
+is used by the ZGC to overcome this problem. Multi-
+mapping refers to the notion of mapping numerous virtual
+memory ranges to the same physical memory. Only one
+remark (marked 0 or marked 1) is allowed to be 1 at any
+given moment; as a result, three mappings should be able
+to resolve the issue.
+III. BENCHMARKS AND TESTING ENVIRONMENT
+In our analysis, we used two benchmark suites – the
+DaCapo suite and the Renaissance benchmark suite.
+A. DaCapo Benchmark Suite
+The DaCapo benchmark suite consists of real-world
+open-source applications with higher memory loads,
+specializing in larger, general-purpose systems that
+integrate client and server-side applications. The selected
+benchmarks are appropriate for testing memory
+management performance and have been used in a variety
+of different garbage collector performance studies. The
+following benchmarks from the DaCapo 9.12 benchmark
+suite were selected and utilized in our research:
+ avrora – simulates a number of programs run on a
+grid of AVR microcontrollers
+ h2 – executes a JDBCbench-like in-memory
+benchmark, executing a number of transactions
+against a model of a banking application
+ pmd – analyzes a set of Java classes for a range of
+source code problems
+ xalan – transforms XML documents into HTML
+1716 MIPRO 2022/SP
+B. Renaissance Benchmark Suite
+Renaissance is a relatively new benchmarking suite that
+includes a wide range of contemporary workloads,
+including a variety of popular systems, frameworks, and
+both server and client-side JVM applications.
+Contemporary programming paradigms, such as
+concurrent, parallel, functional, and object-oriented
+programming, are commonly tested using Renaissance
+benchmarks. For our research, we selected several
+benchmarks from the Renaissance 0.14 benchmark suite:
+ movie-lens – movie recommender using the ALS
+algorithm
+ fj-kmeans – an application that is running the k-
+means algorithm using the fork/join framework
+ db-shootout – execution of shoutout tests while
+using several in-memory databases
+ par-mnemonics – solves the phone mnemonics
+problem using parallel JDK streams
+C. Testing Environment Configuration
+Our academic research testing environment setup
+consisted of a 64-bit machine with Intel(R) Core(TM) i7-
+6700 CPU @ 3.40GHz processor and 16 GB memory
+running Ubuntu operating system version 20.04.3 LTS.
+Moreover, the latest version of the JDK that supported ZGC
+was used, and currently, this was OpenJDK 64-Bit Server
+VM build 17.0.1+12-Ubuntu-120.04 with mixed mode and
+sharing. The results were gathered based on the benchmark
+outputs, executed 10 times each while ignoring the first
+couple of iterations because of the process warm-up period.
+The live set heap size was set to 2GB.
+IV. PRELIMINARY RESULTS
+Based on the results from the benchmarks run on the
+DaCapo suite, the selected garbage collectors presented
+different levels of efficiency. The current standard GC G1
+was expected to have the best performance in most test
+cases which was somewhat the case (Fig. 5). The G1 GC
+significantly outperformed ZGC and Shenandoah GC while
+executing h2 as the multi-threaded application, while ZGC
+and Shenandoah GC had similar performance. Thus, the G1
+GC might be a better choice for the smaller concurrent
+applications that require smaller heaps.
+On the contrary, in the case of xalan test, the G1 GC
+had the worst performance. It was also outperformed by
+Shenandoah GC in the case of pmd, by a slight difference.
+However, these differences in performance might increase
+for larger-scale applications.
+Similar results were achieved on the selected
+Renaissance benchmark applications (Fig. 6), where the G1
+GC had the best performance in most of the chosen
+applications. Once again, it achieved the best performance
+in regards of memory management while handling
+concurrency in fj-kmeans test. However, this might not be
+the case for larger concurrent applications with greater
+heaps. Since G1 GC is optimized to handle smaller heaps,
+it would probably be outperformed by Shenandoah or ZGC
+on a larger application with many concurrent processes.
+Duration of collections (in ms)
+4000
+3500
+3000
+2500
+2000
+1500
+1000
+500
+0
+avrora h2 pmd xalan
+G1 2616 2516 816 572
+ZGC 2648 3678 764 508
+Shenandoah 2664 3525 901 536
+Figure 5. Comparison of duration (in milliseconds) of collections for
+selected DaCapo benchmark applications
+The G1 GC also slightly outperformed Shenandoah GC
+on the db-shootout benchmark as well as on the movie-lens
+where the difference in performance between all their
+garbage collectors was insignificant. This was the expected
+result since the differences in the memory management
+process between these GCs are usually presented in specific
+types of concurrent applications.
+Furthermore, the G1 GC measures the worst
+performance on the par-mnemonics test, where it was
+outperformed by ZGC by roughly 21% and Shenandoah
+GC by 9.4%, showing that G1 GC is less efficient when
+computing large amounts of data compared to Shenandoah
+GC or ZGC. That could mean that Shenandoah GC should
+be considered a better choice for applications that compute
+a large amount of data and are expected to have low latency,
+for example, multi-threaded servers with interactive
+websites where low latency are used to shorten the pauses
+between response times.
+Duration of collections (in ms)
+14000
+12000
+10000
+8000
+6000
+4000
+2000
+0
+fj-
+kmeans
+par-
+mnemo
+nics
+db-
+shootou
+movie-
+lens
+t
+G1 6847 3663 4697 13218
+ZGC 8733 2906 6027 13883
+Shenandoah 8626 3311 4935 13976
+Figure 6. Comparison of duration of collections for selected
+Renaissance benchmark applications
+MIPRO 2022/SP 1717
+Considering heap usage, the G1 GC used the lowest
+amount of heap on all selected benchmarks from the
+Renaissance suite (Table I), which means that it performs
+more collections and shortens the worst-case pause time
+compared to other GCs. On the contrary, creating many
+objects usually makes the G1 GC's memory management
+process CPU intensive since it occupies more OS threads
+necessary for scanning the unused objects in a heap. In
+comparison, Shenandoah used the most heap in most tests
+cases, particularly in the par-mnemonics test, where it used
+6.02 times more heap space than G1 and 2.93 times more
+space than ZGC. It exhibits low pause time even on large
+heaps because of its concurrent object relocation.
+Considering the concurrent tests, the G1 GC measures
+the lowest heap usage and significant difference in size
+compared to ZGC, for which we measured the largest heap
+space. This is the consequence of the ZGC's concurrent
+memory management, enabling low pause time with large
+heaps even with large amounts of data. ZGC used a
+significantly greater heap with latency similar to G1 GC.
+TABLE I. HEAP USAGE PER GB OF MEMORY FOR SELECTED
+RENAISSANCE BENCHMARK TEST APPLICATIONS
+Benchmarks G1 GC Z GC Shenandoah GC
+movie-lens 0.4423 0.5711 0.7925
+fj-kmeans 0.1933 1.3281 0.7261
+db-shootout 0.3405 0.7664 0.9849
+par-mnemonics 0.2589 0.5324 1.5576
+V. DISCUSSION
+One of the primary purposes of automated memory
+management is the improvement of application efficiency.
+Considering modern Big Data applications that handle
+large amounts of data and are memory intensive,
+optimizing the garbage collection process can significantly
+improve the application performance [11]. In such cases,
+the GC event is mostly triggered by Allocation Failure, a
+regular event that occurs when the Young Generation has
+no free space left. Since the GC process tends to generate
+unnecessary swap I/O operations, it might become
+ineffective when handling a large amount of data [12].
+Based on our preliminary test results, low latency GCs like
+Shenandoah GC or ZGC could significantly improve the
+performance of such applications.
+The optimization of the memory management process
+could be particularly important in contemporary Machine
+Learning systems and libraries, whose execution requires a
+lot of resources. Low-latency concurrent GCs might exhibit
+better performance because of the constant removal of
+unmarked objects from memory. However, fully
+concurrent garbage collectors such as C4 should also be
+considered to avoid global stop-the-world pauses [13].
+Since GC time can have a significant contribution of up
+to one-third of the application runtime, parallel GCs could
+be used to reduce the stop-the-world pause time [14].
+However, parallel GC might cause poor application
+scalability and efficiency since a portion of the operating
+system threads are constantly occupied by the GC. Many
+JVM applications, such as the ones represented by the
+benchmarks in the DaCapo and Renaissance suites, cannot
+fully exploit the multicore processors' resources.
+VI. CONCLUSION
+Contemporary applications with large amounts of data
+are heap heavy because of the large amount of newly
+created objects. Preventing memory leaks and improving
+application scalability requires adequate garbage collection
+processes. Since the analyzed GC's are low latency, they
+sacrifice collection time and the application scalability to
+ensure low pause time and, if possible, evade STW events,
+which means that such garbage collectors would provide a
+smoother performance of concurrent applications.
+Based on our preliminary test results, the G1 GC is
+optimized for smaller applications that do not require large
+heaps. While on the contrary, Shenandoah GC performs
+well with large heaps, which means that using it for
+memory management of interactive websites could shorten
+the waiting time without requiring more CPU power.
+Lastly, because of its adaptability to concurrent
+applications, ZGC can perform the memory management
+process while the application is running, making it a good
+fit for the applications that require a large amount of
+memory, such as big data applications.
+REFERENCES
+[1] P. R. Wilson, "Uniprocessor garbage collection techniques,"
+Lecture Notes in Computer Science, vol. 637, 1992.
+[2] N. Jagelid, "Performance evaluation of Java garbage collectors for
+large heap transaction based applications," M.S. thesis, School of
+Electrical Engineering and Computer Science (EECS), KTH, 2020.
+[3] C. D. O. Goncalves, "A Performance Comparison of Modern
+Garbage Collectors for Big Data Environments," M.S. thesis,
+Tecnico Lisboa, Portugal, 2021.
+[4] P. Pufek, H. Grgić, B. Mihaljević, "Analysis of Garbage Collection
+Algorithms and Memory Management in Java," 2019 42nd Int.
+Convention on Information and Communication Technology,
+Electronics and Microelectronics (MIPRO), 2019, pp. 1677-1682.
+[5] T. Domani et al,
+"Implementing an on-the-fly garbage collector for
+Java," 2nd Int. Symposium on Memory Management - ISMM '00,
+2000, pp. 155-166.
+[6] S. Tavakolisomeh, R. Bruno, P. Ferreira, "Selecting a GC for Java
+Applications," Norsk IKT-konferanse for forskning og utdanning,
+2021, pp. 2-15.
+[7] W. Zhao, S. M. Blackburn, "Deconstructing the garbage-first
+collector," 16th ACM SIGPLAN/SIGOPS Int. Conf. on Virtual
+Execution Environments, ACM, 2020, pp. 15-29.
+[8] D. Detlefs, C. Flood, S. Heller and T. Printezis, "Garbage-first
+garbage collection," 4th International Symposium on Memory
+Management - ISMM '04, ACM, 2004, pp. 37-48.
+[9] M. Mägi, "Visualising the logs of Shenandoah Garbage Collection
+algorithm,
+" B.S. thesis, Institute of Computer Science, University
+of Tartu, Estonia, 2017.
+[10] J. Zhang, "Performance Comparative Analysis on Garbage First
+Garbage Collector and Z Garbage Collector," 2021 IEEE 3rd Int.
+Conference on Frontiers Technology of Information and Computer
+(ICFTIC), 2021, pp. 733-740.
+[11] A. Sriram, A. Nair, A. Simon, S. Kalambur and D. Sitaram, "A
+Study on the Causes of Garbage Collection in Java for Big Data
+Workloads," 2020 IEEE Int. Conference on Big Data (Big Data),
+2020, pp. 5831-5833.
+[12] H. Lee, Q. Chen, H. Y. Yeom, and Y. Son, "An efficient garbage
+collection in Java Virtual Machine via swap I/O Optimization,"
+35th ACM Symp. on Applied Computing, 2020, pp. 1238-1245.
+[13] G. Tene, B. Iyengar, and M. Wolf, "C4," ACM SIGPLAN Notices,
+vol. 46, no. 11, 2011, pp. 79–88.
+[14] L. Gidra, G. Thomas, J. Sopena, and M. Shapiro, "A study of the
+scalability of stop-the-world garbage collectors on multicores,"
+ACM SIGPLAN Notices, vol. 48, no. 4, 2013, pp. 229-240.
+
+

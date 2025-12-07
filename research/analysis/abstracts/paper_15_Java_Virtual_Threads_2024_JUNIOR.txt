@@ -1,0 +1,18 @@
+Title: Assessing the Efficiency of Java Virtual Threads in Database-Driven Server Applications
+Authors: L. Lasic, D. Beronic, B. Mihaljevic, A. Radovan
+Year: 2024
+Conference: MIPRO Junior (Student Papers)
+Priority: HIGH - Must examine
+
+Relevance: Technical comparative study by students, good example of evaluation methodology for junior papers
+
+Abstract:
+This paper describes the development of an Open-Source Generative AI Chatbot, utilizing free Large Language Models (LLM) to enrich the student learning experience for a university course in “Introduction to Programming”. The article aims to provide a step-by-step guide for selecting, fine-tuning, and evaluating available models. As a first step in choosing the appropriate LLM, which provides the most accurate responses while not requiring excessive computing power, the article will cover a discussion of the advantages and disadvantages of local vs. cloud-available models. After selecting a few promising models, the next stage includes fine-tuning LLMs to answer domain-specific questions using a dataset containing essential rules, guidelines, and explanatory content regarding the subject. The crucial aspect of selecting a model was evaluating answers, and in this context, both human and automatic evaluation techniques will be presented. Finally, it is possible to enhance the model performance and accuracy by incorporating Retrieval-Augmented Generation (RAG) techniques and exploring the influence of various factors, such as different vector databases, model temperatures, maximum token lengths, prompt templates, embeddings, repetition penalties, and chunking sizes. Our results show that chatbots have significant potential to improve academic support and learning efficiency, as well as personalized education in general.
+
+
+---
+Notes after reading abstract:
+
+
+---
+Decision: [ ] Get full paper  [ ] Abstract sufficient  [ ] Not relevant

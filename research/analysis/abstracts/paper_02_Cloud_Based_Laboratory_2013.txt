@@ -1,0 +1,503 @@
+Title: Cloud Based Laboratory for Distance Education
+Authors: S. Ristov, M. Gusev, A. Donevski
+Year: 2013
+Conference: CE (Computers in Education)
+Priority: HIGH - Must examine
+
+Relevance: Lab infrastructure setup, relevant for IaC Progressive Learning idea
+
+Abstract:
+Today's dynamic life has changed the traditional teaching from the classroom and laboratory based classical learning to an approach using online and distance e-Learning. Universities usually follow this trend and enable their resources as online utilities for the students. There are several ways to offer these facilities online and cloud is the most promising one when analyzing several criteria. The cloud technology provides many benefits reducing the overall cost and improving the business continuity. In this paper we present an idea how to transfer the traditional computer laboratory into a cloud based utility using open source cloud frameworks. This transformation creates a dynamic, flexible, elastic, reliable and modern laboratory that can serve the students as a tool for distance learning for many courses simultaneously. It acts on a “Lab as a Service” principle.
+
+
+---
+Notes after reading abstract:
+
+
+---
+Decision: [ ] Get full paper  [ ] Abstract sufficient  [ ] Not relevant
+
+
+
+Cloud Based Laboratory for Distance Education
+Sasko Ristov, Marjan Gusev and Aleksandar Donevski
+Ss. Cyril and Methodius University,
+Faculty of Computer Science and Engineering,
+Skopje, Macedonia
+Email: {sashko.ristov, marjan.gushev}@finki.ukim.mk, aleksandar.donevski@outlook.com
+Abstract—Today’s dynamic life has changed the traditional
+teaching from the classroom and laboratory based classical
+learning to an approach using online and distance e-Learning.
+Universities usually follow this trend and enable their resources
+as online utilities for the students. There are several ways to offer
+these facilities online and cloud is the most promising one when
+analyzing several criteria. The cloud technology provides many
+benefits reducing the overall cost and improving the business
+continuity. In this paper we present an idea how to transfer the
+traditional computer laboratory into a cloud based utility using
+open source cloud frameworks. This transformation creates a
+dynamic, flexible, elastic, reliable and modern laboratory that
+can serve the students as a tool for distance learning for many
+courses simultaneously. It acts on a ”Lab as a Service” principle.
+Index Terms—Education, Cloud Computing, Online laboratory
+I. INTRODUCTION
+Universities are faced with a huge problem when they
+design their data centers and laboratories. The hardware equip-
+ment’s life-cycle is usually three to five years and the managers
+must be smart enough to choose appropriate hardware, that
+is, to choose the most powerful equipment within a given
+limited budget. However, the experience shows that most of
+the time the resources will be either over-utilized (for example,
+during assignment deadlines, assessments or enrollments), or
+underutilized (during holidays or weekends).
+Another problem, which maybe the worst, is to choose
+a sufficient and appropriate laboratory equipment. That is,
+different courses require equipment with specific technical
+characteristics. For example, multimedia-based courses require
+computing power and available storage space, parallel pro-
+gramming and algorithms need multi-core CPUs and a lot
+of RAM memory, while some courses demand only a high-
+bandwidth Internet connection, regardless of the equipment’s
+power.
+Apart of the hardware equipment, the various courses re-
+quire different system and application software. A diversity of
+operating systems limit the use of learning tools, some might
+need Unix or Linux, while others Windows or Mac operating
+systems. Even more, 16-bit programs are not supported, and
+many 32 bit programs do not work properly on 64 bit operating
+systems since they run in an emulator [1]. Another problem
+arises when installing a program for one course damages
+already installed programs for other courses. There are file
+version conflicts, registry value conflicts, and their unnecessary
+duplication.
+University laboratories are deployed to allow the students
+to learn the material more practically. However, there are
+many part-time students, which are part-time employed and
+cannot attend the hands-on laboratory in specific hours. They
+demand a distance learning environment available 24h per day.
+European Credit Transfer and Accumulation System (ECTS)
+on the other hand, gives a recommendation to the universities
+to evaluate the students’ homework assignments and projects,
+which usually are developed at home, and the regular students
+also need some distance learning environment.
+A possible solution for all these challenges is to use
+the emerging technologies, such as virtualization and cloud
+computing. Virtualization allows a creation of separated virtual
+machine images for each course and instantiating arbitrary
+number of active instances with customized virtualized hard-
+ware resources (CPU, RAM, I/O, HDD). By using the cloud
+computing paradigm, the universities can either build their
+own private clouds in their data centers, or rent resources
+from some commercial public cloud service provider, or both.
+A para-virtual laboratory can even improve the students’
+performance [2].
+Our idea is to realize the laboratory based on a service
+principle offered by the cloud technology. In this paper, we
+present an idea how to develop a cloud based laboratory for
+distance learning by using the emerging techniques without or
+with a little additional cost. This online laboratory acting as
+a service is intended to be used by the arbitrary number of
+students of several courses simultaneously, 24 hours per day,
+7 days in a week, instead of university working hours only.
+The rest of the paper is organized as follows. Section II
+presents the related work in the area of distance education
+based on cloud. In Section III, we describe the architecture
+of our cloud based laboratory for distance learning. The
+usage of the laboratory is presented in Section IV. Section V
+discusses about further development of the laboratory for
+distance learning and self assessment, apart of classical online
+laboratory. Finally, we conclude our work and present our
+plans for future work in Section VI.
+II. RELATED WORK
+This section presents the state of the art in the area of
+distance learning, especially the cloud based.
+Many online courses exist that offer distance learning.
+Udacity offers free and chargeable online courses, which
+834 MIPRO 2014/CE
+Faculty
+Network Online Cloud based Laboratory
+Internet
+Fig. 1. The online laboratory equipment
+EU Controller EU Controller
+OS Controller OS Controller
+can be started at arbitrary time [3]. Putting the Stanford’s
+Introduction to Artificial Intelligence course online, Thrun got
+an enrollment of 160,000 students from all over the world
+[4]. StarHPC [5] (the Software Tools for Academics and
+Researchers) is one of the first projects where the cloud is used
+in distance learning, which ”brings” arbitrary Amazon’s EC2
+(Elastic Computing Cloud) resources into the students’ labo-
+ratory. StarCluster [6] is a similar project where the students
+can create a cluster computing environment in the cloud for
+parallel and distributed computing applications and systems.
+For more than 10 years, Cisco has a learning environment,
+which is migrated on the cloud [7].
+Platform as a Service (PaaS) cloud service layer can be
+also useful in education, since it allows the students to focus
+in the tasks, rather than on spending a lot of time to set up the
+necessary software for course activities [8]. Tian’s framework
+[9] manages PaaS in a virtual cloud laboratory and manages
+the users, resources and their access rights. Yin et al. [10]
+built a multimedia courseware sharing platform, which is based
+on Google App Engine. NVLab is another tool, which uses
+virtualization. It is a web-based laboratory for management of
+network designs [11].
+Gusev et al. [12] developed an e-Learning and bench-
+marking platform for distance learning of the Parallel and
+Distributed Processing course. They proposed a cloud model
+for the platform, as well as [13]. Bastidas [14] proposed
+the implementation of the computer networking laboratory
+infrastructure to distance students in order to extend the
+learning.
+III. THE ONLINE LABORATORY ARCHITECTURE
+In this section we present our model of a distance learning
+lab working as a service on a cloud. The architecture consists
+of two open source cloud frameworks, which are dedicated
+with arbitrary number of physical cloud server nodes.
+A. The Physical Equipment
+The laboratory is based of the existing 20 workstations,
+one router and one switch, as depicted in Figure III-A. All
+workstations are grouped in several VLANs connected by a
+switch. A router is used to enable an access to the university
+internal network.
+Cloud Node Cloud Node
+Cloud Node Cloud Node Cloud Node Cloud Node B. The Architecture
+We have a lot of experience during the last several years
+with various open source cloud frameworks, such as Open-
+Stack, Eucalyptus, OpenNebula and CloudStack. Realizing
+various cloud deployments we have faced several challenges,
+such as Java incompatibility with applications in the cloud,
+or interaction with the cloud interfaces. Therefore, our rec-
+ommendation is to implement two cloud frameworks, i.e.,
+OpenStack and Eucalyptus, as most appropriate to deploy our
+online laboratory. This provides a sufficient redundancy, as
+well as extension for research options.
+Figure III-B depicts the architecture of this online laboratory
+offered as a service. Two workstations are used as Eucalyptus
+Fig. 2. The online laboratory architecture
+cloud and cluster controllers, and one workstation for Open-
+Stack. All others are used as cloud node controllers.
+In normal mode, the Eucalyptus cloud uses all other work-
+station to instantiate virtual machines, while all OpenStack’s
+services are disabled. When necessary, the OpenStack’s ser-
+vices will be enabled, while the Eucalyptus’ services will be
+disabled on several cloud nodes.
+Cloud Node Cloud Node
+MIPRO 2014/CE 835
+Faculty
+Network Online Cloud based Laboratory
+Online
+Researcher
+Traditional
+Student
+VM1
+VM2
+VM3
+VM4
+Online
+Student
+Traditional
+Researcher
+Fig. 3. The usage scenario
+Update of the image is conducted each semester, which
+limits the flexibility of the traditional laboratories. Therefore,
+we migrated one laboratory in the cloud to become a distance
+learning laboratory. We developed several images, each for
+a particular course. For example, the Computer Networks
+image is Windows based, which contains Cisco’s learning
+materials, several network tools and simulators, etc, while
+the image for the High Performance Computing course is
+Linux based, which contains C++ compiler, OpenMP, MPI
+and BLAS libraries.
+Since most of the regular students are at the faculty and
+work on the host operating systems, while the other busy
+students are at work, the laboratory is used mostly as a tradi-
+tional physical laboratory in the working hours. Just in case,
+the administrator can limit the number of available virtualized
+resources through the cloud according to the requirements of
+the laboratory exercises of the current course. For example,
+if the current course requires two CPUs of four core cloud
+server nodes, the administrator can limit the cloud scheduler
+to instantiate virtual machine instances with maximum two
+CPU cores per physical server.
+C. Using as a Research Laboratory
+Additionally, apart of the already prepared customized vir-
+tual machine images for several courses, we prepared ”blank”
+virtual machines for the master and PhD students to realize
+research, or for the undergraduate students to realize a team-
+oriented project. These virtual machines are allowed to interact
+with the cloud controllers in order to develop the elastic and
+scalable applications as a service on the top of the cloud,
+according to the model for e-Assessment cloud solutions [16].
+IV. FUNCTIONAL DESCRIPTION
+This section describes the usage of our deployed cloud
+based online laboratory realized as a service. Figure IV depicts
+its three main purposes:
+• Traditional Physical Laboratory opened for the students
+only in working hours;
+• Distance Learning Laboratory available for the students
+24/7/365; and
+• Research laboratory [15], available both for the students
+and researchers.
+A. Using as a Traditional Physical Laboratory
+Since each workstation is installed with Linux with GUI
+(Graphical User Interface), the whole laboratory can be used as
+a traditional physical laboratory in the faculty’s working hours.
+The students use the host operating system for those courses
+that require Linux operating system, while they can still run
+the virtual machine instance of the cloud for a particular course
+that requires Windows based applications.
+B. Using as a Distance Learning Laboratory
+Our currently prepared image with Windows operating
+system has 124 installed applications, which includes several
+IDEs (Integrated Development Environments) for various pro-
+gramming languages, simulators, network and database tools,
+etc. Each of the laboratory workstations is installed from this
+image. Although this is a huge list of installed applications,
+it is only a Windows platform, and something else is always
+missing, such as some plug-in or some configuration file is
+changed by other application.
+V. DISCUSSION
+This section discusses details of current and further lab
+development to realize the overall goal as a distance education
+lab providing its resources as a service to the students, teachers
+and researchers. The benefits of migrating the traditional
+laboratories in the cloud are elaborated along with description
+of possible challenges.
+A. The Benefits
+The university can achieve many benefits if it migrates some
+or all of its laboratories in the cloud and offer it on a service
+based approach. In this section we present the most important
+ones.
+1) Isolated Course Applications: The online laboratory is
+used for several courses: Computer Networks, High Perfor-
+mance Computing, Parallel Programming, Teamwork, Com-
+puter Network Design, Microprocessor Systems, etc. Each
+virtual machine instance is independent of others and works
+isolated when it is instantiated. This improves the performance
+of the guest operating system because it has less system files,
+rather than our image with 124 installed programs.
+836 MIPRO 2014/CE
+2) Balanced Load of the Equipment: Since different
+courses require various hardware resources and cloud based
+online laboratory allows the students to work in the arbitrary
+time, the utilization of the laboratory equipment will be
+balanced instead of either over-utilized or underutilized. Even
+more, the laboratory can serve much more online students
+rather than a maximum of 20 if it is used as traditional
+laboratory only. That is, usually less than a maximum of 20
+students are enrolled in the exercises, and not all of them
+attend all exercises.
+3) Reducing the Cost: Migrating the laboratory in the cloud
+can reduce the costs in several ways.
+E-Learning should be developed towards open access to
+learning, open source software, open standards, and OER [18].
+The additional software that our pilot cloud based laboratory
+uses is open source, that is, OpenStack and Eucalyptus.
+Although the expert’s assistance is required to setup a fully
+operational, open source workbench [19], the cost for man
+hours for the initial efforts for installing and configuring
+the clouds is much smaller than the cost for formating and
+configuring each computer at the beginning of each semester,
+and the administering during the semester (viruses, no storage
+place, deleted files, etc).
+The reduced number of students in the laboratory will
+also reduce the cost for laboratory maintenance. The cost
+for electricity can be reduced because all physical machines
+(except the cloud controllers) can be started or deactivated
+dynamically, according to the students requirements.
+B. Further Challenges
+Despite the benefits, there are additional challenges for the
+online cloud based laboratory, such as security or availability.
+All cloud based environments are more exposed than be-
+ing on-premise due to virtualization and multi-tenancy [20].
+However, the student exercises’ data are less sensitive.
+Another challenge is the laboratory availability. That is,
+the laboratory room is neither dedicated for mission critical
+services, nor its room has sophisticated climate and redundant
+power supply. Still, our design with two clouds and many
+server nodes offer good availability.
+Maybe the most important challenge is the usage of the
+online laboratory for hardware based courses, which requires
+working on real equipment, rather than on simulators. How-
+ever, the remote engineering is a new trend to share the lab
+equipment, which will allow the students with more time for
+learning, instead of traveling to the University [21].
+C. Further Extensions and Improvements
+Our pilot project is a huge step forward, both for the
+university and the students. However, we are not going to
+stop at this level, instead we are going to further improve
+and enhance our cloud based online laboratory. Our intention
+is to develop the laboratory not only for distance learning, but
+more wider, that is, for distance education.
+Applying formative assessment in learning environments
+increase the benefits [22], [23]. The learning outcomes of
+students can be improved in a mobile learning environment
+[24].
+Recently, we have developed a scalable and elastic cloud
+solution for e-Assessment based on OpenStack cloud frame-
+work [17] and E-Assessment system with interactive images
+[25]. Both of them will be hosted in our cloud based online
+laboratory in order to allow the students to learn through e-
+Testing. The following sections briefly describe them.
+1) Scalable and Elastic e-Assessment Cloud Solution: The
+e-Assessment cloud system is deployed on OpenStack cloud,
+which allows to dynamically instantiate and deactivate the
+virtual machine instances. Figure 4 presents its architecture.
+The implementation creates an instance of already prepared
+virtual machine for assessment with particular size according
+to the number of assessed students, which is deactivated after
+the assessment is finished.
+2) E-Assessment System with Interactive Images: This sys-
+tem uses sophisticated technologies for interactive images,
+such as Google Maps Engine. Interactive image technology
+offers a web based environment where the images are sent
+to the students. After loading the image, the students can
+navigate and zoom to an appropriate level to analyze the image
+details. The students answer by setting up one or more marks
+on some regions of the image. This system enriches the e-
+Assessment environment, enables more correct evaluation and
+prevents several methods of cheating and unfair grading.
+VI. CONCLUSION AND FUTURE WORK
+This paper presents the architecture and the usage of the
+multi purpose cloud based distance education laboratory. It is
+deployed by migrating the existing traditional laboratory in
+the cloud by using the open source cloud frameworks. It is
+offered as a service free of charge for enrolled students and
+University researchers that demand more hardware resources.
+It acts as an extended Platform as a Service, since it offers
+more than standard platforms the conventional cloud providers
+offer. It is not a fully Software as a Service offer for the
+students, since it offers a limited set of software tools and
+hardware in comparison to the full software the conventional
+cloud providers offer. Finally, the students are expected to
+develop the final application code or realize experiments with
+the available tools and hardware.
+The laboratory can be used in three manners. The students
+still can work on-site when they have hands on exercises,
+such as hardware based courses, which require working on
+equipment. Apart of being the traditional on-site laboratory,
+it allows the students to work remotely from home whenever
+they can and want, for each course. Finally, it is also used by
+the young researchers, such as master or PhD students.
+The usage of the laboratory can be also extended in distance
+education, that is, it can host faculty’s online learning and
+online self assessment systems. We will migrate our interactive
+e-Assessment and e-Learning systems in the laboratory in
+order to make them scalable and elastic capable to handle
+arbitrary number of assessed students.
+MIPRO 2014/CE 837
+Cloud Management
+Cloud Resource Pool
+Assessment Node
+Assessment Node
+Dynamic
+Resources
+Student
+.
+.
+.
+Student
+OpenStack CC
+Student Group 1
+WA+DB segment 1
+WA+DB segment N
+Management Module
+Reporting Module
+Static
+Resources
+Student
+Student
+WA+DB
+WA+DB
+Student Group N
+Proffesor
+Fig. 4. e-Assessment cloud system [17]
+Fig. 5. An example of a MGC question for e-Assessment system with interactive images [25]
+Our pilot laboratory will be extended and improved in
+several directions. We will develop and implement virtual
+machine images for more courses and we will test the per-
+formance of the increased number of the users. Also, we
+are challenged to integrate several distributed laboratories on
+several locations into one huge virtual online laboratory for
+distance education.
+838 MIPRO 2014/CE
+REFERENCES
+[1] Microsoft, “Running 32-bit Applications,” [retrieved: Jan,
+2014]. [Online]. Available: http://msdn.microsoft.com/en-us/library/
+aa384249(v=vs.85).aspx
+[2] M. Anisetti, V. Bellandi, A. Colombo, M. Cremonini, E. Damiani,
+F. Frati, J. Hounsou, and D. Rebeccani, “Learning computer networking
+on open paravirtual laboratories,” Education, IEEE Transactions on,
+vol. 50, no. 4, pp. 302–311, 2007.
+[3] Udacity, “Courses,” [retrieved: Jan, 2014]. [Online]. Available:
+https://www.udacity.com/
+[4] F. Salmon, “Udacity and the future of online universities,” 23 Jan. 2012.
+[5] C. Ivica, J. Riley, and C. Shubert, “StarHPC: Teaching parallel pro-
+gramming within elastic compute cloud,” in Information Technology
+Interfaces, 2009. ITI ’09. Proceedings of the ITI 2009 31st International
+Conference on, 2009, pp. 353–356.
+[6] MIT, “StarCluster,” [retrieved: Nov, 2013]. [Online]. Available:
+http://star.mit.edu/cluster/
+[7] CISCO, “Cisco networking academy,” [retrieved: Nov, 2013]. [Online].
+Available: https://cisco.netacad.com/
+[8] L. Vaquero, “Educloud: Paas versus iaas cloud usage for an advanced
+computer science course,” Education, IEEE Transactions on, vol. 54,
+no. 4, pp. 590–598, 2011.
+[9] W. Tian, S. Su, and G. Lu, “A framework for implementing and
+managing platform as a service in a virtual cloud computing lab,” in
+Education Technology and Computer Science (ETCS), 2010 Second
+International Workshop on, vol. 2, 2010, pp. 273–276.
+[10] H. Yin, J. Han, J. Liu, and X. Hongyun, “Development and research
+of multimedia courseware sharing platform based on gae,” in E-Health
+Networking, Digital Ecosystems and Technologies (EDT), 2010 Interna-
+tional Conference on, vol. 2, 2010, pp. 289–292.
+[11] M. Wannous and H. Nakano, “Nvlab, a networking virtual web-based
+laboratory that implements virtualization and virtual network computing
+technologies,” Learning Technologies, IEEE Transactions on, vol. 3,
+no. 2, pp. 129–138, 2010.
+[12] M. Gusev, S. Ristov, G. Velkoski, and B. Ivanovska, “E-learning and
+benchmarking platform for parallel and distributed computing,” Inter-
+national Journal of Emerging Technologies in Learning (iJET), 2014, in
+press.
+[13] S. Ristov, M. Gusev, and G. Velkoski, “Cloud e-learning and bench-
+marking platform for the parallel and distributed computing course,”
+in Global Engineering Education Conference (EDUCON), 2014 IEEE,
+Istanbul, Turkey, 2014, p. in press.
+[14] C. Bastidas, “Enabling remote access to computer networking laborato-
+ries for distance education,” in Frontiers in Education Conference (FIE),
+2011, 2011, pp. F3C–1–F3C–6.
+[15] LiiT, “Laboratory for Internet and Innovative Technologies,” [retrieved:
+Jan, 2014]. [Online]. Available: http://liit.finki.ukim.mk/
+[16] S. Ristov, M. Gusev, G. Armenski, K. Bozinoski, and G. Velkoski,
+“Architecture and organization of e-assessment cloud solution,” in IEEE
+Global Engineering Education Conference (EDUCON), 2013 IEEE.
+Berlin, Germany: IEEE, Mar. 2013, pp. 736–743, best Paper Award.
+[17] S. Ristov, M. Gusev, G. Armenski, and G. Velkoski, “Scalable and
+elastic e-assessment cloud solution,” in Global Engineering Education
+Conference (EDUCON), 2014 IEEE, Istanbul, Turkey, 2014, p. in press.
+[18] D. Dinevski, “Open educational resources and lifelong learning,” in
+Information Technology Interfaces, 2008. ITI 2008. 30th International
+Conference on, 2008, pp. 117–122.
+[19] C. T. Delistavrou and K. G. Margaritis, “Towards an integrated teaching
+environment for parallel programming,” in Proceedings of the 2011 15th
+Panhellenic Conference on Informatics, ser. PCI ’11, 2011, pp. 3–7.
+[20] S. Ristov, M. Gusev, and M. Kostoska, “A new methodology for security
+evaluation in cloud computing,” in MIPRO, 2012 Proceedings of the 35th
+International Convention, 2012, pp. 1484–1489.
+[21] D. Pop, D. Zutin, M. Auer, K. Henke, and H. D. Wuttke, “An online
+lab to support a master program in remote engineering,” in Frontiers in
+Education Conference (FIE), 2011, 2011, pp. GOLC2–1–GOLC2–6.
+[22] L. Gardner, D. Sheridan, and D. White, “A web-based learning and
+assessment system to support flexible education,” Journal of Computer
+Assisted Learning, vol. 18, no. 2, pp. 125–136, June 2002.
+[23] P. Orsmond, S. Merry, and A. Callaghan, “Implementation of a formative
+assessment model incorporating peer and selfassessment,” Innovations
+in Education and Teaching International, vol. 41, no. 3, pp. 273–290,
+2004.
+[24] G.-J. Hwang and H.-F. Chang, “A formative assessment-based mobile
+learning approach to improving the learning attitudes and achievements
+of students,” Comput. Educ., vol. 56, no. 4, pp. 1023–1031, May 2011.
+[25] M. Gusev, S. Ristov, G. Armenski, P. Gushev, and G. Velkoski, “E-
+assessment with interactive images,” in Global Engineering Education
+Conference (EDUCON), 2014 IEEE, Istanbul, Turkey, 2014, p. in press.

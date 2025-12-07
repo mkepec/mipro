@@ -1,0 +1,18 @@
+Title: Container vs. Function as a Service: Impact on Cloud Deployment for Real-World Applications
+Authors: T. Petrovski, M. Gusev
+Year: 2024
+Conference: SSE or DC-CPS
+Priority: HIGH - Must examine
+
+Relevance: Practical cloud deployment comparison, good example of comparative methodology
+
+Abstract:
+This paper compares Container as a Service (CaaS) and Function as a Service (FaaS) as different cloud deployment strategies for a multitenant ride-sharing web application Trek. The application is highly network-intensive, relying extensively on third-party APIs for collecting location data about cities and driving routes. Additionally, it is CPU-intensive due to real-time data processing of driver locations while the vehicle moves towards the destination city.This study evaluates both approaches concerning variable workloads and their impact on system responsiveness, resource utilization, and performance during peak and off-peak periods. It closely examines crucial performance metrics such as latency and throughput to analyze the implications of both approaches for end-user experience and overall operational efficiency. Additionally, our study analyzes several critical factors like scalability and deployment complexity. We conducted experiments on AWS ECS (CaaS) and AWS Lambda (FaaS) to gain actionable insights into the trade-offs, benefits, and limitations of each platform, enabling informed decision-making for cloud-based application deployment.
+
+
+---
+Notes after reading abstract:
+
+
+---
+Decision: [ ] Get full paper  [ ] Abstract sufficient  [ ] Not relevant

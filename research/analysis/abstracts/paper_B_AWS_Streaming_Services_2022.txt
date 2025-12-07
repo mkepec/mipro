@@ -1,0 +1,563 @@
+Title: Comparing AWS Streaming Services: A Use Case on ECG Data Streams
+Authors: M. Velickovska, M. Gusev
+Year: 2022
+Conference: SSE or DC-CPS
+Priority: MEDIUM - Abstract sufficient (consider full paper if AWS examples needed)
+
+Relevance: AWS-specific comparative study - good for AWS MCP junior paper examples
+
+Abstract:
+The goal of this research paper is to compare
+Amazon Kinesis Data Streams and SQS via a practical use
+case for processing electrocardiogram medical data. Both
+services are tested on a large number of concurrent data
+streams up to 10.000 concurrent data streams, measuring and
+evaluating their performance. In both cases, the producer
+is a programmed data generator that supplies the data to
+the services. The motivation of the paper is the streaming
+of textual files with 125-500 samples per second written
+as integers, representing electrocardiograms from sensors.
+We set a research hypothesis that Amazon Kinesis will
+outperform SQS service for streaming medical data collected
+from sensors. The pros and cons are listed for each of the
+Amazon services taking into account the price, use cases
+when each of the services will be more applicable, and the
+scalability. The concluding results from this experiment are
+that both of the services provide great performance but they
+will mainly provide better results if each of them is applied
+to a specific use case.
+Keywords—Streaming, Kinesis, cloud, AWS
+
+
+---
+Notes after reading abstract:
+
+
+---
+Decision: [ ] Get full paper  [ ] Abstract sufficient  [ ] Not relevant
+
+---
+Full Paper (if decided to get):
+
+Comparing AWS Streaming Services: A Use
+Case on ECG Data Streams
+Marija Velickovska∗, Marjan Gusev∗
+∗Ss. Cyril and Methodius University, Faculty of Computer Science and Engineering, Skopje, North Macedonia
+marija.velichkovska@students.finki.ukim.mk, marjan.gushev@finki.ukim.mk
+Abstract—The goal of this research paper is to compare
+Amazon Kinesis Data Streams and SQS via a practical use
+case for processing electrocardiogram medical data. Both
+services are tested on a large number of concurrent data
+streams up to 10.000 concurrent data streams, measuring and
+evaluating their performance. In both cases, the producer
+is a programmed data generator that supplies the data to
+the services. The motivation of the paper is the streaming
+of textual files with 125-500 samples per second written
+as integers, representing electrocardiograms from sensors.
+We set a research hypothesis that Amazon Kinesis will
+outperform SQS service for streaming medical data collected
+from sensors. The pros and cons are listed for each of the
+Amazon services taking into account the price, use cases
+when each of the services will be more applicable, and the
+scalability. The concluding results from this experiment are
+that both of the services provide great performance but they
+will mainly provide better results if each of them is applied
+to a specific use case.
+Keywords—Streaming, Kinesis, cloud, AWS
+I. INTRODUCTION
+Streaming data is the essence of the Big Data concepts
+representing a flow of large data coming with large veloc-
+ity and large volume from different locations and formats.
+Streams are organized by sending small sized data chunks
+repeatedly and continuously. Processing the streaming data
+is a challenge compared to batch processing mainly used
+only for large data volumes, with focus on used algorithms
+and implementing technology.
+Most of these streaming applications are recognized
+as real-time data pipelines and real-data streaming solu-
+tions. The appropriate implementation technology is open-
+source, such as Apache Kafka or provider-specific, offered
+by cloud providers, such as Amazon [1], Google [2],
+Microsoft [3], etc.
+With the complexity of today’s modern requirements,
+legacy data processing methods like client-server archi-
+tecture have become obsolete for most use cases, as they
+can only process data as groups of transactions collected
+over time [4], which is a typical characteristic of a batch
+processing system.
+Stream processing needs different implementing tech-
+nology, and often it requires event driven methods to
+initiate processing as soon as a specific data quantity
+arrives, which is also the basis of the producer-consumer
+principle, representing those sources that produce data
+streams and the processing nodes that consume data.
+In this paper, we aim at finding an efficient cloud
+platform to process the streaming of electrocardiogram
+(ECG) medical data. This data stream consists of in-
+tegers generated with a frequency of 125-500 samples
+per second. The objective is to analyze different cloud
+implementations with a goal to simulate a large number
+of ECG data streams, such as 10.000 parallel ECG data
+stream sources.
+Here, we analyze Amazon Web Services (AWS) Kinesis
+and Amazon SQS platforms that can implement ECG data
+processing solution.
+The research hypothesis is that AWS Kinesis will out-
+perform SQS when ECG medical data is being streamed
+no matter the number of shards being chosen.
+In our case, the problem is approached more from an
+academic aspect providing a large amount of data like
+data randomly generated and then passing to AWS Kinesis
+for a short period and then comparing the analysis with
+SQS. In both cases, the data is consumed and stored. The
+main focus is comparing the latency and cost from the
+experiments.
+The cloud platform itself contributes to the overall
+latency mainly by invocation times and external data
+access times. Moreover, the latency is increasing with the
+amount of data depending on the given technologies, and
+critical thresholds can easily be exceeded [5].
+The paper is organized according to the following
+structure. The related work is presented in Section II.
+Section III presents two experiments conducted on Kinesis
+and SQS platforms, test cases, and evaluation methods.
+Results are elaborated in Section IV and discussed for
+achieved technical performance in Section V evaluating
+the performance for the data streaming on both platforms.
+Finally, Section VI concludes the paper, addresses the
+validation of the hypothesis, and gives future work per-
+spectives.
+II. RELATED WORK
+Stream processing is implemented by different cloud
+providers including Amazon Kinesis Data Stream, Google
+Dataflow, Microsoft Azure Stream Analytics, etc. Queue
+processing is also implemented to support data stream
+processing, but analyzed with different focus, implemented
+for batch or stream processing.
+MIPRO 2022/SSE 1581
+Several research papers analyze the performance and
+trade-off of cost, scalability, and availability of Amazon
+SQS and Kinesis as AWS products [6], [7]. Wang et al.
+[6] conclude that Kinesis scales up and provides less delay
+for its cost compared to other services.
+On the other hand, Yoon et al. [7] analyze SQS, con-
+cluding that there are multiple opportunities for client-side
+optimizations concerning their effective use – with careful
+rate control of SQS messages and by exploiting parallelism
+for data upload to S3. Kinesis is much easier to use “out
+of the box”. Also, Kinesis is a managed service with very
+high availability [8].
+The challenges in streaming applications are to receive
+data and quickly process it, making it available to down-
+stream users so that they can produce the insights and
+improvements that move a company forward, keeping high
+throughput and low latency providing scalability [9].
+Apache Kafka is one of the technologies to meet all of
+these challenges. The biggest cloud providers developed
+their solutions including Amazon Kinesis, Google Pub/sub
+and Microsoft Factory [10].
+AWS offers services for the collection and the pro-
+cessing of data records: Amazon Kinesis Data Stream to
+the real-time process of streaming data, AWS Lambda
+to execute serverless code, Amazon Simple Notification
+Service to send or receive notifications, and Amazon
+Simple Queue Service to store data in a queue [11].
+Shukla et al. [12] propose a real-time IoT benchmark
+suite used to evaluate cloud-based IoT stream processing
+systems and applications.
+The application of applying streaming processing ECG
+data was analyzed by Taher et al. [13]
+Firehose to S3 data flow overview
+(if transformation fail)
+Source Transformed
+data
+S3 bucket
+(optional backup)
+S3 bucket
+(destination)
+Fig. 1: Flow and processing of records by Amazon
+Kinesis Firehose.
+AWS KINESIS
+AWS FIREHOSE
+Stream of
+messages
+provided
+to
+Streams
+Shard 1
+Shard n
+read
+message
+Aggregates
+data
+data being stored into
+S3 Bucket
+Fig. 2: Architecture of the AWS Kinesis Data Stream
+experiment.
+III. METHODS
+A. Implementing technology
+In our experiments, we use S3 Bucket as a scalable
+storage [14].
+The objective of this research is based on analyzing the
+Amazon Kinesis, as a scalable and durable real-time data
+streaming service [1]. A Kinesis Data Stream consists of
+shards, where each shard represents a sequence of data
+records with corresponding sequential number, partition
+key to segregate and route records to different shards, and
+a data blob with capacity up to 1MB as input to support
+logical 2 MB/sec throughput pipes between consumers and
+shards, which allows scaling with parallel access to data
+streams with at most 1000 PUT records per second. A
+retention period is associated to each shard to define the
+time interval (from one day to a whole year) data will be
+stored in the stream.
+The first experiment is implemented with Amazon Kine-
+sis Data Firehose [15] to capture and consume the output
+data from the Kinesis Data Stream. Fig. 1 presents a
+generic architecture of our streaming data solution with
+Firehose that can capture, transform, encrypt data passing
+it to Amazon S3 or others.
+The second experiment is implemented by the Ama-
+zon SQS queuing system, mainly intended as a scalable
+solution to decouple the distributed systems and regulate
+the pace at which each of the services can cope with. [16].
+Two queue types are supported by SQS, the standard queue
+as a cheaper solution and FIFO queue to guarantee proper
+data delivery [17].
+B. Architecture
+Fig. 2 presents the architecture of the solution with AWS
+Kinesis. The solution encapsulates the AWS Kinesis with
+1 and 5 shards and Amazon Firehose as a consumer. The
+producer in both scenarios is a Java programmed producer.
+Later on, the data is passed and stored in S3 Bucket. This
+is chosen as primary storage since it is scalable and secure.
+Fig. 3 presents the architecture of the AWS SQS stream-
+ing data experiment. A standard queue was used accompa-
+nied by a Java programmed consumer for processing and
+S3 bucket as storage.
+C. Experiment
+Two experiments are defined as AWS cloud solutions
+for data streaming, the first one using AWS Kinesis and
+another one SQS. The time for each of the experiments
+defined below will be fixed and each message request will
+1582 MIPRO 2022/SSE
+AWS SQS
+Stream of
+messages
+provided
+to
+queue
+Standard vs
+FIFO queue
+consumer
+consumed by
+data being inserted into
+S3 Bucket
+Fig. 3: Architecture of the AWS SQS experiment.
+We realized two scenarios for the SQS experiment.
+• Scenario 1: Data is being inserted into SQS queue
+for 10 minutes using one producer and one consumer.
+Every message was 12 bytes.
+• Scenario 2: The number of producers is increased to
+5 and only one consumer has consumed data. Again
+the size of the message is 12 bytes and the experiment
+was run for 10 minutes.
+The results of the experiment will be evaluated by com-
+paring the latency (response time) from both services. The
+latency of Kinesis will be taken from the provided metrics
+from AWS, while for SQS latency will be calculated
+manually because such metrics are lacking from AWS.
+The latency for SQS will be calculated as a difference
+between the sent and received times of each message. Each
+experiment will be performed only once and those metrics
+will be compared.
+contain an array of integers converted to 12 bytes string
+message. The range of integers goes from 120 to 200 to
+simulate ECG data.
+In the case of SQS, the experiment is run two times. The
+first try is when one producer in form of a thread produces
+a random string of 12 bytes for 10 minutes. The second
+try is when 5 threads are run at the same time and each of
+them produces 12 bytes strings for 10 minutes. The bytes
+of strings are being consumed by one consumer in both
+of the scenarios.
+The consumer is a thread that reads and deletes the
+messages from the queue. The difference between these
+two approaches is the number of messages being produced
+and provided to the queue. The main idea is to see the
+behavior of the queue with a different number of messages
+being written and read in 10 minutes.
+On the other hand, a similar experiment was done to
+see the performance of Kinesis. The experiment was run
+3 times. The first time is when having one producer in
+form of a thread that produces the same 12 bytes string
+messages for 10 minutes. On the first try, only one shard is
+being used. On the second try, 5 thread producers produce
+the same string as before and pass it to one shard. On the
+last try, the number of shards was increased to 5 and the
+number of producers stayed the same as on the second try.
+In all tries explained above only one consumer is attached
+at the end of the stream which was Kinesis Firehose which
+stored the data in S3 bucket.
+We realized three scenarios for our experiment with
+Kinesis:
+• Scenario 1: One producer and one shard for 10
+minutes.
+• Scenario 2: Five producers and one shard for 10
+minutes.
+• Scenario 3: Five producers and five shards for 10
+minutes.
+The main difference between using one shard and five
+shards is the amount of data that can be ingested by
+Kinesis. The amount of put data is slightly more in the
+case of 5 shards and the put latency is quite similar. All
+in all the cost of this service comes as a trade-off since
+performance is gained but the cost will be higher if more
+shards are being used.
+IV. RESULTS
+The Kinesis experiment resulted with:
+• Scenario 1: One producer has produced 7443 mes-
+sages for 10 minutes.
+• Scenario 2: Five producers have produced 37737
+messages from one shard for 10 minutes.
+• Scenario 3: Five producers have produced 35686
+messages from five shards for 10 minutes.
+The results from the SQS experiment are:
+• Scenario 1: 4926 messages are randomly generated
+by the producer and inserted into SQS queue for 10
+minutes. The consumer has consumed 2526 messages
+in that period.
+• Scenario 2: Five producers have produced 37052
+messages and only one consumer has consumed only
+3795.
+Let’s analyze how our ECG data streaming example can
+be charged in the case of Kinesis and SQS experiments.
+To achieve real-time streaming of 125-500 data samples
+per second, we divide the data stream into data chunks of
+25 samples sending 5 up to 20 data chunks, as a kind of
+near real-time streaming. Assuming that each sample is a
+textual integer (in the range from 0 to 1024) written one
+per row, we calculate the maximum length of each data
+chunk to be 125 bytes, and the complete input data rate
+to be in the range of 625 up to 2.500 bytes per second.
+We assume that a monitoring center system will provide
+service for 1500 concurrent data streams, thus generating
+a data stream with throughput up to 3.75 MB/s for 30,000
+requests per second (20 data chunks * 1500 streams).
+We will calculate the monthly cost per patient. The total
+number of requests per hour is 108 million, and 77,760
+million per month (assuming 30 days * 24h).
+In the Kinesis experiment, the right number of shards is
+determined to be 4 to achieve this throughput. According
+to the existing price list [1], the total cost to process data
+MIPRO 2022/SSE 1583
+Fig. 4: Response time of scenario 1 for Kinesis Data
+Stream for 10 minutes with one producer and one shard.
+Fig. 5: Response time of scenario 2 for Kinesis Data
+Stream for 10 minutes with five producers and one shard.
+with Kinesis for one month is 0.015 * 24 * 4 * 30 = 43.2
+USD or up to 29/100 USD per ECG data stream (patient).
+SQS pricing strategy is based on requests. The first
+million requests per month are free and if this number
+is exceeded then the user pays 0.40 - 0.50 dollars per
+million requests. Every sending, receiving, deleting of data
+is counted as a request. If the FIFO queue is used then
+FIFO rates and prices are used to calculate the total price.
+One request can have from 1 to 10 messages up to 256
+KB. But it is important to be seen that one request takes
+64 KB so if 256 KB are sent as a payload then the user
+has to pay as 4 requests [16]. In our example, for 1500
+concurrent data streams, and 77,760 million requests the
+cost will be 38,880 which is 25.92 USD per data stream
+(patient).
+A lot of recommendations are provided by the cloud
+provider to decrease the SQS costs, including use of batch
+API actions, long polling, then decrease of the number of
+threads, etc.
+Fig. 6: Response time of scenario 3 for Kinesis Data
+Stream for 10 minutes - five producers and five shards.
+V. DISCUSSION
+The achieved latency (response time) will be presented
+on diagrams, where the values on the x-axis present the
+time scale for the experiment execution in the range of
+0 and 10 minutes, and the y-axis corresponds to the
+measured latency.
+The measured latency of the Kinesis Data Stream for
+all three Kinesis scenarios is presented in Fig. 4, Fig. 5,
+and Fig. 6 respectively for scenarios 1, 2, and 3. Values
+on the x-axis present the time scale for the experiment
+execution in the range of 0 and 10 minutes, and the y-axis
+corresponds to the measured latency.
+The calculated latency for SQS measurements is pre-
+sented in Fig. 7 and Fig. 8. Each point on the figure shows
+an average latency for a certain time range.
+We observe a relatively constant response time for the
+Kinesis experiment and linearly increasing response time
+for the SQS experiment, and, therefore, conclude that
+the latency of Kinesis is smaller than SQS. In all three
+scenarios, the latency in the Kinesis experiment achieves
+values in the range between 3 to 4 ms. On contrary, the
+SQS experiment shows a linear increasing trend achieving
+larger latencies over time.
+Fig. 7: Response time of scenario 1 for SQS for 10
+minutes with one producer and one consumer.
+In addition, we conclude in our pricing example for
+1500 concurrent data streams of ECG data, that the costs
+for using SQS are at least 1000 times higher than in the
+Kinesis experiment. The main reason for this is that SQS
+is mainly used for batch processing of large files, and in
+real-time or near real-time processing we deal with smaller
+files.
+The main difference between Amazon Kinesis and SQS
+is that Amazon Kinesis is used to process real-time stream-
+ing big data while on the other hand, SQS is used to store
+messages that are being transmitted between applications.
+Kinesis is better than SQS because it allows routing of
+records, the possibility of multiple clients to ingest data
+concurrently from one stream, an ability to take the same
+data more than once and consume the data later in time.
+1584 MIPRO 2022/SSE
+Fig. 8: Response time of scenario 2 for SQS for 10
+minutes with five producers and one consumer.
+services differ from each other and can be of great benefit
+if applied to a specific use case scenario. Since both of
+them have their pros and cons each of them can be used
+in different scenarios so the price, data availability, data
+reliability, and concurrency will be the best.
+Note that other cloud providers offer similar streaming
+services. For example, Apache Kafka offers distributed
+event streaming platform as an open-source solution, and
+Google Cloud Platform offers the Pub/Sub technology to
+support event driven-data stream processing, and Dataflow
+Apache Beam to transform and enrich processing capabil-
+ities. Our future work will compare implementations by
+different providers for a use-case of ECG data streaming.
+The methods and results presented in this research may
+be used to develop guides for practitioners that have to
+select cloud provider for its applications.
+Our future work plans focus on an experiment that sim-
+ulates processing of incoming 10.000 ECG data streams
+simultaneously.
+Kinesis will not scale itself if the demand is higher from
+the consumers, so the responsibility is for the developer
+to provide enough streams. On the other hand, SQS is
+scalable by itself so it does not have the problem of
+Kinesis. SQS has lower limits of the number of messages
+that can be written and read at the same time so when
+working with Kinesis larger batches can be used [18].
+The recommended typical scenarios for Amazon Kine-
+sis Data Streams [1] include at least pushing data from data
+producers to consumer as they arrive, supporting real-time
+analytics, processing with directed acyclic graphs etc.
+The advantage of Amazon Kinesis Data Streams is
+remarkable [19], especially in routing related records,
+processing and storage ordering, supporting multiple con-
+current applications, preserving the same ordering, etc.
+Amazon SQS is advantageous [20] in a lot of cases, such
+acknowledgement of messaging semantics, configuring
+individual message delay, leveraging transparent scaling,
+etc.
+Code for the conducted experiments can be found at
+the following link: https://github.com/marijavelichkovska/
+Comparing-AWS-services-Kinesis-SQS. Please note that
+some of the code is taken from a free example. [21] [22]
+VI. CONCLUSION
+We have developed an application that processes ECG
+medical data coming as a stream of real-time data with
+125-500 data samples per second. The research goal was to
+realize experiments and find a proper cloud infrastructure
+that can process these ECG data streams. Our experiment
+results proved the hypothesis that AWS Kinesis will out-
+perform SQS when ECG medical data is being streamed,
+both in performance and pricing. If latency is an important
+issue for the use case then Kinesis provides better results
+according to the experiments.
+Similar conclusions have been also confirmed in related
+work, [6], revealing that when scaling and latency are
+taken into consideration Kinesis is a better choice.
+Both Amazon services are highly reliable and serve the
+need for data ingesting, storing, and transmitting. But both
+ACKNOWLEDGMENT
+This research is supported from the European High- Per-
+formance Computing Joint Undertaking (JU) under grant
+agreement No 951745, in particular, the FF4EUROHPC
+CALL-2, for the project entitled “CardioHPC Improving
+DL- based Arrhythmia Classification Algorithm and Sim-
+ulation of Real-Time Heart Monitoring of Thousands of
+Patients”.
+REFERENCES
+[1] “Amazon kinesis,” May 2021. [Online]. Available: https://aws.
+amazon.com/kinesis/
+[2] “Google streaming analytics,” May 2021. [Online]. Available:
+https://cloud.google.com/solutions/stream-analytics
+[3] “Azure data analytics,” May 2021. [Online]. Available: https:
+//azure.microsoft.com/en-us/product-categories/analytics/
+[4] “Introduction to data streams and batch processing,” May 2021.
+[Online]. Available: https://www.confluent.io/learn/data-streaming/
+[5] I. Pelle, J. Czentye, J. D´ oka, and B. Sonkoly, “Towards latency
+sensitive cloud native applications: A performance study on aws,”
+in 2019 IEEE 12th International Conference on Cloud Computing
+(CLOUD), 2019, pp. 272–280.
+[6] S. Wang, S. Valluripally, R. Mitra, S. S. Nuguri, K. Salah, and
+P. Calyam, “Cost-performance trade-offs in fog computing for IoT
+data processing of social virtual reality,” in 2019 IEEE International
+Conference on Fog Computing (ICFC), 2019, pp. 134–143.
+[7] H. Yoon, A. Gavrilovska, K. Schwan, and J. Donahue, “Interactive
+use of cloud services: Amazon SQS and S3,” in 2012 12th
+IEEE/ACM International Symposium on Cluster, Cloud and Grid
+Computing (ccgrid 2012), 2012, pp. 523–530.
+[8] D. Nguyen, A. Luckow, E. Duffy, K. Kennedy, and A. Apon, “Eval-
+uation of highly available cloud streaming systems for performance
+and price,” in 2018 18th IEEE/ACM International Symposium on
+Cluster, Cloud and Grid Computing (CCGRID), 2018, pp. 360–363.
+[9] J. Yates, “Stream processing with IoT
+data: Challenges, best practices, and techniques,”
+2020. [Online]. Available: https://www.confluent.io/blog/
+stream-processing-iot-data-best-practices-and-techniques/
+[10] M. Sha M and M. P. Rahamathulla, “Cloud-based healthcare
+data management framework,” KSII Transactions on Internet and
+Information Systems (TIIS), vol. 14, no. 3, pp. 1014–1025, 2020.
+[11] P. Pierleoni, R. Concetti, A. Belli, and L. Palma, “Amazon, Google
+and Microsoft solutions for IoT: architectures and a performance
+comparison,” IEEE access, vol. 8, pp. 5455–5470, 2019.
+MIPRO 2022/SSE 1585
+[12] A. Shukla, S. Chaturvedi, and Y. Simmhan, “Riotbench: An IoT
+benchmark for distributed stream processing systems,” Concurrency
+and Computation: Practice and Experience, vol. 29, no. 21, p.
+e4257, 2017.
+[13] N. C. Taher, I. Mallat, N. Agoulmine, and N. El-Mawass, “An IoT-
+cloud based solution for real-time and batch processing of big data:
+Application in healthcare,” in 2019 3rd International Conference
+on Bio-engineering for Smart Technologies (BioSMART). IEEE,
+2019, pp. 1–8.
+[14] “Amazon S3,” May 2021. [Online]. Available: https://aws.amazon.
+com/s3/
+[15] “Amazon kinesis data firehose,” May 2021. [Online]. Available:
+https://aws.amazon.com/kinesis/data-firehose/?kinesis-blogs.
+sort-by=item.additionalFields.createdDate&kinesis-blogs.
+sort-order=desc/
+[16] “Amazon SQS,” May 2021. [Online]. Available: https://aws.
+amazon.com/sqs/
+[17] “Amazon SQS types of queues,” May 2021. [Online].
+Available: https://docs.aws.amazon.com/AWSSimpleQueueService/
+latest/SQSDeveloperGuide/standard-queues.html/
+[18] “Amazon comparison of kinesis and SQS,” May
+2021. [Online]. Available: https://www.sumologic.com/
+blog/kinesis-streams-vs-firehose/#:∼:text=Kinesis%20vs%
+20SQS&text=Amazon%20Kinesis%20is%20differentiated%
+20from,transmitted%20between%20distributed%20application%
+20components./
+[19] “Amazon comparison of kinesis and SQS,” May 2021. [Online].
+Available: https://aws.amazon.com/kinesis/data-streams/faqs/
+[20] “Reducing costs of amazon SQS,” May 2021. [Online].
+Available: https://docs.aws.amazon.com/AWSSimpleQueueService/
+latest/SQSDeveloperGuide/reducing-costs.html/
+[21] “Example of sqs code,” April 2022.
+[Online]. Available: https://docs.amazonaws.cn/en
+us/AWSSimpleQueueService/latest/SQSDeveloperGuide/
+sqs-throughput-horizontal-scaling-and-batching.html
+[22] “Example of kinesis code,” April 2022. [On-
+line]. Available: https://docs.amazonaws.cn/en us/streams/latest/
+dev/tutorial-stock-data-kplkcl2-producer.html
+
+

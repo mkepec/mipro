@@ -1,0 +1,18 @@
+Title: Automating Prompt Leakage Attacks on Large Language Models Using Agentic Approach
+Authors: [Check 2025.md for full author list]
+Year: 2025
+Conference: AIS (Artificial Intelligence Systems)
+Priority: HIGH - Must examine
+
+Relevance: LLM + agents (similar to MCP concept), understanding how to present LLM papers
+
+Abstract:
+This paper introduces a novel framework for evaluating the security of large language models (LLMs) against prompt leakage-the exposure of system-level prompts or proprietary configurations-which we identify as a critical threat to secure LLM deployment. Leveraging a multi-agent system implemented using AG2 (formerly AutoGen), we design agentic teams tasked with probing and exploiting the target LLM to elicit its prompt. Inspired by cryptographic principles, we define a prompt leakage-safe system as one in which an attacker cannot distinguish between two agents: one initialized with an original prompt and the other with a prompt stripped of sensitive information. In such a system, the agents' outputs are indistinguishable, ensuring sensitive information remains secure. This framework establishes a rigorous standard for evaluating and designing secure LLMs, bridging the gap between automated threat modeling and practical LLM security through adversarial testing. The implementation of prompt leakage probing is available at GitHub: https://github.com/sternakt/prompt-leakage-probing
+
+
+---
+Notes after reading abstract:
+
+
+---
+Decision: [ ] Get full paper  [ ] Abstract sufficient  [ ] Not relevant

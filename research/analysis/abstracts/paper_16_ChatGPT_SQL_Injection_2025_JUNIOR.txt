@@ -1,0 +1,18 @@
+Title: Using ChatGPT in Designing Web Applications Resistant to SQL Injection Attacks
+Authors: H. Markulin, A. Radovan, B. Mihaljevic, K. Bilic
+Year: 2025
+Conference: MIPRO Junior (Student Papers)
+Priority: HIGH - Must examine
+
+Relevance: Practical AI application by students, similar scope to potential AWS MCP junior paper
+
+Abstract:
+This paper investigates leveraging ChatGPT as a tool for testing web applications resilient to SQL injection attacks. Subsequently, the web application analysis is conducted using different versions of ChatGPT, guided by best practices for preventing SQL injection vulnerabilities. The study evaluates the implemented web application based on Spring Framework, analyzing their compliance with security principles and effectiveness in mitigating risks associated with SQL injection. The research methodology was based on asking the same questions to different models while submitting the same source code and enabling additional explanation in cases where the models refused to answer the question due to the sensitivity of the topic related to hacker attacks. By examining ChatGPT's role in integrating secure coding practices during the database design phase, the research aims to assess its utility as a collaborative and intelligent assistant in the cybersecurity domain. The findings provide insights into the strengths and limitations of AI-driven cybersecurity modeling for enhancing system security against injection-based exploits. The results achieved show that different models detect different vulnerabilities, so the conclusion is that it is necessary to use several different models that would contribute to a more complete analysis of SQL injection vulnerabilities.
+
+
+---
+Notes after reading abstract:
+
+
+---
+Decision: [ ] Get full paper  [ ] Abstract sufficient  [ ] Not relevant

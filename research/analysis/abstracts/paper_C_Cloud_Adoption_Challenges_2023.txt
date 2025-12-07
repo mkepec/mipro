@@ -1,0 +1,621 @@
+Title: Challenges of Adoption of Cloud Computing Solutions in Higher Education: Case Study Republic of Kosovo
+Authors: L. Shala Riza, J. Ajdari, M. Hamiti
+Year: 2023
+Conference: CE (Computers in Education)
+Priority: MEDIUM - Abstract sufficient
+
+Relevance: Cloud adoption in education - provides context for IaC idea (barriers/challenges)
+
+Abstract:
+Cloud Computing has begun to be widely used
+in higher education institutions in the last few years. The
+transition from on-premises systems to cloud solutions in
+education is a smart initiative with its own set of rewards
+and obstacles and affects various stakeholders willing to
+accept this change. The research tries to highlight the
+challenges that could affect the Cloud Computing (CC)
+solution in higher education institutions in the Republic of
+Kosovo (RKS) as a developing country, regarding security,
+infrastructure, and performance. Potential challenges
+affecting the implementation of CC in education will be
+assessed by different stakeholders, such as students,
+academic and IT staff of public and private universities,
+who are the target participants of this research. Also, this
+paper tries to highlight the level of user awareness of CC
+technology, the advantages of this platform, as well as the
+willingness of shareholders to apply it in educational
+institutions. Expected results foresee the identification of
+challenges and benefits that can be encountered in the case
+of CC implementation in HEIs, with the case study of the
+RKS. The findings of the research can help institutions to
+assess the challenges during the integration of a CC solution
+in their HEIs.
+
+
+---
+Notes after reading abstract:
+
+
+---
+Decision: [ ] Get full paper  [ ] Abstract sufficient  [ ] Not relevant
+
+---
+Full Paper (if decided to get):
+
+Challenges of Adoption of Cloud Computing
+Solutions in Higher Education: Case Study
+Republic of Kosovo
+L. Shala Riza, J. Ajdari and M. Hamiti
+South East European University, Faculty of Contemporary Sciences and Technologies, Tetovo, North Macedonia
+ls31402@seeu.edu.mk
+j.ajdari@seeu.edu.mk
+m.hamiti@seeu.edu.mk
+Abstract - Cloud Computing has begun to be widely used
+in higher education institutions in the last few years. The
+transition from on-premises systems to cloud solutions in
+education is a smart initiative with its own set of rewards
+and obstacles and affects various stakeholders willing to
+accept this change. The research tries to highlight the
+challenges that could affect the Cloud Computing (CC)
+solution in higher education institutions in the Republic of
+Kosovo (RKS) as a developing country, regarding security,
+infrastructure, and performance. Potential challenges
+affecting the implementation of CC in education will be
+assessed by different stakeholders, such as students,
+academic and IT staff of public and private universities,
+who are the target participants of this research. Also, this
+paper tries to highlight the level of user awareness of CC
+technology, the advantages of this platform, as well as the
+willingness of shareholders to apply it in educational
+institutions. Expected results foresee the identification of
+challenges and benefits that can be encountered in the case
+of CC implementation in HEIs, with the case study of the
+RKS. The findings of the research can help institutions to
+assess the challenges during the integration of a CC solution
+in their HEIs.
+Keywords - cloud computing; challenges; higher
+education; e-Learning; Republic of Kosovo
+I. INTRODUCTION
+The Republic of Kosovo, as a country emerging from
+the war more than 20 years ago, is in its efforts to
+consolidate the education system in general, aiming to
+adopt effective educational techniques from examples of
+developed countries in the region and beyond. With all the
+tendency to apply numerous reforms, once again the
+education system is encountering various obstacles
+starting from the lack of infrastructure to the lack of
+sufficient budget for investments in this sector. On the
+other hand, the ICT sector has also experienced rapid
+development in the Republic of Kosovo since 1999.
+Various companies offer qualitative IT services, while
+public and private educational institutions in the field of
+IT, through certified teaching curricula, offer education
+for thousands of Kosovar youths, while the demand for
+various trainings is still growing [1].
+Cloud computing plays an important role in boosting
+the quality of education by providing several benefits such
+as low-cost infrastructure, collaboration, scalability, and
+simplicity of use. [2]. In recent decades, there has been an
+increase in interest in e-learning, particularly among
+students enrolled in higher education. As stated in [3], “It
+is very important for governments to invest in high-
+quality universities and provide them the access to the
+most effective learning tools such as high standard IT
+infrastructure which can be used for educational software
+or easy data sharing within the classroom.” Actually,
+today’s students are continually connected to the internet
+through various programs such as Gmail, Google Class-
+room, Facebook, and Twitter, therefore they are a part of
+the cloud infrastructure. As a result, HEIs administrators
+are keen to embrace CC techniques, driving the trend of
+growing CC adoption in the higher education sector [4].
+There are numerous papers and publications regarding
+cloud computing, but it is a need for continuous research
+work in this field in the sense of identifying and
+evaluating the prominent factors adopting CC
+implementation in HEIs. The purpose of this research
+work is to highlight numerous barriers or challenges that
+may influence CC implementation in the public and
+private universities of the Republic of Kosovo.
+II. RELATED WORKS
+A. The Concept of Cloud Computing
+Though there is not a certain definition that has been
+accepted universally for cloud computing technology, in
+the literature we can find several interpretations and
+approaches that tend to elaborate on this concept. As
+stated in [5], “Cloud computing is the model for managing
+the effective access to the shared number of configurable
+resources like servers, network, application, and storage. It
+can minimize the management effort and the interaction of
+service providers. Cloud computing is used to minimize
+the IT infrastructure costs and maintenance”. There are
+several service delivery and deployment models of CCT.
+The above-mentioned resources can be shared over the
+internet effortlessly. CCT has three types of services,
+infrastructure as a service (IaaS), platform as a service
+(PaaS), and software as a service (SaaS). Through SaaS,
+the end users need only an interface to access needed
+information such as Gmail or Dropbox while the other
+architecture resources are hidden from the consumer.
+Through IaaS, users can deploy and execute software
+(such as Amazon Web Services or Microsoft Azure)
+MIPRO 2023/CE 669
+through the provision of computing resources. Lastly,
+PaaS provides a platform for end users to design, modify,
+and deploy applications utilizing libraries or languages
+established earlier by cloud providers.
+There are four types of cloud deployment models:
+private, public, hybrid, and community. The private model
+is often utilized only within an organization, institution, or
+firm, and it is used when a higher level of safety is sought
+and critical for the organization. The most well- known
+cloud is the public cloud, which is administered by service
+providers such as Amazon, Google Drive, and Microsoft
+One Drive. The hybrid cloud model is a mixture of two or
+more patterns that is often used to maximize the benefits
+of each model combined. The community models are
+mostly employed by organizations whose infrastructure is
+hosted by a third party or another organization that is a
+member of the community [6].
+B. Cloud Computing integration in Higher Educational
+Institutions
+Cloud computing technology is already being used at
+higher education institutions in various industrialized
+countries throughout the world, including the United
+States, Japan, and Europe. The cloud-based program
+Google Educator, as well as the Google suite for
+education - GAFE, are probably one of the most essential
+applications that Cloud computing provides. Students and
+instructors may improve cooperation and productivity by
+having access to their data anywhere, at any time, with
+these tools. On the other hand, there are also many cloud-
+based platforms developed for teachers such as Microsoft
+Office 365, iGoogle, Book Search, News, Google Note-
+book, etc. [7].
+According to the proposed model in Fig. 1, the
+university’s system, and application within the hybrid
+cloud, has been divided into two parts: Private Cloud
+which is more secure and has on-premises servers and
+includes SIS, PMS, and UMS. The second part is Public
+Cloud where are hosted the less sensitive data and
+includes LMS, Video on Demand, VCR, and Mailing
+Systems. This model takes advantage of the hybrid cloud
+to achieve speed, security, and availability and it also
+reduces the burden of IT sectors by moving apps to the
+public cloud. As seen, it’s a flexible model since it allows
+educational systems to balance internal/external loads
+based on the organizational needs or technical
+requirements [8] Despite the fact that developing nations
+have inadequate infrastructure, there is an increasing need
+to compare current e-learning approaches to conventional
+ones by utilizing cloud services. This technical method
+may host Learning Management Systems and other
+university resources, although the hybrid model, in which
+the university’s systems are spread between the private
+cloud on-premises and the public cloud, is viewed as the
+most ideal model for CC implementation [9].
+According to [10], organizational capabilities are the
+key factors for adopting ICT in developing countries. This
+survey proposed a model to assess the real likelihood of
+CC or last technology adoption which allows
+organizations to make appropriate decisions. Service
+providers can implement this facility as a web-based DSS
+(Decision Support System) tool in order to measure
+customers’ readiness, thus organizations can avoid
+unsuccessful adoption.
+C. Key challenges and benefits when adopting Cloud
+Computing Technology in Higher Educational
+Institutions experiences from other countries
+In the publication of [11], is found that factors such as
+reliability, relative advantage, security, compatibility,
+technology readiness, regulatory, top management
+support, policy, and competitive pressure have positive
+impacts on cloud computing adoption while tribalism
+culture has a negative impact. The paper of [12],
+highlights the key benefits and barriers to cloud
+computing adoption. According to this study, the main
+benefits of CCT adoption include greater operational
+efficiency, cost savings, simplicity of application
+deployment, flexibility, personnel redeployment, and
+sustainability, whereas key hurdles include security,
+availability, performance, and trust difficulties.
+Further, the study of [13], identified two important
+fac- tors that were decision-making in adopting cloud
+solutions in the Philippines, such as internet access speed
+and lack of knowledge of cloud technologies. In order to
+overcome the aforementioned barriers, the study
+recommends that universities host training courses or
+workshops for aca- demic or IT staff. Similarly as in the
+above papers, in [14], authors recommend a model for
+adopting CC from HEIs in developing countries which
+consisted of five steps: Knowledge (increased awareness
+of CC technology), Per- suasion (find the key benefits of
+the solution aimed), Decision (adopt or reject the
+technology), Implementation (is proceeded in case of
+acceptance decision on the previous step) and
+Confirmation (continue using the solution for long term
+period).
+In their research work, [14] proposed DOI theory to
+help organizations in accepting or rejecting innovations.
+They recommend a model for adopting CC from HEIs in
+developing countries which consisted of five steps:
+Knowledge (increased awareness of benefits and
+limitation of CC technology), Persuasion (find the key
+benefits of the solution aimed), Decision (this step may
+lead to adoption or rejection of the technology),
+Implementation (is proceeded in case of acceptance
+decision on the previous
+Figure 1. Cloud Computing proposed model [8]
+670 MIPRO 2023/CE
+Figure 2. Innovation–decisions process model [14]
+step) and Confirmation (continue using the solution for
+long term period).
+Another study conducted in Jordan, scrutinized the
+main factors affecting CC adoption in HEIs of this
+country. Based on the findings, the following key
+elements were identified: cost savings, disaster recovery,
+scalability, compatibility, knowledge exchange, ICT
+utilization level, and HEIs size. The study also provided
+an implementation structure with four stages of CC
+adoption: CCT awareness, persuasion phase, decision
+phase, and implementation phase [15].
+III. RESEARCH METHODOLOGY
+The purpose of this study was to identify the main
+challenges that affect the adoption of cloud technology in
+higher education institutions in the Republic of Kosovo.
+The data were collected from secondary sources from
+different publications on the internet, later the variables
+were identified based on which the questionnaire was
+designed for the purpose of collecting primary data. Three
+phases were engaged in the questionnaire adaption. (1)
+First, the questionnaire instrument was translated from
+Albanian (source language) to English (target language),
+(2) the data acquired from respondents was administered
+and structured, and (3) the data was processed and
+analyzed graphically using Excel and the SPSS software.
+[16] The Google Forms questionnaire is built on the
+principle of confidentiality and includes both multiple-
+choice questions and questions with a 5-point Likert scale.
+To select the sample, we used convenience sampling
+methods in order to target the desired subjects. The
+targeted respondents are students or graduates, IT staff,
+and academic staff of public and private universities of the
+Republic of Kosovo. The total number of respondents that
+participated in the survey is 57, of which 21 are
+students/graduates, 13 are IT staff, and 23 belong to the
+academic community who actually work in either public
+or private universities. Because this study is descriptive in
+nature, we examined the data acquired from the research
+work using the quantitative approach and the Microsoft
+Excel application program.
+A. Research questions
+Based on the data collected systematically from the
+literature review, we could identify the independent
+variables such as security, privacy, lack of proper
+infrastructure, service provider support, reliability, and
+skills of IT personnel, management, performance, the
+price for accessing resources, internet speed, lack of
+electricity and institutional support. On the other hand,
+cloud computing adoption in HEIs in the RKS is
+considered a dependent variable. Thus, the research
+questions are:
+R1: What are the most significant challenges that
+would affect cloud computing adoption in HEIs of
+RKS?
+R2: What are considered to be the key benefits when
+adopting Cloud technology in higher education
+institutions in RKS?
+B. Data analysis
+1) Questionnaire data analysis: For data collection,
+we used a Google Forms questionnaire distributed online.
+The questionnaire targeted academic staff, IT staff as well
+as students or graduates from public and private
+universities of the Republic of Kosovo. This online
+questionnaire contains nine closed questions. In total, 57
+respondents answered where the gender distribution of the
+respondents is almost equal between the two genders
+(51% female and 49% male). From Fig. 3, we can see that
+from the total number of participants, 23 are academic
+staff, 21 students or graduates and 13 are IT staff. From
+both public and private universities of RKS. From this
+total number, 40.4% have studied or are currently part of a
+private university, while 59.6% of respondents have
+chosen a public university as their institution. In
+embracing new technology, we assumed that the level of
+knowledge we have about that technology and awareness
+about the benefits it offers also play a significant role.
+Figure 3. Respondents profiles
+When asked about their knowledge of the Cloud
+Computing solution, 28% of the sample responded they
+are very well informed, while 17.5% confirmed they know
+only a little aware about this platform. The results of this
+question are visually illustrated in Fig. 4. As is shown in
+the graph presented in Fig. 5, in the question on the
+benefits of CC solution when used in HEIs, 43
+respondents of which 22 were from public universities and
+21 from private ones responded that they are aware of the
+benefits. Further, 9 of the participants answered with
+“Somehow”, 4 answered they are not aware of CC
+benefits and only one respondent chose the “I have no
+answer” option.
+MIPRO 2023/CE 671
+Further, when asked if the lack of knowledge about
+Cloud Computing has an impact on the adoption of this
+solution in higher education institutions, most of the
+respondents agreed upon this fact, of which 17 were
+academic staff, 12 were IT staff and 18 were students or
+graduates (refer to Fig. 6).
+Figure 4. Respondents awareness over Cloud Computing
+A smaller number of participants stated that the lack of
+knowledge or awareness would impact “Somehow” or has
+no impact on the adoption of this technology. The
+question results are shown in Fig. 6.
+Figure 5. Respondents awareness of the benefits of using CC in HEIs
+In terms of ethical standards, the respondents were
+informed about the goal and rationality of the
+questionnaire, as well as the destination of the gathered
+findings, throughout the study process, respectively during
+data collection via the online form. Respondent data is
+kept anonymous, and the obtained information is utilized
+Figure 6. Respondents’ thoughts over the of lack of knowledge
+impact of CC on the adoption of this technology in HEIs for academic reasons.
+2) One-Sample Test: One-Sample T-test is used to
+test the relationship between independent variables
+(security, privacy, reliability, SP support, lack of proper
+infrastructure for integration, IT skills and knowledge,
+management, performance, price for accessing resources,
+internet speed, lack of electricity, institutional support) on
+the dependent variable (Cloud Computing adoption in
+HEIs).
+From the output results in the Sig. (2-tailed) column in
+Figure 6, we can see that p-value is < .05. Also, the
+findings indicate that these variables are all accepted as
+the mean value is (>0.3) and the standard deviation is (>
+0.7). This indicates that the above-mentioned independent
+TABLE I. ONE-SAMPLE TEST ON KEY FACTORS AFFECTING
+CLOUD COMPUTING ADOPTION IN HEIS
+Test Value = 0
+t df Sig.(2-
+tailed)
+Mean
+Diff.
+95% Conf. Interval of
+the Diff.
+Lower Upper
+Security Privacy Reliability SP support Lack of infrast. IT skills Management Performance Price for
+resource
+Internet speed Institutional
+support
+Lack of
+electricity
+26.63 56 .000 4.00 25.42 56 .000 3.82 27.91 56 .000 3.98 24.84 22.94 30.36 27.02 21.82 29.77 23.43 32.26 24.03 56 .000 3.71 56 .000 3.68 56 .000 4.05 56 .000 3.73 56 .000 3.54 56 .000 3.87 56 .000 3.78 56 .000 4.03 56 .000 3.84 3.69 3.52 3.69 3.41 3.36 3.78 3.46 3.21 3.61 3.46 3.78 3.52 4.30
+4.12
+4.26
+4.01
+4.00
+4.32
+4.01
+3.86
+4.13
+4.11
+4.28
+4.16
+variables have a significant impact on CC adoption in
+HEIs in the Republic of Kosova. At the same time, we
+answered the first research question: R1: What are the
+most significant challenges that would affect CC
+adoption in HEIs of RKS?
+Consequently, we can conclude that all above
+mentioned independent variables such as security,
+privacy, reliability, Service Provider support, lack of
+proper infrastructure for integration, IT skills and
+knowledge, management, performance, the price for
+accessing resources, internet speed, institutional support
+and lack of electricity are key factors or challenges
+affecting Cloud Computing adoption in public and private
+universities in the Republic of Kosovo.
+3) Cronbach’s Alpha and KMO and Bartlett’s Test:
+Since the questions are Likert-scale type, it is worth
+measuring the reliability and consistency of the answers,
+this way we make sure the set of the questions raised
+measure the same objective. We checked reliability
+statistics against twelve independent variables and in our
+case Cronbach’s Alpha value is .891.
+Usually, this value should be between 0 and 1 so the
+higher the value of Cronbach’s Alpha, the more
+confidence we have that the questions are internally
+MIPRO 2023/CE
+consistent and correlate to each other. The value we
+gained (.891) is close to one so we can conclude that the
+reliability level is high.
+TABLE II. CRONBACH’S ALPHA TABLE
+Cronbach’s Alpha N of Items
+.891 12
+In order to measure the sampling adequacy and to
+examine how the factors explain each other, a KMO test is
+conducted. The table below presents two different tests:
+the Kaiser-Meyer-Olkin (KMO) Measure of Sampling
+Adequacy and Bartlett’s test of Sphericity which are used
+to measure whether the variables are correlated and also
+the sampling adequacy.
+The accepted value for the KMO index is between 0.5
+and 1. In our case, the KMO index is .772 which indicates
+that factor analysis is appropriate. A KMO value more
+than 0.5 and a significance level for the Bartlett's test less
+than 0.05, as in our case, indicate that there is significant
+correlation in the data. The degree to which a single
+variable is associated with other variables is shown by
+variable collinearity.
+TABLE III. KMO AND BARTLETT’S TEST
+KMO Measure of Sampling
+Adequacy
+Bartlett’s Test of Sphericity way, we have also answered the second research
+question: R2: What do you consider to be the key
+benefits when adopting Cloud technology in higher
+education institutions in RKS?
+Some of the key benefits are the availability of
+resources, better data management, modernization of the
+way of studying, the widest range of online resources,
+better cooperation, and the use of green technology.
+.772
+Approx. Chi-Square 410.171
+df 66
+Sig. .000
+4) Rotated Component Matrix: To find the correlations
+between items and components or factors, the rotated
+com- ponent matrix was used. This matrix helps to
+determine what each of the components means. Small
+coefficients below .5 were suppressed in order to offer a
+clearer view of the group factors. The first component has
+a strong correlation with the lack of proper infrastructure,
+IT skills and knowledge, internet speed, lack of electricity
+and institutional support. The second component has a
+correlation with security, privacy, and reliability, while the
+third component has a correlation with IT skills and
+knowledge, management, performance, the price for
+accessing resources, and internet speed.
+5) Key benefits of adopting Cloud Computing in HEIs:
+In the continuation of data collection, the respondents
+stated there are several benefits of adopting Cloud
+Computing technology in higher education in the RKS. In
+this
+TABLE IV. CORRELATIONS BETWEEN ITEMS AND COMPONENTS
+Component
+1 2 3
+Security
+.866
+Privacy
+.876
+Reliability
+.847
+SP support
+.729
+Lack of proper infrastructure
+.550
+IT skills and knowledge
+.581
+Management
+.556
+Performance
+.786
+Price for accessing resources
+.862
+Internet speed
+.523
+.526
+Lack of electricity
+.855
+Institutional support
+.813
+Figure 7. Key benefits of adopting CC in HEIs
+Lastly, considering the advantages, benefits, and
+challenges of the implementation of this technology, 93%
+of the respondents answered that they are in favor of the
+integration of Cloud Computing technology in higher
+education in the Republic of Kosovo, while 7% stated that
+they have no answer.
+C. Conclusions
+With all of the investments in the country’s technology
+industry, it should be emphasized that there is still room to
+be enlightened about Cloud Computing solution, including
+the benefits it delivers as well as the possible obstacles we
+may face throughout the implementation process. The
+goal of this study paper was to identify the important
+elements or significant challenges that impact Cloud
+Computing adoption in higher education institutions in the
+Republic of Kosovo. From the data analysis, it was
+concluded that all twelve independent variables such as
+security, privacy, reliability, Service Provider support,
+lack of proper infrastructure for integration, IT skills and
+knowledge, management, performance, the price for
+accessing resources, internet speed, institutional support,
+and lack of electricity are the key factors or challenges
+affecting CC adoption in public and private universities in
+the Republic of Kosovo. This research work aspires to
+guide and serve as a reference point for educational
+institutions and other actors in the process of analyzing
+and examining the circumstances for the adoption of
+Cloud technology in educational institutions in the
+Republic of Kosovo as a study case. HEIs in the country
+as well as the different stakeholders involved in this sector
+should consider the above-mentioned aspects in order to
+implement cloud technology in these institutions. In the
+future, more research work can be done in the context of
+increasing the targeted sample and expanding the field of
+study.
+MIPRO 2023/CE 673
+REFERENCES
+[1] L. Aliu, “Analizë e sistemit arsimor në Kosovë,” 2019.
+[2] K. H. A. Al-Shqeerat, F. M. A. Al-Shrouf, M. R. Hassan,
+and H. Fajraoui, “Cloud computing security challenges in higher
+educational institutions - a survey,” International Journal of
+Computer Applications, vol. 161, no. 6, pp. 22–29, Mar 2017.
+[Online]. Available:
+http://www.ijcaonline.org/archives/volume161/ number6/27154-
+2017913217
+[3] C. Bulla, B. Hunshal, and S. Mehta, “Adoption of cloud
+computing in education system: A survey,” international journal
+of engineer- ing science and computing, vol. 6, p. 6375, 07
+2016.
+[4] A. Elgelany and W. G. Alghabban, “Cloud computing: Empirical
+studies in higher education a literature review,” International
+Journal of Advanced Computer Science and Applications, vol. 8,
+no. 10, 2017. [Online]. Available: http://dx.doi.org/10.14569/
+IJACSA.2017.081017
+[5] R. Parveen, “Challenges in cloud computing adoption- an
+empirical study of educational sectors of saudi arabia,”
+International Journal of Managing Information Technology, vol.
+11, pp. 1–11, 2018.
+[6] Y. A. M. Qasem, S. Asadi, R. Abdullah, Y. Yah, R. Atan, M. A.
+Al-Sharafi, and A. A. Yassin, “A multi-analytical approach to
+predict the determinants of cloud computing adoption in higher
+education institutions,” Applied Sciences, vol. 10, no. 14, 2020.
+[Online]. Available: https://www.mdpi.com/2076-
+3417/10/14/4905
+[7] A. Shahzad, A. G. Golamdin, and N. A. Ismail, “Opportunity
+and challenges using the cloud computing in the case of
+malaysian higher education institutions,” The International
+Journal of Management Science and Information Technology
+(IJMSIT), no. 20, pp. 1–18, 2016. [Online]. Available:
+http://hdl.handle.net/ 10419/178822
+[8] M. Ibrahim and M. Elmasry, “Cloud computing for e-learning:
+A proposed model for higher education institutions in developing
+countries,” International Journal of Scientific Technology
+Research, vol. 10, pp. 408–416, 03 2021.
+[9] R. Manoharan, “A systematic review of cloud security
+challenges in higher education,” The Online Journal of Distance
+Education and e-Learning, vol. 5, pp. 1–10, 10 2017.
+[10] M. Workineh, N. M. Garcia, and D. Midekso, “Cloud computing
+as technological solutions for higher education institutions:
+Adoption readiness assessment model: Reseach in-progress,” in
+2017 Inter- national Conference on Computing Networking and
+Informatics (ICCNI), 2017, pp. 1–
+[11] A. Hussein Alghushami, N. H. Zakaria, and Z. Mat Aji,
+“Factors influencing cloud computing adoption in higher
+education institutions of least developed countries: Evidence
+from republic of yemen,” Applied Sciences, vol. 10, no. 22, 2020.
+[Online].
+Available: https://www.mdpi.com/2076-3417/10/22/8098
+[12] V. Arkorful, “Cloud computing adoption in higher education: A
+comparative study between public and private universities in sub
+saharan africa,” Library Philosophy and Practice (e-journal),
+2019.
+[13] C. Alimboyong and M. Bucjan, “Cloud computing adoption
+among state universities and colleges in the philippines: Issues and
+chal- lenges,” International Journal of Evaluation and Research
+in Edu- cation (IJERE), vol. 10, p. 1455, 12 2021.
+[14] M. Odeh, A. Garcia-Perez, and K. Warwick, “Cloud computing
+adoption at higher education institutions in developing
+countries: A qualitative investigation of main enablers and
+barriers,” Interna- tional Journal of Information and Education
+Technology, vol. 7, pp. 921–927, 01 2017.
+[15] M. Odeh, “A novel framework for the adoption of cloud
+computing in the higher education sector in developing
+countries,” 12 2020.
+[16] E. Bahçivan and S. Kapucu, "Adaptation of conceptions of
+learning science questionnaire into Turkish and science
+teacher candidates’ conceptions of learning science,"
+European Journal of Science and Mathematics Education,
+vol. II, pp. 106-118, 2014.
+
+

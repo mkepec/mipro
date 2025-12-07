@@ -1,0 +1,662 @@
+Title: Virtual Electric Machines Laboratory, Requirements and Practical Realization
+Authors: P.J. van Duijsen, D.C. Zuidervliet
+Year: 2023
+Conference: CE or EE (Computers in Education / Engineering Education)
+Priority: HIGH - Need FULL PAPER
+
+Relevance: Virtual lab implementation - directly relevant to IaC Progressive Learning idea
+
+Abstract:
+A fully equipped electrical machine laboratory can
+become a costly factor. However the look and feel of electrical
+machines behavior in operation, is indispensable and very in-
+formative for students. Not only do they learn how to connect
+and operate the machines, but also the limitations of each type
+of machine, becomes visible. Not only equipment is costly, also
+laboratory room space, service and safety can become an issue.
+To reduce those laboratory costs, often simulation is used as
+an alternative. However, the look and feel of the real machines,
+is in many cases lost. In this paper a virtual electric machines
+laboratory is proposed, where students can be trained, using
+digital twins of the electric machines from the laboratory. The
+look and feel of the digital twins, the way the machines are
+connected electrically and mechanically, should represent their
+physical counterparts in such detail, as required in a real physical
+training set-up. Nameplate parameters ease the selection of
+machines size and power level. Adding measurement devices,
+such as voltage and current meters, as well as measuring torque
+and rotational speed, should resemble the real measurement set-
+up as close as possible.
+The size and power level of the electrical machine, is given
+by its nameplate. In the virtual electrical machine model, those
+parameters are entered, instead of the electrical parameters
+mostly encountered in simulation programs.
+
+
+---
+Notes after reading abstract:
+
+
+---
+Full Paper:
+
+Virtual Electric Machines Laboratory, Requirements
+and Practical Realization
+P.J. van Duijsen∗, D.C. Zuidervliet†
+THUAS, Delft, The Netherlands, www.dc-lab.org
+∗p.j.vanduijsen@hhs.nl †d.c.zuidervliet@hhs.nl
+Abstract—A fully equipped electrical machine laboratory can
+become a costly factor. However the look and feel of electrical
+machines behavior in operation, is indispensable and very in-
+formative for students. Not only do they learn how to connect
+and operate the machines, but also the limitations of each type
+of machine, becomes visible. Not only equipment is costly, also
+laboratory room space, service and safety can become an issue.
+To reduce those laboratory costs, often simulation is used as
+an alternative. However, the look and feel of the real machines,
+is in many cases lost. In this paper a virtual electric machines
+laboratory is proposed, where students can be trained, using
+digital twins of the electric machines from the laboratory. The
+look and feel of the digital twins, the way the machines are
+connected electrically and mechanically, should represent their
+physical counterparts in such detail, as required in a real physical
+training set-up. Nameplate parameters ease the selection of
+machines size and power level. Adding measurement devices,
+such as voltage and current meters, as well as measuring torque
+and rotational speed, should resemble the real measurement set-
+up as close as possible.
+The size and power level of the electrical machine, is given
+by its nameplate. In the virtual electrical machine model, those
+parameters are entered, instead of the electrical parameters
+mostly encountered in simulation programs.
+Index Terms—Virtual workbench, electric machines, simula-
+tion, animation, education, laboratory
+I. INTRODUCTION
+VIrtual electrical machines laboratories, will not be the
+replacement of a real physical laboratory. However, when
+teaching large numbers of students, with limited availability
+of costly laboratory equipment, it requires an alternative. A
+virtual laboratory would be the first thing that comes into mind
+when thinking about costs reduction. However, using such a
+virtual laboratory, places constraints on the way the virtual
+laboratory looks like. The main requirement for a practical
+realization of such a virtual laboratory, is simply that it should
+look and behave similar.
+An overview and role of a laboratory for teaching electrical
+machines is an ongoing topic in the society meetings of
+the IEEE [1]. Especially in graduate courses, the use of
+simulation to replace the physical laboratory is a topic, that is
+discussed over the years. The first approaches only discuss
+the replacement of the laboratory by simulation [2]. The
+simulations are still only numerical, in the beginning of the
+application of computers in education [3]. The limitations
+of computer graphics, hampered the introduction of useful
+simulation environments. Also the complicated mix of block-
+diagram models, not representing physical component, makes
+simulation unattractive for undergraduate courses. Only grad-
+uate courses can profit from simulations, as these students
+understand the mathematics behind he electrical machines, and
+thus can apply the numerical models simulating the electrical
+machines, as for example presented in [4]. Also using equiva-
+lent electric circuit models, to model the electrical machines,
+is only dedicated towards graduate students, understanding the
+differential equations describing both the electrical machines
+and electric circuit components [5]. Remote labs [6], tried to
+fill the gap, and replace the laboratory with access to a remote
+laboratory. However also this remote laboratory could only be
+used by a limited number of students. The use of simulation
+programs alone, mainly remained a dedicated set of complex
+simulation models, requiring understanding of the models and
+parameters [7]. All of these simulation approaches are not fully
+applicable in vocational training. Vocational training requires
+models based rated values or nameplate parameters. Internally
+these models contain the complex equations, modeling all
+the phenomena, existing in a physical laboratory set-up. For
+undergraduate graduate students, the level of complexity can
+be increased and brushless motors and their controls are
+usually employed in laboratory experiments [8]. The topic of
+field oriented control is usually seen in graduate laboratory
+experiments, mostly in the form of simulation experiments [9],
+[10].
+The main reason for implementing a virtual laboratory
+is given in section II. In section III the requirements on
+a virtual laboratory are outlined. The structure of a virtual
+laboratory is described in section IV. The objectives are the
+same as for a physical laboratory and outlined in section V.
+Examples of an induction machine and universal motor are
+presented in section VI. The next step in going more into
+detail, requires simulation and animation, and two typical
+examples, are discussed in section VII
+II. VIRTUAL LABORATORY
+The main reason for introducing a virtual laboratory for ed-
+ucation, are not the costs related to a real physical laboratory,
+but the main reason is that in a virtual laboratory, you can set-
+up experiments very quickly, and without any risk whatsoever.
+You can do any experiment, without damaging the laboratory
+equipment, and no matter how extraordinary, you can build
+MIPRO 2023/EE 1845
+Tacho
+N= 907.091 rpm
+N= 907.091 rpm
+SCOPE1
+V= 24 volt
+V= 24 volt
+-3 3
+PMDC
++ -
+1.960
+Ampere DC
+Vdc
+Fig. 1. Permanent Magnet DC motor driving a fan. Current is measured using an analog current meter, while a tachometer measures the speed of the rotor.
+the most unrealistic experiments and learn from the mistakes.
+This is the main reason, since learning from mistakes is mostly
+what is remembered best. The background level of the students
+is the same as they need for a physical laboratory experiment.
+A. Motivation
+Students should get a low entry-level access, into laboratory
+experiments. The look and feel is important, but also the
+experience of doing things wrong, adds to the knowledge of
+the students. Especially the freedom to create experiments, that
+in real life would cause damage, contributes to the knowledge
+and experience level of the student. As long as the laboratory
+components have the same look and feel, as the real laboratory
+components, it contributes to the practical training of students.
+B. Challenges/Risks
+A virtual laboratory is undoubtedly cheaper than a physical
+laboratory. Students can have access to the virtual laboratory at
+any time and place they like and are not bounded to availability
+of the laboratory space. This also creates the possibility to use
+the virtual laboratory as demonstration during oral lectures.
+The virtual laboratory experiments should be carried out
+in the same way, as a face-to-face traditional laboratory
+is organized. The tutor also has the same role during the
+experiments.
+However, the risk is that students do not get access to a real
+laboratory environment, once the virtual lab is implemented.
+Management could cancel the physical laboratory for costs
+saving reasons.
+C. Results
+Due to the faster set-up of a laboratory experiment, without
+any risk of doing something wrong or destroying something,
+students can get results quicker. Instead of doing a single
+experiment, what-if scenarios are possible, not only by the
+students, but also by the teachers, when preparing lectures or
+experiments.
+D. Outcomes
+Application of the virtual laboratory in Delft [11], showed
+that students got a deeper understanding of the operation of
+electric machines, because they had the possibility to virtually
+experiment with the electric machines of any size and power
+level. The examples from section VI are implemented and
+tested, in a second year undergraduate course on electric
+machines in Delft [11]. The drive simulation from section VII,
+are to be used in a third year undergraduate or second year
+graduate course. The examples from section VI can also be
+implemented in second and third year vocational training.
+However, here it is advised to have pre-programmed examples,
+where students only have to change parameters like power
+level of an electric machine, or power supply output voltage.
+III. REQUIREMENTS
+To prepare students, to do practical laboratory tests, requires
+them to train using simulation tools. However simulation
+tools do provide nice models for electrical machines, but also
+require parameters. This is manageable by undergraduate and
+graduate students, but impossible for students of vocational
+training and first semester undergraduate students. For them,
+the nameplate parameters are the first encounter, in identifying
+electrical machines.
+A virtual laboratory [10], should mimic the real labora-
+tory [11]. Each component in the virtual laboratory should
+reassemble a physical component from the real laboratory. Not
+only should the look and feel be the same, also connecting
+the components should be the same as if the students would
+connect the physical machines, see figure 1.
+Models should also have the limitation of the real set-up,
+for example, measuring the angular speed using a tachometer,
+gives an indication of the angular speed in the range of 0 to 5
+volts. The students will understand that there is a conversion
+factor, when going from RPM to an analog voltage, that can
+be measured in an electric circuit.
+Figure 2 shows a typical laboratory set-up. An inverter is
+driving a three-phase brushless motor, and a tachometer is
+measuring the speed. Students can change the DC voltage of
+1846 MIPRO 2023/EE
+the inverter, and this changes the amount of current supplied
+to the brushless motor. As this is a typical experiment for
+vocational training, the DC voltage to drive speed relation can
+be measured using DC voltage meters.
+Fig. 3. Name plate parameters of the Permanent Magnet DC motor, including
+the number of rotor and stator poles for the animation of the motor.
+Fig. 2. Physical laboratory set-up, of three phase inverter U4L [11] with
+brushless DC motor and DC motor acting as tachometer.
+To convert the laboratory experiment from figure 2 into a
+virtual laboratory experiment, the virtual experiment has to ful-
+fill some constraints. The virtual laboratory model should have
+realistic parameters. The brushless motor from figure 2 has
+typical manufacturer data like nominal voltage, nominal speed
+and power level. This has to be supplied by the student in the
+virtual experiment, see figure 3. Also the student should carry
+out the measurement in the same way as in the real experiment.
+In simulation, graphic display of waveforms and numerical
+results are easy to obtain, but in this virtual experiment, the
+student has only access to a multimeter and eventually an
+oscilloscope for recording the waveforms. Finally the virtual
+workbench should show an animation of what would happen
+in the real experiment. For electrical machines, this can be
+done by showing the rotation of the rotor and, additionally,
+the rotation of electromagnetic fields in stator and/or rotor.
+To mimic the laboratory experiment as realistic as possible,
+a virtual laboratory assignment should include:
+• Connecting the components via wires with banana-plugs.
+• Set parameters and/or choose the size/power rating of a
+component.
+• Connect measuring devices like analog voltage or current
+meters, or digital multimeters.
+• Start the experiment, instead of turning on the power
+supply, the simulation/animation has to be started.
+• Observation of the results from the measuring devices.
+• Change parameters(power/size rating) and observe their
+influence on the results.
+• Validate the observation of the results.
+IV. STRUCTURE
+The structure of a virtual laboratory should be able to
+Conceive, Design, Implement and Operate the experiments in
+an engineering environment, being creative and value added
+according to the CDIO-Initiative [12]. Each phase of the
+experiment can be structured according to this initiative.
+• Conceive: Theory
+A short introduction on the theory behind the experiment
+from the textbook. Here the basics of the functioning
+should be outlined, without going into detail on the
+operation.
+• Design: Simulation
+Simulation or animation, with simple model to explore
+working principle using simulation or online tooling [10].
+This will reveal the operation as explained in the theory.
+• Implement: Set-up
+Virtual laboratory set-up, with virtual components and
+animation. Select and place components and interconnect
+them.
+• Operate: Validation
+Run the experiment. Validation of the virtual laboratory
+results, with the theoretical and/or simulation results.
+Comparison with expectations, and explanation of the
+observed laboratory results.
+V. OBJECTIVES
+In the virtual electric machines laboratory assignment, the
+objectives are the same, as for a physical laboratory. They can
+be extended with giving insight in phenomena’s, that are only
+visible through animation.
+A. Electromechanical
+An easy start for undergraduate students is the permanent
+magnet DC motor, see figure 1. The only important parameter
+is the motor constant.
+2π
+U= k· ω= k·
+N (1)
+60
+T= k· I (2)
+where k is the motor constant describing the most important
+relation between electrical and mechanical quantities. How-
+ever, for undergraduate students, this motor constant can be
+hidden as a parameter, if the student only has to enter machine
+nameplate parameters like, nominal voltage, nominal speed
+MIPRO 2023/EE 1847
+Digital Multimeter
+Vdc= 1.479 volt
+Vdc= 1.479 volt
+Vdc
+Rotation
+P= 446.624 Watt
+P= 446.624 Watt
+Vrms= 326.229 volt
+Vrms= 326.229 volt
+L1
+L2
+L3
+N
+Urms= 230.679[V]
+Irms= 943.677m[A]
+P = 620.983[W]
+pf = 950.883m
+IM
+Io =0[A]
+SCOPE1
+Pac 3phase
+Vac3@
+@
+T
+N
+P
+Fig. 4. Simulation of the torque-speed characteristic of an induction machine driving a fan.
+and nominal power, see figure 3. From this data, the machine
+constant k is calculated using (1), and used internally in
+the model. Vocational training students, can simply choose
+the motor based on voltage and power level. Undergraduate
+students can calculate the motor constant k and verify (1).
+B. Winding resistance
+The winding resistance is the first parameter that defines
+the losses of the electrical machine. It can be measured at an
+early stage, using a simple multimeter. The influence of the
+damping effect of the winding resistance on regulation and
+stability, is not yet to be measured in this stage of a virtual
+laboratory, however it can be noticed in the dynamic behavior.
+C. Winding inductance
+If the machine is kept at standstill using the dynamometer,
+the impedance of the winding can be measured. Impedance
+can be measured using an AC signal generator and AC current
+meter. Since the winding resistance is already known, the
+winding inductance can be estimated. Knowing the impedance,
+one can set the correct parameters in a proportional-integration
+[PI] controlled, current regulated AC drive. Graduate students
+can measure the winding resistance and inductance, and use
+this for calculating the PI parameters of the Field Oriented
+Control [FOC] [9].
+D. Magnetic field of the stator and rotor
+Understanding what is happening inside the machine, can be
+visualized using the animation in the virtual laboratory. A re-
+volving field inside the motor alongside the revolving currents
+in the windings, is shown as animation. Students can see the
+asynchronous fields in induction machines, and synchronous
+commutation of phase currents in brushless machines. Espe-
+cially vocational training student and undergraduate students,
+have a need for visualization of magnetic fields, as their
+curriculum does not incorporate 2D/3D electromagnetic field
+analysis.
+E. How is Torque created?
+The concept of torque creation by the outer product between
+current and field T = Ψ× I, is easily visualized in animation.
+It is also numerically visible in the measuring device. The
+linear relation between current and torque in DC motors, can
+be measured by the vocational training and undergraduate
+students, by simply adjusting the power supply. Graduate
+students are challenged to express and verify this relation,
+using the outer product of current and field.
+F. How does terminal voltage arise?
+Adjusting the angular speed of the motor using the dy-
+namometer, or changing the field producing current in a DC
+shunt motor, shows the variation of the terminal voltage of
+the motor. This is a typical experiment for vocational training,
+as it is intuitive to see the proof of the mathematical relation
+from (1).
+VI. EXAMPLES
+A. Induction Machine
+An induction machine laboratory set-up, can be used for
+many different experiments, see figure 4. Typically for in-
+duction motors, compared to DC and brushless motors, is
+the fact, that most of the induction motors are designed and
+thus only operate at the operating voltage they are designed
+for. This means that most of the smaller induction machines,
+with affordable power rating for a laboratory are rated for
+400volt/1kW. In vocational and undergraduate laboratory
+classes, this can be a problem because of safety. There are
+some exceptions [13] working on 23/40volt, but especially in
+vocational training, measuring rated voltage and current levels,
+gives more insight for the student on what to expect. The
+23/40volt motors are especially suited for control experiments
+using a low voltage inverter, since students can touch all wires
+during operation. In the virtual laboratory, the machine ratings
+1848 MIPRO 2023/EE
+are like in a real drive. This means, that students can perform
+measurements on 100kW motor, without any safety issues.
+The winding resistance of the induction machine is simply
+measured using a digital multimeter, see figure 5. From this
+the winding losses can be estimated, if the induction machine
+is in operation.
+Digital Multimeter
+R= 7.615 Ohm
+R= 7.615 Ohm
+Digital Multimeter
+Iac= 4.845 A
+Iac= 4.845 A
+Iac[RMS]
+Rotation
+Dynamo Meter
+P=-2.081 Watt
+T=-4 Nm
+P=-2.081 Watt T=-4 Nm
+Ohm
+Vrms= 325.231 volt
+Vrms= 325.231 volt
+L1
+L2
+L3
+N
+IM
+Rotation
+P= 20.202n Watt
+P= 20.202n Watt
+Vac3@
+@
+T
+IM
+N
+P
+@
+T
+N
+P
+Fig. 6. Application of a dynamometer to measure the slip of the induction
+machine for varying load.
+Fig. 5. Measuring the winding resistance using a multimeter.
+The simulation of start-up in a virtual laboratory, allows the
+recording and visualization of the torque-speed characteristic
+of the induction machine, see figure 4. Interesting for students
+is many times the observation, that is looks slightly more
+complicated during start-up, than the ideal characteristic as
+seen in most textbooks, see Scope1 in figure 4.
+A typical assignment in an induction machine laboratory
+is to measure the torque slip curve, see figure 6. Using a
+dynamometer, the mechanical load of the rotor can be adjusted,
+by specifying the load torque. The speed of the rotor can be
+measured and tabulated, see table I.
+A1 A2
++ -
+Vrms= 229.698 volt
+Vrms= 229.698 volt
+Vac
+SCOPE1
+L1
+L2
+L3
+N
+Universal
+P= 92.194 Watt
+P= 92.194 Watt
+TNP
+Rotation
+@
+SCOPE2
+Torque[Nm] Speed[rpm] slip[%]
+-5 . .
+. . .
+. . .
+5 . .
+SCOPE3
+N= 552.713 N= 552.713 rpm
+rpm
+Tacho
+TABLE I
+TORQUE-SPEED CHARACTERISTIC TO BE COMPLETED BY THE STUDENT
+B. Universal motor
+Running an universal motor from the mains AC power grid,
+reveals a vibrating noise. In a virtual laboratory, using oscillo-
+scopes, the origin of this audible noise can be visualized, see
+figure 7. Although the students select an universal motor and
+only specify nominal operating values, the underlying model
+is more complex. It includes the saturation of the stator and
+rotor iron in the internal model, however, this is not directly
+visible to the students as a separate parameter. The internal
+parameters are calculated from the rated values of the machine,
+simplifying the set-up for the students.
+First of all, power delivered from a single AC source is
+pulsating at double supply frequency. Secondly the saturation
+of the stator and rotor iron in the universal machine, gives
+Fig. 7. Universal motor driving a fan, showing the typical torque harmonics.
+rise to higher harmonics in the waveform for the current, see
+Scope 1 in figure 7. Observing this current waveform, makes
+explaining the torque pulsations easier, see Scope2 in figure 7.
+Finally the resulting rotor speed can be seen, see Scope3 in
+figure 7, explaining the audible noise.
+VII. DRIVE SIMULATIONS
+Once the students understand the working of machines, the
+next step in an undergraduate course, is to add the controller
+and use the machine in a drive system. From the laboratory
+models, students can measure voltages, speed, current as
+constant values. But in a drive, the dynamic behavior becomes
+MIPRO 2023/EE 1849
+important. The simulation becomes more detailed and also the
+control parameters have to be added. Because of the many
+wiring details and different required simulation results, the
+simplified machine and drive models are better suited. Instead
+of measuring constant values, start up behavior or transient
+response becomes more important. The simulation in figure 8,
+shows the start up of a variable speed drive with quadratic load
+characteristic. Scope2 clearly shows the difference between
+the motor and load torque, and from this the acceleration of
+the motor can be explained. When both torque characteristics
+meet, the drive is at stationary speed. Changing parameters like
+load mass or inertia, driving voltage, machine size or machine
+inertia, can be studied using this simulation.
+NOTE1
+SCOPE4
+K=10 Tau=100ms
+C_INERTIA1
+DC
+@ T
+SCOPE1
+V1 PI
++
+600
+-
+PI1
+AC T=k@2
+1m
+SCOPE3
+@
+Red:Torque-speed Electric machine Green: Torque-speed Load
+M/G
+PI
+@
+PROFILEPOSITION
+INT
+TIME INT
+TIME11
+@
+@
+time
+s
+10
+vmax
+12
+amax
+24
+0
+5
+jmax
+Tdelay
+Thold
+20
+Tperiod
+Fig. 9. Variable speed drive, where the angular speed of the machine is set by
+a defined speed profile. The PI controller finally regulates the speed according
+to the speed profile.
+SCOPE2
+SCOPE2
+DC
+@ T
+SCOPE1
+V1 AC
+T=k@2
++
+600
+-
+M/G
+@ N T P[kW]
+Power[Watt]
+= 39.999k W
+= 39.999k W
+128
+Torque
+Fig. 8. Variable speed drive with quadratic load. Both motor torque and load
+torque are displayed in a single scope2 as function of the rotor speed, to show
+the remaining torque difference responsible for the acceleration of the drive.
+The application of a speed or position profile in combination
+with a variable speed drive, only makes sense when there is
+adequate control. The variable speed drive blocks includes
+a PI controller. Setting up such a simulation experiment
+becomes easier when everything is integrated into a single
+block and students are not distracted by the many details of the
+control structure. They only have to set parameters of the PI
+controller, like they would do in an industrial environment. The
+simulation in figure 9 shows a given torque, speed and position
+profile. The speed is the integral of the acceleration, while
+the position is the integral of the angular speed. Therefore,
+defining the acceleration profile in the form of a given torque
+profile, feeding this in the variable speed drive, reveals the
+final speed of the variable speed drive.
+CONCLUSIONS
+For vocational training and undergraduate students, a virtual
+laboratory can be applied, when the components have the same
+look and feel as the real components. The students should be
+able to set-up the virtual laboratory experiment, using banana
+plugs and multimeters, like the student would do in a physical
+laboratory experiment. The models require only nameplate
+and rated parameters, but internally, the models are complex
+and the required parameters are automatically calculated from
+the nameplate and rated values. Non-linearity, saturation and
+harmonics, is included in those models. Since animation can
+be applied, also the rotation of magnetic fields or the com-
+mutation of currents in the machine can be visualized, being
+an extra educative quantity compared to a physical laboratory.
+For last year undergraduate and graduate students, the more
+detailed drive simulations can be applied.
+REFERENCES
+[1] G. G. Karady, "Roll of laboratory education in electrical power engineer-
+ing education," 2008 IEEE Power and Energy Society General Meeting
+- Conversion and Delivery of Electrical Energy in the 21st Century,
+Pittsburgh, PA, USA, 2008, pp. 1-3, doi: 10.1109/PES.2008.4596141.
+[2] R. Belmans and W. Geysen, "Impact of the computer developments
+on the education of engineering graduates in electrical machines
+and drives," Proceedings. Electrotechnical Conference Integrating Re-
+search, Industry and Education in Energy and Communication En-
+gineering’„ Lisbon, Portugal, 1989, pp. 728-732, doi: 10.1109/MEL-
+CON.1989.50146.
+[3] H. A. Smolleck, "Modeling and analysis of the induction machine: a
+computational/experimental approach," in IEEE Transactions on Power
+Systems, vol. 5, no. 2, pp. 482-485, May 1990, doi: 10.1109/59.54556.
+[4] F. Flinders, S. Senini and W. Oghanna, "Mixed electrical and mechanical
+simulations using dynamic systems analysis packages," Proceedings of
+the 1993 IEEE/ASME Joint Railroad Conference, Pittsburgh, PA, USA,
+1993, pp. 87-93, doi: 10.1109/RRCON.1993.292959.
+[5] K. T. Chau and C. C. Chan, "A SPICE compatible model of permanent
+magnet DC motor drives," Proceedings of 1995 International Conference
+on Power Electronics and Drive Systems. PEDS 95, Singapore, 1995,
+pp. 477-482 vol.1, doi: 10.1109/PEDS.1995.404875.
+[6] P. Bauer, V. Fedak and O. Rompelman, "PEMCWebLab - Distance
+and virtual laboratories in electrical engineering: Development and
+trends," 2008 13th International Power Electronics and Motion Control
+Conference, EPE-PEMC 2008, Poznan, Poland, 2008, pp. 2354-2359,
+doi: 10.1109/EPEPEMC.2008.4635615.
+[7] P. Casals-Torrens, "Virtual Laboratory for Learning Asynchronous Mo-
+tors in Engineering Degrees," in IEEE Revista Iberoamericana de
+Tecnologias del Aprendizaje, vol. 8, no. 2, pp. 71-76, May 2013, doi:
+10.1109/RITA.2013.2258234.
+[8] A. Üzel, D. C. Zuidervliet and P. J. v. Duijsen, "Educational Set-up for
+Brushless Motor Drives," 2021 17th Conference on Electrical Machines,
+Drives and Power Systems (ELMA), Sofia, Bulgaria, 2021, pp. 1-6, doi:
+10.1109/ELMA52514.2021.9503025.
+[9] P. J. v. Duijsen and D. C. Zuidervliet, "Teaching Field Oriented Control
+using Animation," 2021 17th Conference on Electrical Machines, Drives
+and Power Systems (ELMA), Sofia, Bulgaria, 2021, pp. 1-6, doi:
+10.1109/ELMA52514.2021.9502966.
+[10] Caspoc Simulation and Animation, Simulation Research, [Online] Avail-
+able: https://www.caspoc.com,
+[11] DC laboratory, The Hague University, TIS, Delft. [Online] Available:
+http://dc-lab.org
+[12] CDIO Initiative, [Online] Available: www.cdio.org
+[13] ETS-Didactic, 3-phase asynchronous motor, [Online] Available:
+https://ets-didactic.de/en-gb/home/drehstrom-asynchronmotor-ac3-23-
+40v-20w-35004-2078293/
+
+

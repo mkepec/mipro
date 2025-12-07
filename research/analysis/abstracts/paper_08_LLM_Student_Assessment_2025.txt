@@ -1,0 +1,18 @@
+Title: Exploring the Role of Large Language Models in Advancing Student Assessment in Database Courses
+Authors: A. Skinner, E. Kallmeyer, P. Gutierrez, D. Bacic
+Year: 2025
+Conference: CE (Computers in Education)
+Priority: HIGH - Must examine
+
+Relevance: LLM + assessment (very relevant!), directly related to MCP Assessment idea
+
+Abstract:
+Database courses are a fundamental element in computer science education. Performing effective student assessment in them is an essential aspect which often faces various challenges. Some of them include time-intensive preparation of complex and diverse tasks, as well as their subsequent grading. The study presented in this paper focuses on exploring the potential of large language models (LLMs) to support the assessment procedures in university database courses. The key aspects examined in the study are the capabilities of LLMs to create more variety in training and exam tasks and to aid in automatic grading of SQL queries. Along with the benefits of the suggested approach, some limitations are discussed.
+
+
+---
+Notes after reading abstract:
+
+
+---
+Decision: [ ] Get full paper  [ ] Abstract sufficient  [ ] Not relevant

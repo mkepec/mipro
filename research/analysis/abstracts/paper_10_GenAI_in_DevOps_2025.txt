@@ -1,0 +1,18 @@
+Title: GenAI in DevOps: Boon or a Bane
+Authors: H.J. Kam, A. Hemon-Hildgen
+Year: 2025
+Conference: SSE (Software and Systems Engineering)
+Priority: HIGH - Must examine
+
+Relevance: Recent DevOps + AI paper, relevant for MCP Observability and general AI integration
+
+Abstract:
+The primary objective of this study is to explore the impact of Generative AI (GenAI) on Development and Operations (DevOps) practices, focusing on both its advantages and potential drawbacks. DevOps is a process built around the CALMS framework, which emphasizes Culture, Automation, Lean principles, Measurement, and Sharing to integrate development and operations effectively. With the increasing adoption of GenAI in information technology (IT) particularly in DevOps, it becomes essential to understand how AI-powered automation influences these foundational DevOps pillars. This study leverages data collected from the DevOps subreddit on Reddit to identify key trends and insights into how automated operations based upon GenAI is reshaping the DevOps landscape. Our preliminary findings indicate that DevOps professionals have mixed feelings about the use of GenAI. On one hand, GenAI-driven automation enhances individual productivity; on the other hand, the complexities of GenAI, combined with its tendency for hallucinations, foster algorithmic aversion, making individuals hesitant to rely on it for critical tasks. Overall, this study aims to contribute to the information systems (IS) literature by providing insights into the role of GenAI automation in mitigating burnout among DevOps professionals.
+
+
+---
+Notes after reading abstract:
+
+
+---
+Decision: [ ] Get full paper  [ ] Abstract sufficient  [ ] Not relevant
